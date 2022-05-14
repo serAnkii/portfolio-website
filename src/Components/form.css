@@ -1,0 +1,30 @@
+#form{
+    display: flex;
+    border: 2px solid;
+    align-items: center;
+    height: 65vh;
+    justify-content: center;
+    width: 98%;
+    border-radius: 30px;
+    
+}
+
+#form:hover{
+    box-shadow: 10px 0px 6px ;
+}
+
+label{
+    font-size: 30px;
+    /* margin: 20px; */
+}
+
+input {
+    font-size: 30px;
+    margin: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+input:hover {
+    box-shadow: 10px 0px 6px ,-10px 0px 6px ;
+}
