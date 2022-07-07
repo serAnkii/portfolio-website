@@ -5,22 +5,9 @@ import {Contact} from  "./Components/Contact"
 import {Projects} from './Components/Projects'
 import { Profile } from "./Components/Profile"
 import { Error } from "./Components/Error"
-import { Route,Routes,Link} from "react-router-dom";
+import { Route,Routes} from "react-router-dom";
 import { useState } from "react"
 export default function App(){
-  const [background,changebackground] = useState("url(./Components/landing.png)")
-  const backchangefunc = ()=>{
-    changebackground("black")
-  }
-
-  const backgr={
-    background:background,
-    margin:'0',
-    padding:'0',
-    height:'100vh',
-    width:'100%'
-
-  }
   const [count , chnagecount] = useState(0);
   const [style,changesty] = useState({top:'-1110'});
   const kuchbhi = ()=>{
@@ -37,11 +24,11 @@ export default function App(){
 
   return(
     <>
-    <div style={backgr}>
+    <div>
     <div id="hamburger">
     <button id="button" onClick={kuchbhi}>{count===0?"Expandnavbar":"Hidenavbar"}</button>
     <nav style={style}>
-      <a id="home" onMouseEnter={backchangefunc} href="/">Home</a>
+      <a id="home" href="/">Home</a>
       <a  id="project" href="/project">Projects</a>
       <a id="" href="/about">About</a>
       <a href="/contact">Contact page </a>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0%;
-    background: url(./Components/landing.png);
+    background: linear-gradient(rgb(104, 53, 192) , rgb(130, 97, 168) );
     height: 99vh;
     width: 99%;
     background-position: center;
