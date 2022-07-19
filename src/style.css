@@ -4,10 +4,10 @@ body {
     background: linear-gradient(rgb(104, 53, 192) , rgb(130, 97, 168) );
     height: 99vh;
     width: 99%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: fill; */
+    /* overflow: hidden; */
 }
 
 #button {
@@ -63,9 +63,12 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
+    bottom: 0%;
+    /* bottom: 0; */
+
     width: 100%;
     height: 10%;
+    /* position: relative; */
     background-color: transparent;
     left: 0;
 }

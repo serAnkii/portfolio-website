@@ -1,8 +1,15 @@
 import React from 'react'
-
+import "./projects.css"
 export function Projects() {
   return (
-    <div>this is Projects page</div>
+    <div>
+      <h1>These are the some projects Made by me</h1>
+      <div className="section">
+
+      </div>
+      {/* <div className='section'>
+      </div> */}
+    </div>
   )
 }
 
