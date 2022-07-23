@@ -6,6 +6,7 @@ import {Projects} from './Components/Projects'
 import { Profile } from "./Components/Profile"
 import { Error } from "./Components/Error"
 import { Route,Routes} from "react-router-dom";
+import { Link } from "react-router-dom"
 import { useState } from "react"
 export default function App(){
   const [count , chnagecount] = useState(0);
@@ -38,17 +39,17 @@ export default function App(){
     <div id="hamburger">
     <button id="button" onClick={shadow}  style={buttonshadow}> ☠️</button>
     <nav style={style}>
-      <a id="home" href="/">Home</a>
+      {/* <a id="home" href="/">Home</a>
       <a  id="project" href="/project">Projects</a>
       <a id="" href="/about">About</a>
-      <a href="/contact">Contact page </a>
+      <a href="/contact">Contact page </a> */}
  
-{/*       
+      
   <Link to="/">home</Link>
   <Link to="/about">about</Link>
   <Link to="/project">projects</Link>
   <Link to="/contact">contact</Link>
-  <Link to="/profile/:username">Profile</Link> */}
+  <Link to="/profile/:username">Profile</Link>
     </nav>
       <Routes>
       <Route path="/" element={<Home />} />
