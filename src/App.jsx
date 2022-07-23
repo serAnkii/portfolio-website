@@ -9,8 +9,10 @@ import { Route,Routes} from "react-router-dom";
 import { useState } from "react"
 export default function App(){
   const [count , chnagecount] = useState(0);
-  const [style,changesty] = useState({top:'-1110'});
-  const [buttonshadow,changeshadow]=useState({boxShadow: '4px 3px 3px black',borderRadius: '10PX'});
+  const [style,changesty] = useState({left:'-1500',top:'0'});
+  const [buttonshadow,changeshadow]=useState({boxShadow: '4px 3px 3px black',
+  borderRadius: '10PX',
+  backgroundColor:'white'});
 
   function shadow()
   {
@@ -18,14 +20,14 @@ export default function App(){
 
     // for hiding the bar
     if(count===0){
-      changesty({top:'0',position:'relative'})
+      changesty({left:'0',top:'0'})
         chnagecount(1);
-        changeshadow({boxShadow: '4px 3px 3px orange',borderRadius: '100PX'});
+        changeshadow({boxShadow: '4px 3px 40px 10000px white',borderRadius: '100PX' , color:'white',backgroundColor: 'rgb(104, 53, 192)'});
     }
     else {
-      changesty({top:'-1000'});
+      changesty({left:'-1500',top:'0'});
       chnagecount(0);
-      changeshadow({boxShadow: '4px 3px 3px black'});
+      changeshadow({boxShadow: '4px 3px 10px black',borderRadius: '10PX',backgroungColor:'white'});
     }
   }
 
@@ -34,7 +36,7 @@ export default function App(){
     <>
     <div>
     <div id="hamburger">
-    <button id="button" onClick={shadow}  style={buttonshadow}>|||</button>
+    <button id="button" onClick={shadow}  style={buttonshadow}> ☠️</button>
     <nav style={style}>
       <a id="home" href="/">Home</a>
       <a  id="project" href="/project">Projects</a>

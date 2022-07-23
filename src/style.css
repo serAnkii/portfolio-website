@@ -11,25 +11,22 @@ body {
 }
 
 #button {
-    color:  transparent;
+    color:  black;
     /* box-shadow: 4px 3px 3px black; */
-    margin: 30px;
+    margin: 40px;
     /* border-radius: 10PX; */
-    border: none;
-    background-color: rgb(56, 8, 138);
+    border: none; 
+    background-color: transparent;
     font-size: xx-large;
     font-family: BurbankBigRegular-Black !important;
     transition: 1000ms ease-out;
 }
 
-#button:hover {
-    transform: scale(1.1);
-}
 
 nav {
     display: inline-flex;
     transition: 1000ms ease-in-out;
-    position: absolute;
+    position: relative;
     left: 0%;
     margin-bottom: 20px;
     width: 78%;
