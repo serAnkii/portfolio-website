@@ -4,7 +4,7 @@
     justify-content:space-evenly;
 }
 
-h1{
+#home h1{
     position:sticky;
     padding-right: 30px;
     top: 30%;
@@ -16,7 +16,7 @@ h1{
     text-shadow: 8px  7px  14px;
 }
 
-h2{ 
+#subhome h2{ 
        position:sticky;
     top: 30%;
     /* bottom: 30%; */
@@ -40,7 +40,7 @@ h2{
     justify-content: space-around;
 }
 
-p{
+#home3 p{
     font-size: 4vh;
     position: relative;
     position:sticky;
@@ -50,7 +50,7 @@ p{
     text-decoration: wavy;
 }
 
-button{
+#home3 button{
     width: fit-content;
     height: fit-content;
     font-family: 'Press Start 2P';
