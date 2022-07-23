@@ -19,7 +19,7 @@ body {
     background-color: rgb(56, 8, 138);
     font-size: xx-large;
     font-family: BurbankBigRegular-Black !important;
-    transition: 2000ms ease-out;
+    transition: 1000ms ease-out;
 }
 
 #button:hover {
