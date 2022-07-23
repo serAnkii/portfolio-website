@@ -10,15 +10,23 @@ import { useState } from "react"
 export default function App(){
   const [count , chnagecount] = useState(0);
   const [style,changesty] = useState({top:'-1110'});
-  const kuchbhi = ()=>{
+  const [buttonshadow,changeshadow]=useState({boxShadow: '4px 3px 3px black',borderRadius: '10PX'});
+
+  function shadow()
+  {
+    
+
+    // for hiding the bar
     if(count===0){
-    changesty({top:'0',position:'relative'})
-      chnagecount(1);
-  }
-  else {
-    changesty({top:'-1000'});
-    chnagecount(0);
-  }
+      changesty({top:'0',position:'relative'})
+        chnagecount(1);
+        changeshadow({boxShadow: '4px 3px 3px orange',borderRadius: '100PX'});
+    }
+    else {
+      changesty({top:'-1000'});
+      chnagecount(0);
+      changeshadow({boxShadow: '4px 3px 3px black'});
+    }
   }
 
 
@@ -26,7 +34,7 @@ export default function App(){
     <>
     <div>
     <div id="hamburger">
-    <button id="button" onClick={kuchbhi}>{count===0?"Expandnavbar":"Hidenavbar"}</button>
+    <button id="button" onClick={shadow}  style={buttonshadow}>|||</button>
     <nav style={style}>
       <a id="home" href="/">Home</a>
       <a  id="project" href="/project">Projects</a>

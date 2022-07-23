@@ -11,14 +11,15 @@ body {
 }
 
 #button {
-    color: #e99651;
-    box-shadow: 4px 3px 3px black;
+    color:  transparent;
+    /* box-shadow: 4px 3px 3px black; */
     margin: 30px;
-    border-radius: 10PX;
+    /* border-radius: 10PX; */
     border: none;
-    background-color: transparent;
+    background-color: rgb(56, 8, 138);
     font-size: xx-large;
     font-family: BurbankBigRegular-Black !important;
+    transition: 2000ms ease-out;
 }
 
 #button:hover {
@@ -44,12 +45,12 @@ nav {
 }
 
 nav a {
-    color: #e99651;
+    color: black;
     transition: 500ms linear;
     margin: auto;
     text-decoration: none;
     font-size: 30px;
-    text-shadow: 20px 10px 9px #e2883f;
+    text-shadow: 4px 10px 9px ;
     font-family: BurbankBigRegular-Black !important;
 }
 
