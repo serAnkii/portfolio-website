@@ -6,7 +6,7 @@ function Box(props) {
   const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
  
-  useFrame((state, delta) => (ref.current.rotation.x += 0.01))
+  useFrame((state, delta) => (ref.current.rotation.x += 0.01,ref.current.rotation.z += 100))
   return (
     <mesh
       {...props}
@@ -15,8 +15,8 @@ function Box(props) {
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
-      <boxGeometry args={[5, 0.1, 0.1]} />
-      <meshStandardMaterial color={hovered ? 'magenta' : 'cyan'} />
+      <boxGeometry args={[5, 0.1, 0.7]} />
+      <meshStandardMaterial color={hovered ? 'black' : 'cyan'} />
     </mesh>
   )
 }
@@ -27,13 +27,15 @@ export default function Additional() {
       <ambientLight intensity={0.2} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Box position={[0.6, 0, 0.6]} />
-      {/* <Box position={[4, 0, 0]} /> */}
-      <Box position={[0.3, 0.3, 0.4]} />
-      <Box position={[0.3, 0.6, 0.6]} />
-      <Box position={[0.5, 0.7, 1.8]} />
-      <Box position={[1.9, 0, 0]} />
+      <Box position={[0, -1.2, 0]} />
+      <Box position={[0, -0.9, 0]} />
+      <Box position={[0, -0.6, 0]} />
+      <Box position={[0, -0.3, 0]} />
       <Box position={[0, 0, 0]} />
+      <Box position={[0, 0.3, 0]} />
+      <Box position={[0, 0.6, 0]} />
+      <Box position={[0, 0.9, 0]} />
+      <Box position={[0, 1.2, 0]} />
     </Canvas>
   )
 }

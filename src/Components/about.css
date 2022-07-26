@@ -8,38 +8,14 @@
     justify-content: space-evenly;
 }
 
-#resume h1{
+/* #resume h1{
     position: relative;
     display: inline;
     
-}
+} */
 
 #resume a{
     text-decoration: none;
     font-size: 3rem;
     margin-top: 6rem;
-}
-
-
-
-
-
-element.style {
-}
-.gradient-stroke[data-v-8de1a9bc] {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: var(--app-color-shell);
-    display: block;
-    font-size: 120px;
-    font-weight: 800;
-    line-height: .9;
-}
-* {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    -webkit-transition: background-color var(--transition-duration) ease-in,background var(--transition-duration) ease-in;
-    transition: background-color var(--transition-duration) ease-in,background var(--transition-duration) ease-in;
-    -webkit-transition-delay: 0;
-    transition-delay: 0;
 }
