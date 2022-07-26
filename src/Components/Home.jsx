@@ -19,7 +19,9 @@ export function Home() {
       <h2>I'am Ankit <br /></h2> <br />
       <div id='home3'>
       <p >
-        <TypewriterComponent onInit={text}/>
+        <TypewriterComponent onInit={text} options={{
+          autoStart:true,loop:true,
+        }}/>
       </p>
       </div>
     </div>

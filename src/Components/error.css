@@ -8,17 +8,17 @@
 
 #error button {
     color: black;
-    border-radius: 30px;
+    border-radius: 3.0rem;
     text-align: center;
     font-size: xx-large;
     background-color: transparent;
     transition: 500ms linear;
-    text-shadow: 4px 0px 5px rgb(201, 84, 103);
+    text-shadow: .4rem .0rem .5rem rgb(201, 84, 103);
     border-color: rgb(201, 84, 103);
 }
 
 #butt:hover {
     transform: skewY(5deg);
     border: none;
-    box-shadow: 5px 0px 20px 10px rgb(201, 84, 103);
+    box-shadow: .5rem .0rem 2.0rem 1.0rem rgb(201, 84, 103);
 }

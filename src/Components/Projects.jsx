@@ -3,7 +3,7 @@ import "./projects.css"
 export function Projects() {
   return (
     <div>
-      <h1>These are the some projects Made by me</h1>
+      <h1 id='project'>These are the some projects Made by me</h1>
       <div className="section">
 
       </div>

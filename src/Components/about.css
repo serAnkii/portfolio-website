@@ -1,0 +1,21 @@
+#resume{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    width: 99%;
+    margin: 1rem;
+    border: .5rem solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#resume h1{
+    position: relative;
+    display: inline;
+    
+}
+
+#resume a{
+    text-decoration: none;
+    font-size: 3rem;
+    margin-top: 6rem;
+}

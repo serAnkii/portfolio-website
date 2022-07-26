@@ -1,30 +1,30 @@
 #form{
     display: flex;
-    border: 2px solid;
+    border: .2rem solid;
     align-items: center;
     height: 65vh;
     justify-content: center;
     width: 98%;
-    border-radius: 30px;
+    border-radius: 3.0rem;
     
 }
 
 #form:hover{
-    box-shadow: 10px 0px 6px ;
+    box-shadow: 1.0rem .0rem .6rem ;
 }
 
 label{
-    font-size: 30px;
-    /* margin: 20px; */
+    font-size: 3.0rem;
+    /* margin: 2.0rem; */
 }
 
 input {
-    font-size: 30px;
-    margin: 20px;
-    border-radius: 30px;
+    font-size: 3.0rem;
+    margin: 2.0rem;
+    border-radius: 3.0rem;
     text-align: center;
 }
 
 input:hover {
-    box-shadow: 10px 0px 6px ,-10px 0px 6px ;
+    box-shadow: 1.0rem .0rem .6rem ,-1.0rem .0rem .6rem ;
 }

@@ -1,12 +1,12 @@
-h1{
+#project{
     text-transform: capitalize;
     text-align: center;
-    text-shadow: 7px 8px 14px;
+    text-shadow: .7rem .8rem 1.4rem;
 }
 
 .section{
 height: 40vh;
 width:40vh;
-border: 1px solid black;
-margin: 10px;
+border: .1rem solid black;
+margin: 1.0rem;
 }
