@@ -3,17 +3,24 @@ import {Home} from "./Components/Home"
 import {About} from "./Components/About"
 import {Contact} from  "./Components/Contact"
 import {Projects} from './Components/Projects'
-import { Profile } from "./Components/Profile"
 import { Error } from "./Components/Error"
 import { Route,Routes} from "react-router-dom";
 import { Link } from "react-router-dom"
 import { useState } from "react"
+
+//icons 
+import {RiHomeSmileFill} from "react-icons/ri"
+import {SiAboutdotme} from "react-icons/si"
+import {GrProjects} from 'react-icons/gr'
+import {MdOutlineConnectWithoutContact} from "react-icons/md"
+import {GiHamburgerMenu} from "react-icons/gi"
+
 export default function App(){
   const [count , chnagecount] = useState(0);
   const [style,changesty] = useState({left:'-1500',top:'0'});
   const [buttonshadow,changeshadow]=useState({boxShadow: '4px 3px 3px black',
   borderRadius: '10PX',
-  backgroundColor:'white'});
+  backgroundColor:'coral'});
 
   function shadow()
   {
@@ -23,12 +30,12 @@ export default function App(){
     if(count===0){
       changesty({left:'0',top:'0'})
         chnagecount(1);
-        changeshadow({boxShadow: '4px 3px 40px 10000px white',borderRadius: '100PX' , color:'white',backgroundColor: 'rgb(104, 53, 192)'});
+        changeshadow({boxShadow: '4px 3px 40px 10000px coral',borderRadius: '100PX' , color:'white',backgroundColor: 'rgb(104, 53, 192)'});
     }
     else {
       changesty({left:'-1500',top:'0'});
       chnagecount(0);
-      changeshadow({boxShadow: '4px 3px 10px black',borderRadius: '10PX',backgroungColor:'white'});
+      changeshadow({boxShadow: '4px 3px 10px black',borderRadius: '10PX',backgroungColor:'coral'});
     }
   }
 
@@ -37,7 +44,7 @@ export default function App(){
     <>
     <div>
     <div id="hamburger">
-    <button id="button" onClick={shadow}  style={buttonshadow}> ☠️</button>
+    <button id="button" onClick={shadow}  style={buttonshadow}> <GiHamburgerMenu/></button>
     <nav style={style}>
       {/* <a id="home" href="/">Home</a>
       <a  id="project" href="/project">Projects</a>
@@ -45,18 +52,16 @@ export default function App(){
       <a href="/contact">Contact page </a> */}
  
       
-  <Link to="/">home</Link>
-  <Link to="/about">about</Link>
-  <Link to="/project">projects</Link>
-  <Link to="/contact">contact</Link>
-  <Link to="/profile/:username">Profile</Link>
+  <Link to="/"><RiHomeSmileFill/>  HOME</Link>
+  <Link to="/about">ABOUT   <SiAboutdotme/></Link>
+  <Link to="/project"><GrProjects />   PROJECTS</Link>
+  <Link to="/contact"><MdOutlineConnectWithoutContact/>   CONTACT</Link>
     </nav>
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/project" element={<Projects />} />
-      <Route path="/profile/:username" element={<Profile />}  />
       <Route path="*" element={<Error />}/>
       </Routes>
   </div>

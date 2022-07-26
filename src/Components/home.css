@@ -1,4 +1,7 @@
+
+
 #home {
+    width: 100%;
     display: flex;
     -ms-flex-item-align: center;
     justify-content:space-evenly;
@@ -6,24 +9,25 @@
 
 #home h1{
     position:sticky;
-    padding-right: 30px;
+    padding-right: 3.0rem;
     top: 30%;
     /* bottom: 30%; */
     font-size: 12vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: italic;
-    border-right: 1px solid;
-    text-shadow: 8px  7px  14px;
+    border-right: .1rem solid black;
+    text-shadow: .8rem  .7rem  1.4rem black;
+    color: antiquewhite;
 }
 
 #subhome h2{ 
-       position:sticky;
+    position:sticky;
     top: 30%;
     /* bottom: 30%; */
     font-size: 7vh;
     font-family: 'Press Start 2P';
     text-align: center;
-    text-shadow: 7px 0px 0px #392459, -7px 0px 0px #5423a5;
+    text-shadow: .7rem .0rem .0rem rgba(34, 31, 31, 0.26), -.7rem .0rem .0rem rgba(48, 45, 45, 0.171);
 
 }
 
@@ -31,7 +35,6 @@
 #subhome{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 #home3{
@@ -43,19 +46,112 @@
 #home3 p{
     font-size: 4vh;
     position: relative;
-    position:sticky;
+    /* position:sticky; */
     /* font-family: 'Press Start 2P'; */
     text-align: center;
-    text-shadow: 3px 2px 10px ;
-    text-decoration: wavy;
+    text-shadow: .3rem .2rem 1.0rem ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-#home3 button{
-    width: fit-content;
-    height: fit-content;
-    font-family: 'Press Start 2P';
-    position: relative;
-    top: 50%;
-    margin-left: 20px;
-    background: transparent;
+#home_button{
+    width: 100%;
+    display: flex ;
+    justify-content: center;
 }
+
+#home_button button Link{
+  text-decoration: none !important;
+
+}
+
+#home_button button,
+#home_button button:after {
+  width: 10.0rem;
+  height: 3.6rem;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-family:'Press Start 2P';
+  background: linear-gradient(45deg, transparent 5%, rgb(105 55 191) 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: .3rem;
+  box-shadow: .6rem .0rem .0rem black;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#home_button button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -.6rem 0 0);
+  --slice-2: inset(50% -.6rem 30% 0);
+  --slice-3: inset(10% -.6rem 85% 0);
+  --slice-4: inset(40% -.6rem 43% 0);
+  --slice-5: inset(80% -.6rem 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, black 3%, black 5%, rgb(105 55 191) 5%);
+  text-shadow: -.3rem -.3rem .0rem #F8F005, .3rem .3rem .0rem black;
+  clip-path: var(--slice-0);
+}
+
+#home_button button:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-2.0rem, -1.0rem);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(1.0rem, 1.0rem);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-1.0rem, 1.0rem);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(.0rem, .5rem);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-.5rem, .0rem);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(.5rem, .0rem);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(.5rem, 1.0rem);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-1.0rem, 1.0rem);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(2.0rem, -1.0rem);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-1.0rem, .0rem);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
