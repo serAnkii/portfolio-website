@@ -4,6 +4,8 @@ import {About} from "./Components/About"
 import {Contact} from  "./Components/Contact"
 import {Projects} from './Components/Projects'
 import { Error } from "./Components/Error"
+import Additional from "./Components/Additional"
+
 import { Route,Routes} from "react-router-dom";
 import { Link } from "react-router-dom"
 import { useState } from "react"
@@ -56,12 +58,15 @@ export default function App(){
   <Link to="/about">ABOUT   <SiAboutdotme/></Link>
   <Link to="/project"><GrProjects />   PROJECTS</Link>
   <Link to="/contact"><MdOutlineConnectWithoutContact/>   CONTACT</Link>
+  <Link to="/additional">Additional things</Link>
+
     </nav>
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/project" element={<Projects />} />
+      <Route path="/additional" element={<Additional />} />
       <Route path="*" element={<Error />}/>
       </Routes>
   </div>
