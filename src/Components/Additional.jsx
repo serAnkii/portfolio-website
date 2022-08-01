@@ -6,7 +6,7 @@ function Box(props) {
   const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
  
-  useFrame((state, delta) => (ref.current.rotation.x += 0.01,ref.current.rotation.z += 100))
+  useFrame(() => (ref.current.rotation.x += 0.01 ,ref.current.rotation.z += 100))
   return (
     <mesh
       {...props}
