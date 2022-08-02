@@ -40,7 +40,9 @@ body{
     font-family: 'Merienda One';
     
 }
-
+#negi:hover{
+    text-shadow: 3px 0px 10px hsl(211deg 87% 64%),-3px -0px 10px hsl(211deg 87% 64%) ;
+}
 #main #links {
     
     width: 60%;

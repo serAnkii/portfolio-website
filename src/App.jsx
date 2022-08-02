@@ -3,7 +3,6 @@ import {Home} from "./Components/Home"
 import {About} from "./Components/About"
 import {Projects} from './Components/Projects'
 import { Error } from "./Components/Error"
-import Additional from "./Components/Additional"
 
 import { Route,Routes} from "react-router-dom";
 import { Link } from "react-router-dom"
@@ -26,14 +25,13 @@ export default function App(){
         <div id="main">
                       
                       <div id="title">
-                        <h1>Ankit <span style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
+                        <h1>Ankit <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
                       </div> 
                             
                       <div id="links">
                           <Link className="link" to="/"><RiHomeSmileFill/>  HOME</Link>
                           <Link className="link" to="/about">ABOUT   <SiAboutdotme/></Link>
                           <Link className="link" to="/project"><GiThorHammer />   PROJECTS</Link>
-                          <Link className="link" to="/additional">Additional things</Link>
                       </div>
                         
                       <div id="links2">
@@ -46,7 +44,6 @@ export default function App(){
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Projects />} />
-            <Route path="/additional" element={<Additional />} />
             <Route path="*" element={<Error />}/>
             </Routes>
           {/* <footer>
