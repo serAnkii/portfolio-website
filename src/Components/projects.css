@@ -10,3 +10,11 @@ width:40vh;
 border: .1rem solid black;
 margin: 1.0rem;
 }
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    
+}

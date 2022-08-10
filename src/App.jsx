@@ -35,9 +35,9 @@ export default function App(){
                       </div>
                         
                       <div id="links2">
-                            <h1><GoMarkGithub/></h1>
-                            <h1><BsInstagram fill="#c536a0"/></h1>
-                            <h1><SiTwitter fill="#53a1f2"/></h1>
+                            <h1 className="social"><GoMarkGithub/></h1>
+                            <h1 className="social"><BsInstagram fill="#c536a0"/></h1>
+                            <h1 className="social"><SiTwitter fill="#53a1f2"/></h1>
                         </div>
                   </div>
             <Routes >
