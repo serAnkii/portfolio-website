@@ -14,11 +14,11 @@ export function About() {
     
     <>
     <div class="about">
-  <div class="grid-item1"> <h2>I'am Ankit <br /></h2> <br /></div>
+  <div class="grid-item1"> <h2>I'am a<br /></h2> <br /></div>
   <div class="grid-item2"><p ><TypewriterComponent onInit={text} options={{autoStart:true,loop:true,}}/></p>
 </div>
-  <div class="grid-item3"><h1>MY RESUME  <RiPagesLine/></h1></div>
-  <div class="grid-item4"><a href="https://drive.google.com/drive/folders/1cPsEL96CIrUwhvxv1ZcxV0Mo2zS6t_3m" target="_">My RESUME </a>
+  <div class="grid-item3"><h1>This is my  <RiPagesLine/></h1></div>
+  <div class="grid-item4"><a href="https://drive.google.com/drive/folders/1cPsEL96CIrUwhvxv1ZcxV0Mo2zS6t_3m" target="_">RESUME </a>
 </div>
   <div class="grid-item5">5</div>
   <div class="grid-item6">6</div>

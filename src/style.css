@@ -41,7 +41,7 @@ body{
     
 }
 #negi:hover{
-    text-shadow: 3px 0px 10px hsl(211deg 87% 64%),-3px -0px 10px hsl(211deg 87% 64%) ;
+    text-shadow: 3px 0px 10px hwb(211 42% 2%),-3px -0px 10px rgb(77, 162, 254) ;
 }
 #main #links {
     
