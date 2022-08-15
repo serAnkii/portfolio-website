@@ -1,27 +1,33 @@
 .about{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
   /* border: 1px solid white; */
   height: 100vh;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
-.grid-item1{
-  /* border: 1px solid white; */
+#typerwrite{
   display: flex;
-  align-items: center;
-  justify-content:center;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   
 }
-.grid-item2{
-  /* border: 1px solid white; */
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  text-shadow: 0.5rem 0rem 0.2rem red ,-0.5rem 0rem 0.2rem cyan ;
+        #item1{
+          /* border: 1px solid white; */
+          display: flex;
+          
+          align-items: center;
+          justify-content:center;
+          
+        }
+        #item2{
+          /* border: 1px solid white; */
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          text-shadow: 0.5rem 0rem 0.2rem red ,-0.5rem 0rem 0.2rem cyan ;
 
-}
+        }
 
 /* .grid-item3{
   border: 1px solid white;

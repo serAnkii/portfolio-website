@@ -2,6 +2,8 @@
     text-transform: capitalize;
     text-align: center;
     text-shadow: .7rem .8rem 1.4rem;
+    font-size: 5rem;
+    color: rgb(83, 161, 243);
 }
 
 .section{
