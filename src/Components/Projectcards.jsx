@@ -6,11 +6,11 @@ export default function Projectcards(props){
     return (
         <>
         <div id="card" >
-        <img src={props.image} alt="image" />
+        <img src="t.jpg" alt="image" />
         <h1>{props.name}</h1>
 
 
-        </div>
+        </div> 
         </>
     );
 }
