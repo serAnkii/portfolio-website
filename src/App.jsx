@@ -25,7 +25,7 @@ export default function App(){
         <div id="main">
                       
                       <div id="title">
-                        <h1>Ankit <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
+                        <h1 id="ankit">Ankit <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
                       </div> 
                             
                       <div id="links">

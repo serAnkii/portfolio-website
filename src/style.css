@@ -47,7 +47,13 @@ body{
     
 }
 #negi:hover{
-    text-shadow: 3px 0px 10px hwb(211 42% 2%),-3px -0px 10px rgb(77, 162, 254) ;
+    text-shadow: 3px 0px 10px hwb(211 42% 2%),-3px -0px 10px rgb(77, 162, 254) !important ;
+    cursor:none;
+}
+
+#ankit:hover{
+    text-shadow: 3px 0px 10px #d0d3d6,-3px -0px 10px #d0d3d6;
+    cursor: none;
 }
 #main #links {
     
@@ -116,15 +122,19 @@ footer:hover{
 } */
 
 .social:hover{
-    box-shadow: .3rem .0rem 1.0rem , -.3rem .0rem 1.0rem;
+    box-shadow: .3rem .0rem 3.0rem , -.3rem .0rem 3.0rem;
     border-radius: 6rem;
     cursor: pointer;
 }
-/* 
-.social #twitter:hover{
-    box-shadow: .3rem .0rem 1.0rem rgb(77, 162, 254) , -.3rem .0rem 1.0rem rgb(77, 162, 254);    
-} */
 
+#twitter:hover{
+    box-shadow: .3rem .0rem 3.0rem rgb(77, 162, 254) , -.3rem .0rem 3.0rem rgb(77, 162, 254);    
+}
+
+
+#insta:hover{
+    box-shadow: .3rem .0rem 3.0rem #c536a0, -.3rem .0rem 3.0rem #c536a0;    
+}
 
 ::-webkit-scrollbar-thumb{
     background: url('./scroll.jpg');
