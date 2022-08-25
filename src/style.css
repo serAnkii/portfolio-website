@@ -2,7 +2,7 @@ html{
     font-size: 10px;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: black !important;
 }
 body{
     background-color:black;
@@ -119,4 +119,29 @@ footer:hover{
     box-shadow: .3rem .0rem 1.0rem , -.3rem .0rem 1.0rem;
     border-radius: 6rem;
     cursor: pointer;
+}
+/* 
+.social #twitter:hover{
+    box-shadow: .3rem .0rem 1.0rem rgb(77, 162, 254) , -.3rem .0rem 1.0rem rgb(77, 162, 254);    
+} */
+
+
+::-webkit-scrollbar-thumb{
+    background: url('./scroll.jpg');
+    background-size :contain;
+    border-radius: 10rem;
+    background-repeat: no-repeat;
+    background-origin:content-box;
+    background-size:contain;
+    background-position-y: 20rem;
+}
+
+::-webkit-scrollbar{
+    width: 5rem;
+    height: 1rem;
+    border-radius: 10rem;
+    background:url('./scrol.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 10rem;
 }
