@@ -1,16 +1,22 @@
 import React from "react";
-import "./cards.css"
+import './projects.css'
+import {data} from './api'
 
-export default function Projectcards(props){
-    console.log(props.image)
-    return (
-        <>
-        <div id="card" >
-        <img src="t.jpg" alt="image" />
-        <h1>{props.name}</h1>
+export function ProjectCards(){
 
-
-        </div> 
+  return (
+    <>
+    {data.map((ele)=>{
+        return(
+        <>  
+            <div className="card" style={ele.background} key={ele.id}>
+            <h2>{ele.name}</h2>
+            <p>{ele.description}</p>
+            <img src={ele.image} alt="" />
+            </div>
         </>
-    );
+        )
+    })}
+    </>
+  )
 }
