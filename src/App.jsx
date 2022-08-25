@@ -21,7 +21,7 @@ export default function App(){
   return(
     <>
 
-    <div id="body">    
+    <div id="body" >    
         <div id="main">
                       
                       <div id="title">
