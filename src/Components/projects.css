@@ -18,8 +18,5 @@
 
 .cards_container{
     background-color: black;
-    display: grid;
-    grid-template-columns: 2;
-    grid-area: span;
 
 }
