@@ -6,27 +6,29 @@
   background-color: black;
 }
 
+#resume{
+  font-size: 2rem;
+  background-color: slategray;
+  position:static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
 #typerwrite{
   display: flex;
   justify-content: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;  
   
 }
-        #item1{
-          /* border: 1px solid white; */
-          display: flex;
-          
-          align-items: center;
-          justify-content:center;
-          
-        }
-        #item2{
+       #item2{
           /* border: 1px solid white; */
           display: flex;
           align-items: center;
           justify-content:center;
-          text-shadow: 0.5rem 0rem 0.2rem red ,-0.5rem 0rem 0.2rem cyan ;
+          text-shadow: 0.5rem 0rem 3rem yellow ;
 
         }
 
@@ -42,3 +44,19 @@
 .grid-item6{
   border: 1px solid white;
 } */
+
+#type{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#typewrite{
+  border:0.1rem solid white;
+  /* color: #c536a0; */
+  width: 45rem;
+}
+
+#typewrite h2{
+font-size: 3rem;
+}

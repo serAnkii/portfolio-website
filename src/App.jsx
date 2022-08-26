@@ -1,5 +1,4 @@
 import "./style.css"
-import {Home} from "./Components/Home"
 import {About} from "./Components/About"
 import {Projects} from './Components/Projects'
 import { Error } from "./Components/Error"
@@ -23,33 +22,31 @@ export default function App(){
 
     <div id="body" >    
         <div id="main">
-                      
-                      <div id="title">
-                        <h1 id="ankit">Ankit <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
-                      </div> 
-                            
-                      <div id="links">
-                          <Link className="link" to="/"><RiHomeSmileFill/>  HOME</Link>
-                          <Link className="link" to="/about">ABOUT   <SiAboutdotme/></Link>
-                          <Link className="link" to="/project"><GiThorHammer />   PROJECTS</Link>
-                      </div>
-                        
-                      <div id="links2">
-                            <h1 className="social" id="twitter"><SiTwitter fill="#53a1f2"/></h1>
-                            <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
-                            <h1 className="social" ><GoMarkGithub/></h1>
-                        </div>
-                  </div>
-            <Routes >
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/project" element={<Projects />} />
-            <Route path="*" element={<Error />}/>
-            </Routes>
-          {/* <footer>
-            sfasdfadfadfadf
-          </footer> */}
- 
+        
+        <div id="title">
+          <h1 id="ankit">Ankit <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
+        </div> 
+              
+        <div id="links">
+            <Link className="link" to="/">ABOUT   <SiAboutdotme/></Link>
+            <Link className="link" to="/project"><GiThorHammer />   PROJECTS</Link>
+        </div>
+          
+        <div id="links2">
+              <h1 className="social" id="twitter"><a href="https://twitter.com/AnkitNe14613482" target="_blank"><SiTwitter fill="#53a1f2"/></a></h1>
+              <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
+              <h1 className="social" ><a href="https://www.github.com/serAnkii" target="_blank"><GoMarkGithub /></a></h1>
+          </div>
+    </div>
+    <Routes >
+    <Route path="/" element={<About />} />
+    <Route path="/project" element={<Projects />} />
+    <Route path="*" element={<Error />}/>
+    </Routes>
+  {/* <footer>
+    sfasdfadfadfadf
+  </footer> */}
+
   </div>
 
     </>
