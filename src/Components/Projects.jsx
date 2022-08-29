@@ -1,13 +1,44 @@
 import React from 'react'
 import "./projects.css"
 import {ProjectCards} from './ProjectCards' 
+import { data } from './api'
 export function Projects() {
+//state variable
+const [currele,setele] = React.useState(data);
+
+//function to show only pirticualr cateogary of cards
+const filterItem = (arg)=>{
+const updatedlist = data.filter((ele)=>{
+  return ele.group===arg
+})
+setele(updatedlist);
+}
+
 
   return (
   <>
-  <h1 id='headingofprojects'>These are some projects made by me:-</h1>
+  <div id='buttons'>
+    <button className="category" onClick={()=>{
+      filterItem("ml");
+    }}>Machine Learning</button>
+    
+    
+    <button className="category" onClick={()=>{
+      filterItem("development");
+    }}>Development</button>
+
+
+    <button className="category" onClick={()=>{
+      filterItem("blockchain");
+    }}>Blockchain</button>
+
+
+    <button className="category" onClick={()=>{
+      setele(data);
+    }}>ALL</button>
+  </div>
   <div className='cards_Container'>
- <ProjectCards />
+ <ProjectCards data={currele} />
  </div>
   </> )
 }

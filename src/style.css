@@ -3,6 +3,7 @@ html{
     margin: 0;
     padding: 0;
     background-color: black !important;
+    font-family: 'Merienda One';
 }
 body{
     background-color:black;
@@ -102,7 +103,7 @@ body{
 }
 
 .social:hover{
-    box-shadow: .3rem .0rem 3.0rem , -.3rem .0rem 3.0rem;
+    box-shadow: .3rem .0rem 3.0rem #551a8b, -.3rem .0rem 3.0rem #551a8b;
     border-radius: 6rem;
     cursor: pointer;
 }

@@ -1,11 +1,10 @@
 import React from "react";
 import './projects.css'
-import {data} from './api'
 
-export function ProjectCards(){
+export function ProjectCards(props){
   return (
     <>
-    {data.map((ele)=>{
+    {props.data.map((ele)=>{
         return(
         <>  
             <div className="card" key={ele.id}>

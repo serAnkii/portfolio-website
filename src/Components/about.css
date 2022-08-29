@@ -8,7 +8,7 @@
 
 #resume{
   font-size: 2rem;
-  background-color: slategray;
+  background-color: #3887da;
   position:static;
   bottom: 0;
   left: 0;
@@ -28,7 +28,7 @@
           display: flex;
           align-items: center;
           justify-content:center;
-          text-shadow: 0.5rem 0rem 3rem yellow ;
+          text-shadow: 0.5rem 0rem 3rem #3887da ;
 
         }
 
@@ -52,9 +52,10 @@
 }
 
 #typewrite{
-  border:0.1rem solid white;
+  border:0.1rem solid #3887da;
   /* color: #c536a0; */
-  width: 45rem;
+  border-radius: 2rem;
+  width: 50rem;
 }
 
 #typewrite h2{

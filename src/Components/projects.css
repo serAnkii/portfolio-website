@@ -1,5 +1,5 @@
 .card{
-    background-color: aliceblue;
+    background-color: #3887da;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -28,4 +28,22 @@
     overflow-x: scroll;
     gap: 10rem;
 
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    gap: 1rem;
+    
+    
+}
+
+.category{
+    font-size: 2rem;
+    font-family: 'Merienda One';
+    background-color: whitesmoke;
+    border-radius: 3rem;
+    border-width: 0.5rem;
+    border-color: mediumaquamarine;
 }
