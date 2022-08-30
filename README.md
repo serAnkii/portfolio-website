@@ -1,5 +1,5 @@
 # ABOUT
 > ## Autobiography of a self-taught developer
 # PREVIEW
-> ## https://ankitnegi.pages.dev/ 
-#under development
+> ## https://portfolio-website-xi-fawn.vercel.app/
+> under development
