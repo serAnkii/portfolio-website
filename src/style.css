@@ -8,7 +8,7 @@ html{
 body{
     background-color:black;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 
 }
 #body{
@@ -16,7 +16,7 @@ body{
     margin-top: 20vh;
     margin-left:0vh ;
     margin-right: 0vh;
-    height: 150vh;
+    height: 100vh;
     color: #d0d3d6;
     background-attachment: fixed;
     
@@ -78,13 +78,13 @@ body{
     border-top: 1px solid azure;
     border-radius: 4.5rem;
    
-
+    transition: 0.1s ease;
     
 }
 
 #main #links .link:hover{
     font-size: 3rem;
-    transition-duration: 0.4s;
+    transform:scale(1.15);
    
 }
 
@@ -102,10 +102,15 @@ body{
 
 }
 
+.social{
+    transition: 0.5s ease-in-out;
+    margin: 1rem;
+}
 .social:hover{
     box-shadow: .3rem .0rem 3.0rem #551a8b, -.3rem .0rem 3.0rem #551a8b;
-    border-radius: 6rem;
+    transform: scale(1.15);
     cursor: pointer;
+    border-radius: 6rem;
 }
 
 #twitter:hover{
@@ -117,23 +122,21 @@ body{
     box-shadow: .3rem .0rem 3.0rem #c536a0, -.3rem .0rem 3.0rem #c536a0;    
 }
 
-::-webkit-scrollbar-thumb{
-    background: url('./scroll.jpg');
-    background-size :contain;
-    border-radius: 10rem;
-    background-repeat: no-repeat;
-    background-origin:content-box;
-    background-size:contain;
-    background-position-y: 20rem;
-}
-
 ::-webkit-scrollbar{
-    width: 5rem;
-    height: 1rem;
-    border-radius: 10rem;
-    background:url('./scrol.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 10rem;
+  display: none;
 }
 
+footer{
+    background-color: rgb(18, 16, 16);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-self: baseline;
+    align-items: center;
+}
+
+footer::before
+{
+    align-items: baseline !important;
+}
