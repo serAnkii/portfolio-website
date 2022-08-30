@@ -1,5 +1,5 @@
 import React from "react";
-import './projects.css'
+import './projectcard.css'
 
 export function ProjectCards(props){
   return (
@@ -7,11 +7,16 @@ export function ProjectCards(props){
     {props.data.map((ele)=>{
         return(
         <>  
-            <div className="card" key={ele.id}>
+        <div class="card">  
+          <div class="card-image" style={{background:ele.image}}>
+          
+          </div>
+          
+          <div class="card-text">
             <h2>{ele.name}</h2>
             <p>{ele.description}</p>
-            <img src={ele.image} alt="" />
-            </div>
+          </div>
+        </div>
         </>
         )
     })}

@@ -17,6 +17,7 @@ setele(updatedlist);
 
   return (
   <>
+
   <div id='buttons'>
     <button className="category" onClick={()=>{
       filterItem("ml");
@@ -37,9 +38,11 @@ setele(updatedlist);
       setele(data);
     }}>ALL</button>
   </div>
-  <div className='cards_Container'>
- <ProjectCards data={currele} />
- </div>
+  <div id='parentcontainer'>
+  <div id="container">
+  <ProjectCards data={currele} />
+  </div>
+  </div>
   </> )
 }
 
