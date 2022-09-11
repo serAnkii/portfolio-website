@@ -26,7 +26,7 @@ setele(updatedlist);
     
     <button className="category" onClick={()=>{
       filterItem("development");
-    }}>Development</button>
+    }}>Web-Development</button>
 
 
     <button className="category" onClick={()=>{
