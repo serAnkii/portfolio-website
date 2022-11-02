@@ -24,7 +24,7 @@ export default function App(){
         <div id="main">
         
         <div id="title">
-          <h1 id="ankit">RDIT <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>User=Ankit_Negi</span><br /></h1>
+          <h1 id="ankit">RDIT Services Pvt Ltd <span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>User=Ankit_Negi</span><br /></h1>
         </div> 
               
         <div id="links">
@@ -44,7 +44,7 @@ export default function App(){
     <Route path="*" element={<Error />}/>
     </Routes>
   <footer>
-    All rights reserved | Ankit Negi
+    All rights reserved | RDIT Services Pvt Ltd
   </footer>
 
   </div>
