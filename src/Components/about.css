@@ -1,5 +1,7 @@
 .about{
   /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-evenly;
   height: 100vh;
   text-align: center;
   font-size: 4rem;
@@ -9,10 +11,10 @@
 #resume{
   font-size: 2rem;
   background-color: #3887da;
-  position:static;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-right: 3rem;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 2rem;
   
 }
 
@@ -56,6 +58,7 @@
   /* color: #c536a0; */
   border-radius: 2rem;
   width: 50rem;
+  height: fit-content;
 }
 
 #typewrite h2{

@@ -16,7 +16,7 @@ export function About() {
     <div id="type">
       <div id='typewrite'>
           
-        <h2>I'am a</h2>
+        <h2>I'am Ankit Negi</h2>
         <div >
             <p id='item2' ><TypewriterComponent onInit={text} options={{autoStart:true,loop:true,}}/></p>
         </div>

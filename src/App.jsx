@@ -1,4 +1,5 @@
 import "./style.css"
+
 import {About} from "./Components/About"
 import {Projects} from './Components/Projects'
 import { Error } from "./Components/Error"
@@ -6,23 +7,71 @@ import { Error } from "./Components/Error"
 import { Route,Routes} from "react-router-dom";
 import { Link } from "react-router-dom"
 
+import "./css/eye.css"
+
+
 
 //icons 
 import {SiAboutdotme,SiTwitter} from "react-icons/si"
-import {GiThorHammer} from 'react-icons/gi'  
+import {GiAnchor, GiThorHammer}  from 'react-icons/gi'  
 import {GoMarkGithub} from 'react-icons/go'
 import {BsInstagram} from "react-icons/bs"
 
-export default function App(){
+//code to change the eye balls position
+document.addEventListener('mousemove',(e)=>{
+    const mousex = e.clientX;
+    const mousey = e.clientY;
+    const eye = document.getElementById("eyeim1");
+    const rekt = eye.getBoundingClientRect();
+    const eyex = rekt.left + rekt.width / 2;
+    const eyey = rekt.top + rekt.height / 2;
 
+    const ang = angle(mousex,mousey,eyex,eyey);
+
+    const eyes = document.querySelectorAll(".eys")
+
+    eyes.forEach(temp => {
+      temp.style.transform = `rotate(${90 + ang}deg)`;
+      eye.style.filter = `hue-rotate(${ang}deg)`;
+})
+
+  })
+
+
+function angle(cx , cy , ex , ey)
+{
+  const dx = ex - cx;
+  const dy = ey - cy;
+  const rad = Math.atan2(dy,dx);
+
+  const angdeg = rad * 180 / Math.PI;
+   return angdeg;
+
+}
+
+
+
+
+
+
+export default function App(){
 
   return(
     <>
 
-    <div id="body" >    
+    <div id="body" >  
+       
       <div id="main">
         <div id="title">
-          <h1 id="ankit">Ankit<span id='negi' style={{color:"hsl(211deg 87% 64%)"}}>Negi</span></h1>
+            <div id="well">
+            <h1 id="ankit">WELL</h1>
+            <h1 id='negi' style={{color:"hsl(211deg 87% 64%)"}}>COME</h1>
+            </div>
+            <div id= "eye">
+            <img src="eyeback.jpg" alt="eye" id = "eyeim1"/>
+            <img className = "eys" id="eye1" src="eye.png" alt="eye" />
+            <img className = "eys" id="eye2" src="eye.png" alt="eye" />
+           </div> 
         </div>              
         <div id="links">
             <Link className="link" to="/">ABOUT   <SiAboutdotme/></Link>
@@ -33,8 +82,9 @@ export default function App(){
               <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
               <h1 className="social" ><a href="https://www.github.com/serAnkii" target="_blank"><GoMarkGithub /></a></h1>
         </div>
+        
       </div>
-    <Routes >
+    <Routes>
     <Route path="/" element={<About />} />
     <Route path="/project" element={<Projects />} />
     <Route path="*" element={<Error />}/>
@@ -44,7 +94,6 @@ export default function App(){
   </footer>
 
   </div>
-
     </>
   );
 }   

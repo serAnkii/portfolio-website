@@ -1,0 +1,33 @@
+#eye{
+    color: white;
+    width: fit-content;
+    height: 20%;
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+#eyeim1{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -2.38rem;
+    border-radius: 3rem;
+}
+
+#eye1{
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top:-7.5rem;
+    right: -1.9rem;
+}
+
+#eye2{
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top:-7.6rem;
+    right: -3.8rem;
+}
