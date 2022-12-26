@@ -5,7 +5,8 @@
   height: 100vh;
   text-align: center;
   font-size: 4rem;
-  background-color: black;
+  background : black;
+  clip-path: polygon(50% 0%, 100% 0%, 99.60% 64.99%, 53.06% 99.32%, 0px 50%, 0px 0px);
 }
 
 #resume{
