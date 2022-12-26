@@ -1,6 +1,8 @@
 #parentcontainer{
+    background-color: black;
     display: flex;
     justify-content: center;
+    margin-top: -3rem;
 }
 
 #container{
@@ -12,10 +14,13 @@
 }
 
 #buttons{
+    /* width: 100%; */
+    background-color: black;
     display: flex;
     justify-content: center;
-    margin: 3rem;
+    margin-bottom: 3rem;
     gap: 1rem;
+    
     
     
 }

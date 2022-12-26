@@ -1,67 +1,36 @@
-.about{
-  /* border: 1px solid white; */
+.about
+{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
-  height: 100vh;
-  text-align: center;
-  font-size: 4rem;
-  background : black;
-  clip-path: polygon(50% 0%, 100% 0%, 99.60% 64.99%, 53.06% 99.32%, 0px 50%, 0px 0px);
-}
-
-#resume{
-  font-size: 2rem;
-  background-color: #3887da;
-  margin-right: 3rem;
-  height: fit-content;
-  width: fit-content;
-  border-radius: 2rem;
   
-}
-
-#typerwrite{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  justify-content: space-around;  
-  
-}
-       #item2{
-          /* border: 1px solid white; */
-          display: flex;
-          align-items: center;
-          justify-content:center;
-          text-shadow: 0.5rem 0rem 3rem #3887da ;
-
-        }
-
-/* .grid-item3{
-  border: 1px solid white;
-}
-.grid-item4{
-  border: 1px solid white;
-}
-.grid-item5{
-  border: 1px solid white;
-}
-.grid-item6{
-  border: 1px solid white;
-} */
-
-#type{
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 #typewrite{
-  border:0.1rem solid #3887da;
-  /* color: #c536a0; */
-  border-radius: 2rem;
-  width: 50rem;
+  width: 40%;
   height: fit-content;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
 }
 
-#typewrite h2{
-font-size: 3rem;
+#details{
+  margin: 2ren;
+  width: 40%;
+  font-size: 1.7rem;
+  
+}
+
+#details li{
+  margin:0.5rem ;
+  font-size: 1.7rem;
+  overflow: scroll;
 }

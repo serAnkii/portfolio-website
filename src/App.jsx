@@ -77,11 +77,7 @@ export default function App(){
             <Link className="link" to="/">ABOUT   <SiAboutdotme/></Link>
             <Link className="link" to="/project"><GiThorHammer />   PROJECTS</Link>
         </div>
-        <div id="links2">
-              <h1 className="social" id="twitter"><a href="https://twitter.com/AnkitNe14613482" target="_blank"><SiTwitter fill="#53a1f2"/></a></h1>
-              <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
-              <h1 className="social" ><a href="https://www.github.com/serAnkii" target="_blank"><GoMarkGithub /></a></h1>
-        </div>
+       
         
       </div>
     <Routes>
@@ -89,11 +85,14 @@ export default function App(){
     <Route path="/project" element={<Projects />} />
     <Route path="*" element={<Error />}/>
     </Routes>
-  <footer>
-    All rights reserved | Ankit Negi
+    <footer>
+    <h1 className="social" id="twitter"><a href="https://twitter.com/AnkitNe14613482" target="_blank"><SiTwitter fill="#53a1f2"/></a></h1>
+    <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
+    <h1 className="social" ><a href="https://www.github.com/serAnkii" target="_blank"><GoMarkGithub fill="white"/></a></h1>
+    <h1 id="res"> <a href="www.github.com" target="_blank">Resume</a></h1>
   </footer>
-
   </div>
+  
     </>
   );
 }   

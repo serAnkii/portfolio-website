@@ -11,20 +11,40 @@ export function About() {
   return (
     
   <>
-    <div class="about"> 
-      <div id="type">
+    <div class="about">
+      
         <div id='typewrite'>
               <h2>I'am Ankit Negi</h2>
               <div >
               <p id='item2' ><TypewriterComponent onInit={text} options={{autoStart:true,loop:true,}}/></p>
+              <p>Hi there! I was born and raised in Dehradun. My main expertise lies in website design, though I do dabble in Blockchain and machine learning. If you like my site, don’t hesitate to reach out!</p>
               </div>
         </div>
-      </div>
-      <div id='resume' >
-          <h1>What i've done and what can i do</h1>
-          <p>Feel free to take a deeper look at what I've accomplished over the years and what I'm able to do for you.</p>
-          <a href="https://drive.google.com/drive/folders/1cPsEL96CIrUwhvxv1ZcxV0Mo2zS6t_3m" target="_">RESUME </a>
-      </div>
+        <div id='details'>  
+        <h1>What i Like</h1>
+        <ul>
+          <li>Interest in traveling to new locations to learn about different cultures</li>
+          <li>Watching English Movies and listening to the songs</li>
+          <li>Improving myself </li>
+        </ul>
+        <h1>My Tech Stack</h1>
+        <ul>
+          <h2>Development:</h2>
+          <li>HTML,CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <h2>Programming</h2>
+          <li>Java</li>
+          <li>C++</li>
+          <h2>Machine Learning</h2>
+          <li>Python</li>
+          <h2>Blockchain</h2>
+          <li>Solidity</li>
+          <h1>Database</h1>
+          <li>mySQL</li>
+          <li>MongoDB</li>
+        </ul>
+        </div>
     </div>
       
   </>
