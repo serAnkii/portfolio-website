@@ -50,19 +50,16 @@ function angle(cx , cy , ex , ey)
 }
 
 
-
-
-
-
 export default function App(){
 
   return(
     <>
 
     <div id="body" >  
-       
+      
       <div id="main">
         <div id="title">
+            <div id="shapes"></div>
             <div id="well">
             <h1 id="ankit">WELL</h1>
             <h1 id='negi' style={{color:"hsl(211deg 87% 64%)"}}>COME</h1>
@@ -86,10 +83,13 @@ export default function App(){
     <Route path="*" element={<Error />}/>
     </Routes>
     <footer>
+    <h1>CONTACT  </h1>
+    <hr /><hr /><hr />
     <h1 className="social" id="twitter"><a href="https://twitter.com/AnkitNe14613482" target="_blank"><SiTwitter fill="#53a1f2"/></a></h1>
     <h1 className="social" id="insta"><BsInstagram fill="#c536a0"/></h1>
     <h1 className="social" ><a href="https://www.github.com/serAnkii" target="_blank"><GoMarkGithub fill="white"/></a></h1>
     <h1 id="res"> <a href="www.github.com" target="_blank">Resume</a></h1>
+    <h1 id="res"><a href="www.gmail.com/recruitankitnegi2023@gmail.com" target="_blank">E-mail</a></h1>
   </footer>
   </div>
   

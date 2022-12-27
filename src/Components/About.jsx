@@ -30,22 +30,30 @@ export function About() {
         </div>
         <h1>My Tech Stack</h1>
         <div id='tech'>
-        <ul>
-          <h2>Development:</h2>
-          <li>HTML,CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <h2>Programming</h2>
-          <li>Java</li>
-          <li>C++</li>
-          <h2>Machine Learning</h2>
-          <li>Python</li>
-          <h2>Blockchain</h2>
-          <li>Solidity</li>
-          <h1>Database</h1>
-          <li>mySQL</li>
-          <li>MongoDB</li>
-        </ul>
+          <ul>
+            <h2>Development:</h2>
+            <li>HTML,CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <h2>Programming</h2>
+            <li>Java</li>
+            <li>C++</li>
+            <h2>Machine Learning</h2>
+            <li>Python</li>
+            <h2>Blockchain</h2>
+            <li>Solidity</li>
+            <h1>Database</h1>
+            <li>mySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <h1>What I'm learning</h1>
+          <div id='tech'>
+            <ul>
+              <li>Node.js</li>
+              <li>Deep Learning</li>
+              <li>DevOps</li>
+            </ul>
       </div>
     </div>
   </div>
