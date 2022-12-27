@@ -8,6 +8,7 @@ import { Route,Routes} from "react-router-dom";
 import { Link } from "react-router-dom"
 
 import "./css/eye.css"
+import "./css/shapes.css"
 
 
 
@@ -59,16 +60,18 @@ export default function App(){
       
       <div id="main">
         <div id="title">
-            <div id="shapes"></div>
-            <div id="well">
-            <h1 id="ankit">WELL</h1>
-            <h1 id='negi' style={{color:"hsl(211deg 87% 64%)"}}>COME</h1>
-            </div>
             <div id= "eye">
             <img src="eyeback.jpg" alt="eye" id = "eyeim1"/>
             <img className = "eys" id="eye1" src="eye.png" alt="eye" />
             <img className = "eys" id="eye2" src="eye.png" alt="eye" />
            </div> 
+        </div>
+        <div id="name">
+            <div className="shapes" id="s1"></div>
+            <div className="shapes" id="s2"></div>
+            <div className="shapes" id="s3"></div>
+            <div className="shapes" id="s4"></div>
+            <div className="shapes" id="s5"></div>
         </div>              
         <div id="links">
             <Link className="link" to="/">ABOUT   <SiAboutdotme/></Link>
