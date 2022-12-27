@@ -32,7 +32,7 @@ document.addEventListener('mousemove',(e)=>{
 
     eyes.forEach(temp => {
       temp.style.transform = `rotate(${90 + ang}deg)`;
-      // eye.style.filter = `hue-rotate(${ang}deg)`;
+      eye.style.filter = `hue-rotate(${ang}deg)`;
 })
 
   })
