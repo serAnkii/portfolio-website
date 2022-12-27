@@ -85,45 +85,12 @@ body {
   width: fit-content;
 }
 .social:hover {
-  box-shadow: 0.3rem 0rem 3rem white, -0.3rem 0rem 3rem white;
-  transform: scale(1.15);
+  box-shadow: 0.3rem 0rem 1.5rem black, -0.3rem 0rem 1.5rem black;
+  transform: scale(1.25);
   cursor: pointer;
   border-radius: 6rem;
 }
 
-#twitter:hover {
-  box-shadow: 0.3rem 0rem 3rem rgb(77, 162, 254),
-    -0.3rem 0rem 3rem rgb(77, 162, 254);
-}
-
-#insta:hover {
-  box-shadow: 0.3rem 0rem 3rem #c536a0, -0.3rem 0rem 3rem #4e013a;
-}
-
 ::-webkit-scrollbar {
   display: none;
-}
-
-footer {
-  align-items: center;
-  justify-content: flex-end;
-  background-color: black;
-  height: 10rem;
-  display: flex;
-  font-size: 2rem;
-  width: 100%;
-  gap: 2rem;
-}
-
-footer h1 {
-  margin-left: 1rem;
-}
-#res a {
-  text-decoration: none;
-  color: white;
-  margin-right: 1rem;
-}
-
-#res a:hover {
-  text-shadow: 0.3rem 0rem 3rem #d0d3d6, -0.3rem 0rem 3rem #d0d3d6;
 }

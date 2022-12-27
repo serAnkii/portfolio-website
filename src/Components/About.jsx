@@ -10,21 +10,23 @@ export function About() {
   return (
     <>
       <div class="about">
-        <div id="typewrite">
-          <h2>I'am Ankit Negi</h2>
-          <div>
-            <p id="item2">
-              <TypewriterComponent
-                onInit={text}
-                options={{ autoStart: true, loop: true }}
-              />
-            </p>
-            <p>
-              Hi there! I was born and raised in Dehradun. My main expertise
-              lies in website design, though I do dabble in Blockchain and
-              machine learning. If you like my site, don’t hesitate to reach
-              out!
-            </p>
+        <div id="section1">
+          <div id="typewrite">
+            <h2>I'am Ankit Negi</h2>
+            <div>
+              <p id="item2">
+                <TypewriterComponent
+                  onInit={text}
+                  options={{ autoStart: true, loop: true }}
+                />
+              </p>
+              <p>
+                Hi there! I was born and raised in Dehradun. My main expertise
+                lies in website design, though I do dabble in Blockchain and
+                machine learning. If you like my site, don’t hesitate to reach
+                out!
+              </p>
+            </div>
           </div>
         </div>
         <div id="details">

@@ -1,0 +1,46 @@
+footer {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  height: 40rem;
+  display: flex;
+  font-size: 1rem;
+  width: 100%;
+  gap: 1rem;
+  color: black;
+  clip-path: polygon(49.65% 0%, 0% 30%, 0% 100%, 100% 100%, 100% 30%);
+}
+
+#footsocial {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footsocial div {
+  display: flex;
+  font-size: 2rem;
+}
+
+#footcontact {
+  width: 50%;
+  height: 39rem;
+  display: flex;
+  border-right: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footcontact div {
+  display: flex;
+  font-size: 2rem;
+  gap: 2rem;
+}
+
+#footcontact div h1 a{
+    text-decoration: none;
+    gap: 2rem;
+}

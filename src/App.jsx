@@ -9,10 +9,11 @@ import { Link } from "react-router-dom";
 
 import "./css/eye.css";
 import "./css/shapes.css";
+import "./css/footer.css";
 
 //icons
 import { SiAboutdotme, SiTwitter } from "react-icons/si";
-import { GiAnchor, GiThorHammer } from "react-icons/gi";
+import { GiThorHammer } from "react-icons/gi";
 import { GoMarkGithub } from "react-icons/go";
 import { BsInstagram } from "react-icons/bs";
 
@@ -78,37 +79,58 @@ export default function App() {
           <Route path="*" element={<Error />} />
         </Routes>
         <footer>
-          <h1>CONTACT </h1>
-          <hr />
-          <hr />
-          <hr />
-          <h1 className="social" id="twitter">
-            <a href="https://twitter.com/AnkitNe14613482" target="_blank">
-              <SiTwitter fill="#53a1f2" />
-            </a>
-          </h1>
-          <h1 className="social" id="insta">
-            <BsInstagram fill="#c536a0" />
-          </h1>
-          <h1 className="social">
-            <a href="https://www.github.com/serAnkii" target="_blank">
-              <GoMarkGithub fill="white" />
-            </a>
-          </h1>
-          <h1 id="res">
-            {" "}
-            <a href="www.github.com" target="_blank">
-              Resume
-            </a>
-          </h1>
-          <h1 id="res">
-            <a
-              href="www.gmail.com/recruitankitnegi2023@gmail.com"
-              target="_blank"
-            >
-              E-mail
-            </a>
-          </h1>
+          <div id="footcontact">
+            <h1>CONTACT</h1>
+            <hr
+              style={{
+                background: "black",
+                color: "#fffff",
+                width: "40%",
+                height: "0.1rem",
+              }}
+            />
+            <div>
+              <h1>
+                <a
+                  href="www.gmail.com/recruitankitnegi2023@gmail.com"
+                  target="_blank"
+                >
+                  E-mail
+                </a>
+              </h1>
+              <h1>
+                <a href="www.github.com" target="_blank">
+                  Resume
+                </a>
+              </h1>
+            </div>
+          </div>
+          <div id="footsocial">
+            <h1>SOCIAL </h1>
+            <hr
+              style={{
+                background: "black",
+                color: "#fffff",
+                width: "40%",
+                height: "0.1rem",
+              }}
+            />
+            <div>
+              <h1 className="social" id="twitter">
+                <a href="https://twitter.com/AnkitNe14613482" target="_blank">
+                  <SiTwitter fill="black" />
+                </a>
+              </h1>
+              <h1 className="social" id="insta">
+                <BsInstagram fill="black" />
+              </h1>
+              <h1 className="social" id="github">
+                <a href="https://www.github.com/serAnkii" target="_blank">
+                  <GoMarkGithub fill="black" />
+                </a>
+              </h1>
+            </div>
+          </div>
         </footer>
       </div>
     </>
