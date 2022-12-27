@@ -21,13 +21,15 @@ export function About() {
               </div>
         </div>
         <div id='details'>  
-        <h1>What i Like</h1>
+        <div id="likes"><h1>What i Like</h1>
         <ul>
           <li>Interest in traveling to new locations to learn about different cultures</li>
           <li>Watching English Movies and listening to the songs</li>
           <li>Improving myself </li>
         </ul>
+        </div>
         <h1>My Tech Stack</h1>
+        <div id='tech'>
         <ul>
           <h2>Development:</h2>
           <li>HTML,CSS</li>
@@ -44,8 +46,9 @@ export function About() {
           <li>mySQL</li>
           <li>MongoDB</li>
         </ul>
-        </div>
+      </div>
     </div>
+  </div>
       
   </>
   )
