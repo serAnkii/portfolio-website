@@ -1,14 +1,12 @@
-.about
-{
+.about {
   width: 100%;
   min-height: 100vh;
   background-color: black;
   display: flex;
   justify-content: space-evenly;
-  
 }
 
-#typewrite{
+#typewrite {
   width: 40%;
   height: fit-content;
   font-size: 2rem;
@@ -19,38 +17,33 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-
 }
 
-#details{
+#details {
   margin: 2rem;
   display: fle;
   width: 40%;
   font-size: 1.7rem;
   margin: 4px, 4px;
   margin: 4px, 4px;
-  
 }
 
-#details h1{
+#details h1 {
   text-decoration: underline;
 }
 
-
-#details li{
-  margin:0.5rem ;
+#details li {
+  margin: 0.5rem;
   font-size: 1.7rem;
   overflow: scroll;
 }
 
-#tech
-{
+#tech {
   width: 100%;
   height: 20%;
-  
+
   overflow: scroll;
 }
-#tech:hover{
+#tech:hover {
   box-shadow: 1rem 0rem white;
 }
-

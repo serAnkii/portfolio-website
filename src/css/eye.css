@@ -1,35 +1,35 @@
-#eye{
-    color: white;
-    width: fit-content;
-    height: 20%;
-    margin: 0;
-    margin-left: 1rem;
-    padding: 0;
+#eye {
+  color: white;
+  width: fit-content;
+  height: 20%;
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0;
 }
 
-#eyeim1{
-    width: 24rem;
-    height: 8rem;
-    margin-right: 1rem;
-    position: relative;
-    top: -2.38rem;
-    border-radius: 3rem;
+#eyeim1 {
+  width: 24rem;
+  height: 8rem;
+  margin-right: 1rem;
+  position: relative;
+  top: -2.38rem;
+  border-radius: 3rem;
 }
 
-#eye1{
-    height: 4rem;
-    width: 4rem;
-    position: relative;
-    top:-4.4rem;
-    right: 9.5rem;
-    border-radius: 1rem;
+#eye1 {
+  height: 4rem;
+  width: 4rem;
+  position: relative;
+  top: -4.4rem;
+  right: 9.5rem;
+  border-radius: 1rem;
 }
 
-#eye2{
-    height: 4rem;
-    width: 4rem;
-    position: relative;
-    top:-8.4rem;
-    right: -4.4rem;
-    border-radius: 1rem;
+#eye2 {
+  height: 4rem;
+  width: 4rem;
+  position: relative;
+  top: -8.4rem;
+  right: -4.4rem;
+  border-radius: 1rem;
 }
