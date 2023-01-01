@@ -1,5 +1,5 @@
 import React from "react";
-import "./projectcard.css";
+import "../css/ProjectCard.css";
 
 export function ProjectCards(props) {
   return (
@@ -7,8 +7,8 @@ export function ProjectCards(props) {
       {props.data.map((ele) => {
         return (
           <>
-            <div class="card">
-              <div class="card-image" style={{ background: ele.image }}></div>
+            <div className="card">
+              <div className="card-image" style={{ background: ele.image }}></div>
               <h2
                 style={{
                   textAlign: "center",

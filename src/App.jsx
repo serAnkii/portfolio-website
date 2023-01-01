@@ -71,18 +71,20 @@ export default function App() {
             <ul id="nav-list">
               <li className="list-item">
                 <Link className="link" to="/">
+                <h1>ABOUT</h1>
                   <div className="icon">
                     <SiAboutdotme />
                   </div>
-                  <h1>ABOUT</h1>
+                  
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/project">
+                <h1>PROJECTS</h1>
                   <div className="icon">
                     <GiThorHammer />
                   </div>{" "}
-                  <h1>PROJECTS</h1>
+                  
                 </Link>
               </li>
 

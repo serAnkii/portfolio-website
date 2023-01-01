@@ -1,6 +1,6 @@
 :root{
+  --color2: rgb(0, 0, 0);
   --color1: white;
-  --color2: black;
 }
 
 html {
