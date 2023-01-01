@@ -1,5 +1,5 @@
 #parentcontainer {
-  background-color: black;
+  background-color: var(--color2);
   display: flex;
   justify-content: center;
   margin-top: -3rem;
@@ -14,7 +14,7 @@
 
 #buttons {
   /* width: 100%; */
-  background-color: black;
+  background-color: var(--color2);
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
@@ -24,10 +24,10 @@
 .category {
   font-size: 2rem;
   font-family: "Merienda One";
-  background-color: whitesmoke;
+  background-color: var(--color1);
   border-radius: 3rem;
   border-width: 0.5rem;
-  border-color: mediumaquamarine;
+  border-color: var(--color1);
   transition: 0.5s ease;
 }
 

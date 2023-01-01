@@ -1,8 +1,13 @@
+:root{
+  --color1: white;
+  --color2: black;
+}
+
 html {
   font-size: 10px;
   margin: 0;
   padding: 0;
-  background: black !important;
+  background: var(--color2) !important;
   font-family: "Merienda One";
 }
 body {
@@ -10,12 +15,12 @@ body {
   padding: 0;
 }
 #body {
-  background-color: white;
+  background-color: var(--color1);
   margin-top: 20vh;
   margin-left: 0vh;
   margin-right: 0vh;
-  height: 100vh;
-  color: #d0d3d6;
+  height: 80vh;
+  color: var(--color1);
   background-attachment: fixed;
 }
 #main {
@@ -39,58 +44,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  font-family: "Merienda One";
+  
 }
 
-#main #links {
-  width: 44%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  border: 1px solid white;
-  border-top: none;
-  border-radius: 30px;
-}
-
-#main #links .link {
-  font-size: 2.5rem;
-  font-family: "Cormorant SC";
-  text-decoration: none;
-  color: azure;
-  border-left: 1px solid azure;
-  border-top: 1px solid azure;
-  border-radius: 4.5rem;
-
-  transition: 0.1s ease;
-}
-
-#main #links .link:hover {
-  font-size: 3rem;
-  transform: scale(1.15);
-}
-
-#main #links2 {
-  width: 20%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 2rem;
-  text-decoration: none;
-  color: azure;
-}
-
-.social {
-  margin: 3rem;
-  width: fit-content;
-}
-.social:hover {
-  box-shadow: 0.3rem 0rem 1.5rem black, -0.3rem 0rem 1.5rem black;
-  transform: scale(1.25);
-  cursor: pointer;
-  border-radius: 6rem;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}

@@ -1,14 +1,14 @@
 footer {
   align-items: center;
   justify-content: space-evenly;
-  background-color: white;
-  height: 40rem;
+  background-color: var(--color1);
+  height: 20rem;
   display: flex;
   font-size: 1rem;
   width: 100%;
   gap: 1rem;
-  color: black;
-  clip-path: polygon(49.65% 0%, 0% 30%, 0% 100%, 100% 100%, 100% 30%);
+  color: var(--color2);
+  /* clip-path: polygon(49.65% 0%, 0% 30%, 0% 100%, 100% 100%, 100% 30%); */
 }
 
 #footsocial {
@@ -25,13 +25,14 @@ footer {
 }
 
 #footcontact {
-  width: 50%;
-  height: 39rem;
+  width: 50.2%;
+  height: 20rem;
   display: flex;
-  border-right: 2px solid black;
+  border-right: 2px solid var(--color2);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 #footcontact div {
@@ -43,4 +44,59 @@ footer {
 #footcontact div h1 a{
     text-decoration: none;
     gap: 2rem;
+    color: var(--color2);
+    transition:  200ms;
+    border-radius: 1.8rem;
+  }
+
+#footcontact div h1 a:hover{
+  box-shadow: 0.1rem 0rem 1rem var(--color2),-0.1rem 0rem 1rem var(--color2);
+  font-size: 4.2srem;
+
+}
+
+/* #footcontact div h1 a:first-child:hover{
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+} */
+
+
+
+.wave {
+  
+  width: 100%;
+  overflow: hidden;
+  margin: -0.1rem;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotate(180deg);
+  border: none;
+}
+
+.wave .shape-fill {
+  fill: var(--color1);
+}
+
+
+
+ .social {
+  margin: 3rem;
+  width: fit-content;
+}
+.social:hover {
+  box-shadow: 0.3rem 0rem 1.5rem var(--color2), -0.3rem 0rem 1.5rem var(--color2);
+  transform: scale(1.25);
+  cursor: pointer;
+  border-radius: 6rem;
+}
+
+
+.icns{
+  fill: var(--color2);
+  
 }

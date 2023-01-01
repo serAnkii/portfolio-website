@@ -1,5 +1,5 @@
 #eye {
-  color: white;
+  color: var(--color1);
   width: fit-content;
   height: 20%;
   margin: 0;
@@ -16,6 +16,7 @@
   border-radius: 3rem;
 }
 
+
 #eye1 {
   height: 4rem;
   width: 4rem;
@@ -24,6 +25,8 @@
   right: 9.5rem;
   border-radius: 1rem;
 }
+
+
 
 #eye2 {
   height: 4rem;

@@ -7,7 +7,7 @@
   height: 4rem;
   min-width: 4rem;
   margin-right: 2rem;
-  background-color: whitesmoke;
+  background-color: var(--color1)smoke;
 }
 
 #s1 {
@@ -32,7 +32,7 @@
 
 @keyframes shapechangea {
   15% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       0% 100%,
       0% 1%,
@@ -49,15 +49,16 @@
     );
   }
   20% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    
   }
   40% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   60% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       30% 0%,
       70% 0%,
@@ -70,18 +71,18 @@
     );
   }
   100% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: circle(50% at 50% 50%);
   }
 }
 
 @keyframes shapechangen {
   0% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: circle(50% at 50% 50%);
   }
   20% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       0% 77%,
       0 0,
@@ -97,15 +98,15 @@
     );
   }
   40% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   60% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   100% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       30% 0%,
       70% 0%,
@@ -121,7 +122,7 @@
 
 @keyframes shapechangek {
   0% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       30% 0%,
       70% 0%,
@@ -134,11 +135,11 @@
     );
   }
   20% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: circle(50% at 50% 50%);
   }
   40% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       49% 0,
       28% 0,
@@ -155,22 +156,22 @@
     );
   }
   60% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   100% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 }
 
 @keyframes shapechangei {
   0% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   20% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       30% 0%,
       70% 0%,
@@ -183,11 +184,11 @@
     );
   }
   40% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: circle(50% at 50% 50%);
   }
   60% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       0 0,
       100% 0,
@@ -204,22 +205,22 @@
     );
   }
   100% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
 }
 
 @keyframes shapechanget {
   0% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   20% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   40% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       30% 0%,
       70% 0%,
@@ -232,11 +233,11 @@
     );
   }
   60% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: circle(50% at 50% 50%);
   }
   100% {
-    background-color: white;
+    background-color: var(--color1);
     clip-path: polygon(
       10% 25%,
       35% 25%,

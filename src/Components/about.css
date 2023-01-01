@@ -1,22 +1,22 @@
 .about {
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+  background-color: var(--color2);
   display: flex;
   justify-content: space-evenly;
 }
 #section1
 {
   width: 40%;
-  display: flex;
+   display: flex;
   margin-top: 20rem;
 }
 #typewrite {
   
   height: fit-content;
   font-size: 2rem;
-  background-color: white;
-  color: black;
+  background-color: var(--color1);
+  color: var(--color2);
   border-radius: 5rem;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,8 @@
   justify-content: center;
   align-items: center;
 }
+
+
 
 #details {
   margin: 2rem;
@@ -51,5 +53,6 @@
   overflow: scroll;
 }
 #tech:hover {
-  box-shadow: 1rem 0rem white;
+  box-shadow: 1rem 0rem var(--color1);
 }
+
