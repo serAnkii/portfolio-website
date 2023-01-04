@@ -11,7 +11,7 @@ export function Projects() {
   //function to show filter menu
   const menu = document.getElementById("buttons");
   function showfilter() {
-    if (filterstate === 0) {
+    if(filterstate === 0) {
       menu.style.left = "-100rem";
       changestate(1);
     } else if (filterstate === 1) {

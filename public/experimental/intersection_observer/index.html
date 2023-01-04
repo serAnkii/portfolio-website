@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>observer</title>
+    <style>
+       
+        .child{
+            position: relative;
+            width: 99vw;
+            height: 99vh;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .child1{
+            color: red;
+            background-color: green;
+
+        }
+
+        .child2{
+            color: blue;
+            background-color: cyan;
+            
+        }.child3{
+            color: magenta;
+            background-color: cornflowerblue ;
+            
+        }.child4{
+            color: purple;
+            background-color: olive;
+            
+        }
+
+        .inverse{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+   
+        <div class="child" id="child1">section 1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+
+    <script>
+        var eleone = document.querySelectorAll("div")
+        
+        var options = {
+            // root:null, //it is the viewport and leaving blank is also equivalent to it
+            // rootMargin:"-150px",
+            // threshold:0 // 0 means any single peace enters and 1 means entre item
+        };
+
+        
+
+        const observer = new IntersectionObserver((entries , observer)=>{
+            
+            entries.forEach(entry =>{
+                if(entry.isIntersecting)
+            {
+                return null;
+            }
+                entry.target.classList.toggle("inverse")
+                console.log(entry);
+            },options);
+
+        })
+
+        eleone.forEach(elemet=>{
+            observer.observe(elemet);
+        })
+        
+    </script>
+</body>
+</html>

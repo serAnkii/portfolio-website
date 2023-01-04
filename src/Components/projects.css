@@ -62,7 +62,8 @@
 #container {
   display: grid !important;
   gap: 1rem; 
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
   /* grid-auto-rows: 200rem */
   
 }
