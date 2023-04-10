@@ -3,6 +3,7 @@
   grid-template-rows: 25rem 5rem 10rem 10rem;
 
   height: 50rem;
+  width: 50rem;
 
   transition: 0.5s ease;
   cursor: pointer;

@@ -69,7 +69,8 @@ export default function App() {
 
           <div id="links">
             <ul id="nav-list">
-              <li className="list-item">
+              
+              <li>
                 <Link className="link" to="/">
                 <h1>ABOUT</h1>
                   <div className="icon">
@@ -88,14 +89,14 @@ export default function App() {
                 </Link>
               </li>
 
-              <li className="list-item">
+              {/* <li className="list-item">
                 <Link className="link" to="/project">
                   <div className="icon">
                     <GiThorHammer />
                   </div>{" "}
                   <h1>THEME</h1>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

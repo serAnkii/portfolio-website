@@ -54,7 +54,7 @@
 #parentcontainer {
   background-color: var(--color2);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: -3rem;
   width: 100%;
 }

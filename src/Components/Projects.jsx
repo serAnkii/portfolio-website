@@ -12,11 +12,12 @@ export function Projects() {
   const menu = document.getElementById("buttons");
   function showfilter() {
     if(filterstate === 0) {
-      menu.style.left = "-100rem";
       changestate(1);
+      menu.style.left = "-100rem";
+      
     } else if (filterstate === 1) {
-      menu.style.left = "0";
       changestate(0);
+      menu.style.left = "0";
     }
   }
 
@@ -24,6 +25,7 @@ export function Projects() {
   const filterItem = (arg) => {
     const updatedlist = data.filter((ele) => {
       return ele.group === arg;
+      
     });
     setele(updatedlist);
   };
