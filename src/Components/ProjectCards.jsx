@@ -2,13 +2,26 @@ import React from "react";
 import "../css/projectcard.css";
 
 export function ProjectCards(props) {
+
   return (
     <>
+      
       {props.data.map((ele) => {
         return (
           <>
-            <div className="card">
-              <div className="card-image" style={{ background: ele.image }}></div>
+            
+            <div
+              className="card"
+              style={{boxShadow:ele.shadowcolor}}
+                  
+                             
+          
+
+            >
+              <div
+                className="card-image"
+                style={{ background: ele.image }}
+              ></div>
               <h2
                 style={{
                   textAlign: "center",

@@ -4,9 +4,10 @@ export const data = [
     name: "Twitter Clone",
     description: "A Twitter clone project is a social media web application that allows users to create an account, post short messages known as 'tweets' follow other users, and receive updates from those they follow. The platform mimics the key features of Twitter, providing a similar user experience for those who want to communicate and share their thoughts and ideas in real-time. The project involves building the frontend and backend of the application, designing a database schema to store user information and tweets, implementing user authentication and authorization, and deploying the application to a web server. Additional features such as direct messaging, retweeting, and hashtags may also be added to enhance the user experience. Overall, the Twitter clone project is a challenging and rewarding way to develop one's web development skills and gain experience building a full-stack web application.",
     image: "url('twitter.jpg')",
-    group: "blockchain",
+    group: "development",
     repo: "https://github.com/serAnkii/web3_twitter",
     deploy: "",
+    shadowcolor:".5rem .5rem 7rem rgba(0, 119, 205, 0.6)"
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const data = [
     image: "url('portfolio.png')",
     repo: "https://github.com/serAnkii/portfolio-website/blob/main/README.md",
     deploy: "/",
+    shadowcolor:".5rem .5rem 7rem white"
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const data = [
     image: "url('tic-tac-toe.png')",
     repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
     deploy: "",
+    shadowcolor:".5rem .5rem 7rem yellow"
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ export const data = [
     image: "url('facerecog.png')",
     repo: "",
     deploy: "",
+    shadowcolor:".5rem .5rem 7rem blue"
   },
   {
     id: 5,
@@ -45,5 +49,17 @@ export const data = [
     image: "url('credit.jpeg')",
     repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
     deploy: "",
+    shadowcolor:".5rem .5rem 7rem purple"
   },
+ { 
+  id: 6,
+  name: "Blockchain Based Food Distribution System",
+  description:
+    "This project aims to use blockchain technology to create a more transparent and efficient food distribution system. It will connect farmers, distributors, retailers, and consumers in a decentralized platform, improving traceability and accountability in the food supply chain.",
+  group: "blockchain",
+  image: "url('block.jpeg')",
+  repo: "",
+  deploy: "",
+  shadowcolor:".5rem .5rem 7rem rgb(182 23 23)"
+},
 ];

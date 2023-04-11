@@ -11,11 +11,11 @@ export function Projects() {
   //function to show filter menu
   const menu = document.getElementById("buttons");
   function showfilter() {
-    if(filterstate === 0) {
+    if(filterstate == 0) {
       changestate(1);
       menu.style.left = "-100rem";
       
-    } else if (filterstate === 1) {
+    } else if (filterstate == 1) {
       changestate(0);
       menu.style.left = "0";
     }
