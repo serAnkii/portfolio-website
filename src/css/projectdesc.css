@@ -1,0 +1,115 @@
+/* Main container styles */
+#maincontainer {
+    background-color: var(--color2);
+    animation: fadein 1s;
+    padding: 2rem;
+    padding-top: 0;
+    height: 100vh;
+  }
+  
+  /* Heading styles */
+  #nameofproject h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color1);
+    animation: slidein 1s;
+    text-align: center;
+  }
+  
+  /* Summary styles */
+  #summary {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--color1);
+    animation: fadein 1s;
+  }
+  
+  /* Context styles */
+  #context {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Role styles */
+  #role {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Skills styles */
+  #skills {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Outcome styles */
+  #Outcome {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Visuals styles */
+  #Visuals {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Codelinks styles */
+  #codelinks {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+    animation: fadein 1s;
+  }
+  
+  /* Empty section styles */
+  #context:empty::before,
+  #role:empty::before,
+  #skills:empty::before,
+  #Outcome:empty::before,
+  #Visuals:empty::before,
+  #codelinks:empty::before {
+    content: "This section is empty";
+    color: #999;
+    font-style: italic;
+    animation: fadein 1s;
+  }
+  
+  /* Animation keyframes */
+  @keyframes slidein {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

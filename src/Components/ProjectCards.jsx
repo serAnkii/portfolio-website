@@ -21,7 +21,7 @@ export function ProjectCards(props) {
               e.currentTarget.style.boxShadow = `2rem 2rem 7rem ${ele.shadowcolor},-2rem -2rem 7rem ${ele.shadowcolor}`;
               e.currentTarget.style.transition = "box-shadow 0.2s ease";
               e.currentTarget.querySelector(".description").style.display =
-                "block";
+                "flex";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.boxShadow = "none";
@@ -62,6 +62,9 @@ export function ProjectCards(props) {
                 padding: "2rem",
                 boxSizing: "border-box",
                 overflow: "scroll",
+                flexDirection:"column",
+                alignItems:"center",
+                justifyContent:"center"
               }}
             >
               {ele.description}

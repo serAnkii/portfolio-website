@@ -56,5 +56,5 @@
 
 #links:hover .link h1{
     display: block;
-    transition: width 300ms ease-in-out ;
+    transition: width 100ms ease-in-out ;
 }
