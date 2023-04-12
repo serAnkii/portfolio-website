@@ -41,17 +41,7 @@ export function ProjectCards(props) {
               {ele.name}
             </div>
 
-            <div id="linktopage"
             
-            onMouseEnter={(e) => {
-              e.currentTarget.style.display = "flex"
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.display = "none"
-            }}
-            >
-              <a href="">click to see details</a>
-            </div>
           </div>
         );
       })}
