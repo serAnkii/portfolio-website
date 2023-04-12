@@ -1,11 +1,13 @@
 #name {
   display: flex;
   align-items: center;
+  height: fit-content;
+  margin-top: 2rem;
 }
 
 .shapes {
-  height: 4rem;
-  min-width: 4rem;
+  height: 2rem;
+  min-width: 2rem;
   margin-right: 2rem;
   background-color: var(--color1)smoke;
 }

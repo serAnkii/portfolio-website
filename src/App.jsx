@@ -140,7 +140,7 @@ export default function App() {
                 </a>
               </h1>
               <h1>
-                <a href="www.github.com" target="_blank">
+                <a href="https://drive.google.com/file/d/1z2XeeXXY2rpnAwvYelsHdli3Xo1Kk3WZ/view?usp=share_link" target="_blank">
                   Resume
                 </a>
               </h1>
