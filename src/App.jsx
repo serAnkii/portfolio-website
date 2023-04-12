@@ -6,6 +6,8 @@ import { Error } from "./Components/Error";
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+import Projectdescription from "./Components/Projectdescription";
+
 import "./css/eye.css";
 import "./css/shapes.css";
 import "./css/footer.css";
@@ -105,6 +107,13 @@ export default function App() {
           <Route path="/" element={<About />} />
           <Route path="/project" element={<Projects />} />
           <Route path="*" element={<Error />} />
+
+          <Route path="/projects/1" element={<Projectdescription name = {"project1"}/>} />
+          <Route path="/projects/2" element={<Projectdescription name = {"project2"}/>} />
+          <Route path="/projects/3" element={<Projectdescription name = {"project3"}/>} />
+          <Route path="/projects/4" element={<Projectdescription name = {"project4"}/>} />
+          <Route path="/projects/5" element={<Projectdescription name = {"project5"}/>} />
+          <Route path="/projects/6" element={<Projectdescription name = {"project6"}/>} />
         </Routes>
         <div className="wave">
           <svg

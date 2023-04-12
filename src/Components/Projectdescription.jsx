@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Projectdescription = () => {
+const Projectdescription = (props) => {
   return (
-    <div>Projectdescription</div>
+    <div id='description' style={{color:"black"}}><h1>{props.name}</h1></div>
   )
 }
 
