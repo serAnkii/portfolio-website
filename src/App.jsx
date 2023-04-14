@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import Projectdescription from "./Components/Projectdescription";
-import {ele} from "./Components/apiforprojectdesc"
+import { ele } from "./Components/apiforprojectdesc";
 
 import "./css/eye.css";
 import "./css/shapes.css";
@@ -72,23 +72,20 @@ export default function App() {
 
           <div id="links">
             <ul id="nav-list">
-              
               <li>
                 <Link className="link" to="/">
-                <h1>ABOUT</h1>
+                  <h1>ABOUT</h1>
                   <div className="icon">
                     <SiAboutdotme />
                   </div>
-                  
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/project">
-                <h1>PROJECTS</h1>
+                  <h1>PROJECTS</h1>
                   <div className="icon">
                     <GiThorHammer />
-                  </div>{" "}
-                  
+                  </div>
                 </Link>
               </li>
 
@@ -109,12 +106,102 @@ export default function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="*" element={<Error />} />
 
-          <Route path="/projects/1" element={<Projectdescription name = {ele[0].name} description ={ele[0].description} context ={ele[0].context} role ={ele[0].role} skills ={ele[0].skills} outcome ={ele[0].outcome} visuals ={ele[0].visuals} code ={ele[0].repo} deploy ={ele[0].deploy} />} />
-          <Route path="/projects/2" element={<Projectdescription name = {ele[1].name} description ={ele[1].description} context ={ele[1].context} role ={ele[1].role} skills ={ele[1].skills} outcome ={ele[1].outcome} visuals ={ele[1].visuals} code ={ele[1].repo} deploy ={ele[1].deploy}/>} />
-          <Route path="/projects/3" element={<Projectdescription name = {ele[2].name} description ={ele[2].description} context ={ele[2].context} role ={ele[2].role} skills ={ele[2].skills} outcome ={ele[2].outcome} visuals ={ele[2].visuals} code ={ele[2].repo} deploy ={ele[2].deploy}/>} />
-          <Route path="/projects/4" element={<Projectdescription name = {ele[3].name} description ={ele[3].description} context ={ele[3].context} role ={ele[3].role} skills ={ele[3].skills} outcome ={ele[3].outcome} visuals ={ele[3].visuals} code ={ele[3].repo} deploy ={ele[3].deploy}/>} />
-          <Route path="/projects/5" element={<Projectdescription name = {ele[4].name} description ={ele[4].description} context ={ele[4].context} role ={ele[4].role} skills ={ele[4].skills} outcome ={ele[4].outcome} visuals ={ele[4].visuals} code ={ele[4].repo} deploy ={ele[4].deploy}/>} />
-          <Route path="/projects/6" element={<Projectdescription name = {ele[5].name} description ={ele[5].description} context ={ele[5].context} role ={ele[5].role} skills ={ele[5].skills} outcome ={ele[5].outcome} visuals ={ele[5].visuals} code ={ele[5].repo} deploy ={ele[5].deploy}/>} />
+          <Route
+            path="/projects/1"
+            element={
+              <Projectdescription
+                name={ele[0].name}
+                description={ele[0].description}
+                context={ele[0].context}
+                role={ele[0].role}
+                skills={ele[0].skills}
+                outcome={ele[0].outcome}
+                visuals={ele[0].visuals}
+                code={ele[0].repo}
+                deploy={ele[0].deploy}
+              />
+            }
+          />
+          <Route
+            path="/projects/2"
+            element={
+              <Projectdescription
+                name={ele[1].name}
+                description={ele[1].description}
+                context={ele[1].context}
+                role={ele[1].role}
+                skills={ele[1].skills}
+                outcome={ele[1].outcome}
+                visuals={ele[1].visuals}
+                code={ele[1].repo}
+                deploy={ele[1].deploy}
+              />
+            }
+          />
+          <Route
+            path="/projects/3"
+            element={
+              <Projectdescription
+                name={ele[2].name}
+                description={ele[2].description}
+                context={ele[2].context}
+                role={ele[2].role}
+                skills={ele[2].skills}
+                outcome={ele[2].outcome}
+                visuals={ele[2].visuals}
+                code={ele[2].repo}
+                deploy={ele[2].deploy}
+              />
+            }
+          />
+          <Route
+            path="/projects/4"
+            element={
+              <Projectdescription
+                name={ele[3].name}
+                description={ele[3].description}
+                context={ele[3].context}
+                role={ele[3].role}
+                skills={ele[3].skills}
+                outcome={ele[3].outcome}
+                visuals={ele[3].visuals}
+                code={ele[3].repo}
+                deploy={ele[3].deploy}
+              />
+            }
+          />
+          <Route
+            path="/projects/5"
+            element={
+              <Projectdescription
+                name={ele[4].name}
+                description={ele[4].description}
+                context={ele[4].context}
+                role={ele[4].role}
+                skills={ele[4].skills}
+                outcome={ele[4].outcome}
+                visuals={ele[4].visuals}
+                code={ele[4].repo}
+                deploy={ele[4].deploy}
+              />
+            }
+          />
+          <Route
+            path="/projects/6"
+            element={
+              <Projectdescription
+                name={ele[5].name}
+                description={ele[5].description}
+                context={ele[5].context}
+                role={ele[5].role}
+                skills={ele[5].skills}
+                outcome={ele[5].outcome}
+                visuals={ele[5].visuals}
+                code={ele[5].repo}
+                deploy={ele[5].deploy}
+              />
+            }
+          />
         </Routes>
         <div className="wave">
           <svg
@@ -150,7 +237,10 @@ export default function App() {
                 </a>
               </h1>
               <h1>
-                <a href="https://drive.google.com/file/d/1z2XeeXXY2rpnAwvYelsHdli3Xo1Kk3WZ/view?usp=share_link" target="_blank">
+                <a
+                  href="https://drive.google.com/file/d/1z2XeeXXY2rpnAwvYelsHdli3Xo1Kk3WZ/view?usp=share_link"
+                  target="_blank"
+                >
                   Resume
                 </a>
               </h1>
@@ -168,7 +258,11 @@ export default function App() {
             />
             <div>
               <h1 className="social" id="twitter">
-                <a href="https://twitter.com/AnkitNe14613482" target="_blank" title="Follow me on Twitter">
+                <a
+                  href="https://twitter.com/AnkitNe14613482"
+                  target="_blank"
+                  title="Follow me on Twitter"
+                >
                   <svg
                     className="icn"
                     xmlns=""
@@ -181,19 +275,22 @@ export default function App() {
                 </a>
               </h1>
               <h1 className="social" id="insta">
-              <a href="https://www.instagram.com/ankit_negi______/" target="_blank" title="Follow me on Instagram">
-                <svg
-                  xmlns=""
-                  viewBox="0 0 64 64"
-                  width="64px"
-                  height="64px"
+                <a
+                  href="https://www.instagram.com/ankit_negi______/"
+                  target="_blank"
+                  title="Follow me on Instagram"
                 >
-                  <path d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z" />
-                </svg>
+                  <svg xmlns="" viewBox="0 0 64 64" width="64px" height="64px">
+                    <path d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z" />
+                  </svg>
                 </a>
               </h1>
               <h1 className="social" id="github">
-                <a href="https://www.github.com/serAnkii" target="_blank" title="Follow me on Github">
+                <a
+                  href="https://www.github.com/serAnkii"
+                  target="_blank"
+                  title="Follow me on Github"
+                >
                   <svg
                     className="icn"
                     xmlns=""

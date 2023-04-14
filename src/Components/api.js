@@ -49,7 +49,7 @@ export const data = [
   image: "url('block.jpeg')",
   repo: "",
   deploy: "",
-  shadowcolor:"rgb(182 23 23)"
+  shadowcolor:"#c8d8fc"
 },
 {
   id: 6,

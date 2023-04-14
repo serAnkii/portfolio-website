@@ -10,7 +10,7 @@ export const ele = [
     role: "Lead developer",
     skills: ["React", "Node.js", "Express", "MongoDB", "CSS"],
     outcome: "Developed a fully functional social media platform with key features similar to Twitter",
-    visuals: ["Homepage", "Profile page", "Tweet feed"]
+    visuals: ["block.jpeg", "Profile page", "Tweet feed"]
   },
   {
     id: 2,
