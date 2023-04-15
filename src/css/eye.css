@@ -14,6 +14,7 @@
   position: relative;
   top: -9.5rem;
   border-radius: 3rem;
+  right: -4rem;
 }
 
 
@@ -22,7 +23,7 @@
   width: 4rem;
   position: relative;
   top: -18.3rem;
-  right: -6.5rem;
+  right: -9.5rem;
   border-radius: 1rem;
 }
 
@@ -33,6 +34,6 @@
   width: 4rem;
   position: relative;
   top: -18.3rem;
-  right: -16.4rem;
+  right: -20.4rem;
   border-radius: 1rem;
 }

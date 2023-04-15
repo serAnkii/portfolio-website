@@ -64,9 +64,9 @@ export default function App() {
 
           <div id="title">
             <div id="eye">
-              <img src="eyeback.jpg" alt="eye" id="eyeim1" />
-              <img className="eys" id="eye1" src="eye.png" alt="eye" />
-              <img className="eys" id="eye2" src="eye.png" alt="eye" />
+              <img src="/eyeback.jpg" alt="eye" id="eyeim1" />
+              <img className="eys" id="eye1" src="/eye.png" alt="eye" />
+              <img className="eys" id="eye2" src="/eye.png" alt="eye" />
             </div>
           </div>
 

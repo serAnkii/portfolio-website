@@ -11,7 +11,18 @@ const Projectdescription = (props) => {
       <div id="summary">
         <p>{props.description}</p>
       </div>
-
+      <div id="Visuals">
+        <h3>Visuals</h3>
+        <br />
+        <div id="imageframe">
+          <div className="content" id="imagecontainer">
+            <br />
+            {props.visuals.map((visual, index) => (
+              <img key={index} src={visual} alt={`Visual ${index + 1}`} />
+            ))}
+          </div>
+        </div>
+      </div>
       <div id="context">
         <h3>Context</h3>
         <br />
@@ -37,16 +48,7 @@ const Projectdescription = (props) => {
         <br />
         <p className="content">{props.outcome}</p>
       </div>
-      <div id="Visuals">
-        <h3>Visuals</h3>
-        <br />
-        <div className="content">
-          {props.visuals.map((visual, index) => (
-            <img key={index} src={visual} alt={`Visual ${index + 1}`} />
-          ))}
-        </div>
-        
-      </div>
+
       <div class="code-links">
         <a class="code-link" href={props.code}>
           View Code
