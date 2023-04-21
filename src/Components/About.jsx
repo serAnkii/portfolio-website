@@ -35,8 +35,8 @@ export function About() {
           <div id="likes">
             <ul>
               <li>
-                Interest in traveling to new locations to learn about different
-
+                Interested in traveling to new locations to learn about
+                different things.
               </li>
               <li>Watching English Movies and listening to the songs</li>
               <li>Improving myself </li>
