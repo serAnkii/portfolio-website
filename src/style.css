@@ -17,7 +17,7 @@ body {
 }
 #body {
   background-color: var(--color2);
-  margin-top: 20vh;
+  margin-top: 23vh;
   margin-left: 0vh;
   margin-right: 0vh;
   height: 80vh;
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 15vh;
+  height: 21vh;
   position: fixed;
   left: 0;
   right: 0;

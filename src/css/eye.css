@@ -9,20 +9,20 @@
 
 #eyeim1 {
   width: 30rem;
-  height: 16rem;
+  height: 22rem;
   margin-right: 1rem;
   position: relative;
-  top: -9.5rem;
+  top: -11.5rem;
   border-radius: 3rem;
   right: -4rem;
 }
 
 
 #eye1 {
-  height: 3.8rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   position: relative;
-  top: -18.3rem;
+  top: -25.3rem;
   right: -9.5rem;
   border-radius: 1rem;
 }
@@ -30,10 +30,10 @@
 
 
 #eye2 {
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   position: relative;
-  top: -18.3rem;
-  right: -20.4rem;
+  top: -25.3rem;
+  right: -24.4rem;
   border-radius: 1rem;
 }

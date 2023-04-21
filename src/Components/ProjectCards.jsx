@@ -14,7 +14,7 @@ export function ProjectCards(props) {
             key={ele.id}
             style={{
               background: ele.image,
-              backgroundSize: "35rem 35rem",
+              backgroundSize: "35rem 40rem",
               backgroundRepeat: "no-repeat",
             }}
             onMouseEnter={(e) => {

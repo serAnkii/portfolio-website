@@ -4,14 +4,16 @@
   background-color: var(--color2);
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 #section1 {
   position: relative;
-  width: 50%;
+  width: 100%;
   display: flex;
-  margin-top: 20rem;
-  height: 100vh;
-  
+  align-items: center;
+  height: 50vh;
+  gap: 4rem;
+  letter-spacing: 0.4rem;
 }
 #typewrite {
   position: relative;
@@ -29,13 +31,16 @@
   align-items: center;
 }
 
-
-
 /* /////////////// */
-
-#details{
+#section2{
+  width: 100%;
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
+}
+
+#details {
+  display: flex;
   overflow: scroll;
   flex-direction: column;
   align-items: center;
@@ -45,18 +50,13 @@
   position: relative;
   right: -2rem;
   padding: 2rem;
-  border-top-left-radius: 5rem;
-  border-bottom-left-radius: 5rem;
+  border-radius: 5rem;
   margin: 2rem;
   width: 50%;
   height: 100%;
   font-size: 1.7rem;
-  margin: 4px, 4px;
-  margin: 4px, 4px;
-  
 }
 
-  
 /* CSS for "What I Like" section */
 
 #likes {
@@ -67,7 +67,6 @@
   align-items: center;
   justify-content: center;
   text-align: center !important;
-   
 }
 
 #likes h1 {
@@ -80,7 +79,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
 
 #likes li {
@@ -93,7 +91,6 @@
   content: "• ";
   color: var(--color2);
 }
-
 
 #tech {
   display: flex;
@@ -160,7 +157,6 @@
 
 @keyframes slide-up {
   from {
-
     transform: translateY(50%);
     opacity: 0;
   }
@@ -179,7 +175,7 @@
   }
 }
 
-#details li{
+#details li {
   background-color: rgb(170, 180, 176);
   width: fit-content;
   padding: 1rem;
@@ -187,9 +183,24 @@
   text-align: center;
 }
 
-#likes{
+#likes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+#illustrations {
+  /* border: 1px solid white; */
+  height: 100%;
+  width: 100%;
+}
+
+#illustrations img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;  
+  transition: all 2s ease-in-out;
+}
+
+
