@@ -6,7 +6,7 @@ const Home = () => {
   const [isInputEmpty, setIsInputEmpty] = useState(true);
 
   const click = () => {
-    window.alert("")
+    window.alert("chatbot is under construction")
   };
 
   const handleInputChange = (event) => {
