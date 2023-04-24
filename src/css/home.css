@@ -1,0 +1,90 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+#chatbox {
+    position: relative;
+    left:calc(100vw - 60rem);
+    background-color: #1d1f21;
+
+    border-radius: 20px;
+    padding: 2rem;
+    width: 40rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #chatbox:hover{
+    left:calc(100vw - 93rem);;
+  }
+  
+  #chatbox h1 {
+    color: #f8f8f2;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  #chatbox input[type="text"] {
+    background-color: #282a36;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem;
+    color: #f8f8f2;
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  
+  #chatbox button {
+    background-color: #50fa7b;
+    border: none;
+    border-radius: 10px;
+    color: #1d1f21;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #chatbox button:hover {
+    background-color: #69ff94;
+  }
+
+button.disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  #tagline{
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  #tagline h1{
+    font-family:Arial, Helvetica, sans-serif !important;
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    
+    text-shadow: 0.5rem 0.1rem 0.1rem cyan,-0.5rem -0.1rem 0.1rem red ;
+  }
+
+  #redtext{
+    color: red;
+    font-size: 4rem;
+    text-shadow: 0.5rem 0.1rem 1rem white;
+  }

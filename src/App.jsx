@@ -1,5 +1,6 @@
 import "./style.css";
 //clamp
+import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Projects } from "./Components/Projects";
 import { Error } from "./Components/Error";
@@ -18,9 +19,7 @@ import "./css/navbar.css";
 
 import { SiAboutdotme, SiTwitter } from "react-icons/si";
 import { GiThorHammer } from "react-icons/gi";
-import { GoMarkGithub } from "react-icons/go";
-import { BsInstagram } from "react-icons/bs";
-
+import { GiIndianPalace } from "react-icons/gi";
 //code to change the eye balls position
 document.addEventListener("mousemove", (e) => {
   const mousex = e.clientX;
@@ -72,8 +71,14 @@ export default function App() {
 
           <div id="links">
             <ul id="nav-list">
-              <li>
+              <li className="list-item">
                 <Link className="link" to="/">
+                <h1>HOMEEE</h1>
+                  <div className="icon"><GiIndianPalace/></div>
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/about">
                   <h1>ABOUT</h1>
                   <div className="icon">
                     <SiAboutdotme />
@@ -88,21 +93,13 @@ export default function App() {
                   </div>
                 </Link>
               </li>
-
-              {/* <li className="list-item">
-                <Link className="link" to="/project">
-                  <div className="icon">
-                    <GiThorHammer />
-                  </div>{" "}
-                  <h1>THEME</h1>
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>
 
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/project" element={<Projects />} />
           <Route path="*" element={<Error />} />
 

@@ -27,7 +27,7 @@ export const data = [
     image: "url('facerecog.gif')",
     repo: "",
     deploy: "",
-    shadowcolor:"blue"
+    shadowcolor:"#68c9c0"
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const data = [
     image: "url('credit.gif')",
     repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
     deploy: "",
-    shadowcolor:"purple"
+    shadowcolor:"#e64a5a"
   },
  { 
   id: 5,
@@ -49,7 +49,7 @@ export const data = [
   image: "url('block.gif')",
   repo: "",
   deploy: "",
-  shadowcolor:"#c8d8fc"
+  shadowcolor:"#37bc9b"
 },
 {
   id: 6,
@@ -59,6 +59,6 @@ export const data = [
   image: "url('tic-tac-toe.gif')",
   repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
   deploy: "",
-  shadowcolor:"orange"
+  shadowcolor:"#ff4c4c"
 },
 ];

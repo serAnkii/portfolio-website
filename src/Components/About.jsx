@@ -3,18 +3,18 @@ import TypewriterComponent from "typewriter-effect";
 import "./about.css";
 
 export function About() {
-  const [imageSource, setImageSource] = useState("student.svg");
+  const [imageSource, setImageSource] = useState("Exams.gif");
 
   function changeimage1() {
-    setImageSource("programming.svg");
+    setImageSource("Code typing.gif");
   }
 
   function changeimage2() {
-    setImageSource("developer.svg");
+    setImageSource("Programming.gif");
   }
 
   function changeimage3() {
-    setImageSource("student.svg");
+    setImageSource("Exams.gif");
   }
 
   function text(typewriter) {

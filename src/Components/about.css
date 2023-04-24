@@ -31,6 +31,9 @@
   align-items: center;
 }
 
+#typewrite h2{
+  font-size: 4rem !important;
+}
 /* /////////////// */
 #section2{
   width: 100%;

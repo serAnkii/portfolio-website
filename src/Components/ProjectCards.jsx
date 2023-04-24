@@ -2,7 +2,7 @@ import React from "react";
 import "../css/projectcard.css";
 
 import { Link} from "react-router-dom";
-import Projectdescription from './Projectdescription';
+
 
 export function ProjectCards(props) {
   return (
@@ -12,7 +12,7 @@ export function ProjectCards(props) {
           <div
             className="card"
             key={ele.id}
-            style={{
+            style={{ 
               background: ele.image,
               backgroundSize: "35rem 40rem",
               backgroundRepeat: "no-repeat",
