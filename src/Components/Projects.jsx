@@ -71,7 +71,7 @@ export function Projects() {
               onClick={() => {
                 setele(data);
               }}
-            >
+              >
               ALL
             </button>
           </div>

@@ -32,6 +32,7 @@ const Home = () => {
             placeholder='Ask Anything'
             value={inputValue}
             onChange={handleInputChange}
+            
           />
           <button onClick={click} disabled={isInputEmpty} className={isInputEmpty ? "disabled" : ""}>go</button>
         </div>
