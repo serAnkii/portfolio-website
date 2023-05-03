@@ -13,21 +13,43 @@
   height: 50rem;
   align-items: center;
 }
+
+#mainbutton{
+  cursor: pointer;
+}
 #buttons {
   
-  width: 100%;
-  background-color: var(--color1);
+  width: fit-content;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   height:auto;
-  justify-content: space-evenly;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: -1rem;
   position: relative;
   left: -100rem; 
   transition: 0.3s ease-in-out; 
   border-radius: 1rem;
 
+}
+
+#buttons:hover{
+  gap:3rem;
+  transition: all 1s ease;
+}
+#buttons p
+{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+#buttons p:hover{
+  background: linear-gradient(to right, #3a86ff, #6ac1ff, #92d6ff, #b8e9ff, #d3f5ff, #f3f3f3, #ffdfdf, #ff9797);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .category {
@@ -43,11 +65,7 @@
 
 }
 
-.category:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
+
 
 
 

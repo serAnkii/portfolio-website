@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
 }
 
 #nav-list {
@@ -13,7 +13,11 @@
 .list-item {
   margin-left: 1.875rem;
 }
-
+.list-item h1{
+  background: linear-gradient(90deg,black,grey,rgb(130, 123, 125),white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .link {
   display: flex;
   align-items: center;
@@ -45,7 +49,6 @@
 
 .link:hover {
   color: black;
-  background-color: white;
 }
 
 .icon {

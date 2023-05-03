@@ -77,7 +77,7 @@ export default function App() {
                   <div className="icon"><GiIndianPalace/></div>
                 </Link>
               </li>
-              <li>
+              <li className="list-item">
                 <Link className="link" to="/about">
                   <h1>ABOUT</h1>
                   <div className="icon">

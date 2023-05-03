@@ -20,7 +20,7 @@ const Projectdescription = (props) => {
           {props.visuals.map((visual, index) => (
             <img key={index} src={visual} alt={`Visual ${index + 1}`} />
           ))}
-        </div>  
+        </div>
       </div>
       <div id="context">
         <h3>Context</h3>

@@ -34,8 +34,8 @@ export function Projects() {
     <>
       <div id="projectsection">
         <div id="filter">
-          <button className="category" onClick={showfilter}>
-            filters
+          <button id="mainbutton" className="category" onClick={showfilter}>
+           filters
           </button>
 
           <div id="buttons">
@@ -45,7 +45,7 @@ export function Projects() {
                 filterItem("ml");
               }}
             >
-              Machine Learning
+              <p>Machine L.</p>
             </button>
 
             <button
@@ -54,7 +54,7 @@ export function Projects() {
                 filterItem("development");
               }}
             >
-              Development
+              <p>Development</p>
             </button>
 
             <button
@@ -63,7 +63,7 @@ export function Projects() {
                 filterItem("blockchain");
               }}
             >
-              Blockchain
+              <p>Blockchain</p>
             </button>
 
             <button
@@ -72,7 +72,7 @@ export function Projects() {
                 setele(data);
               }}
               >
-              ALL
+              <p>ALL</p>
             </button>
           </div>
         </div>

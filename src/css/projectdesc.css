@@ -16,7 +16,9 @@
 /* Name of Project */
 #nameofproject {
   margin-bottom: 2rem;
-
+  background: linear-gradient(to right, #000000, #333333, #555555, #808080, #C0C0C0, #D3D3D3, #DCDCDC, #F5F5F5, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #nameofproject h1 {
@@ -170,6 +172,7 @@
   display: flex;
   overflow-y: scroll;
   scroll-snap-type: x mandatory;
+  
 }
 
 #imagecontainer img{
@@ -177,6 +180,7 @@
   width:40rem;
   border: 1px solid black;
   scroll-snap-align: center;
+  
 }
 
 
