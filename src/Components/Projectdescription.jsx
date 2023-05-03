@@ -14,14 +14,13 @@ const Projectdescription = (props) => {
       <div id="Visuals">
         <h3>Visuals</h3>
         <br />
-        <div id="imageframe">
-          <div className="content" id="imagecontainer">
-            <br />
-            {props.visuals.map((visual, index) => (
-              <img key={index} src={visual} alt={`Visual ${index + 1}`} />
-            ))}
-          </div>
-        </div>
+
+        <div className="content" id="imagecontainer">
+          <br />
+          {props.visuals.map((visual, index) => (
+            <img key={index} src={visual} alt={`Visual ${index + 1}`} />
+          ))}
+        </div>  
       </div>
       <div id="context">
         <h3>Context</h3>

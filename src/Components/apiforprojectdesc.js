@@ -10,7 +10,7 @@ export const ele = [
     role: "From Scratch to hatch",
     skills: ["React", "FireBase", "CSS"],
     outcome: "Developed a fully functional social media platform with key features similar to Twitter",
-    visuals: ["", "", ""]
+    visuals: ["/block.jpeg", "/credit.jpeg", "/eyeback.jpg"]
   },
   {
     id: 2,

@@ -107,7 +107,7 @@
   padding: 40px;
   padding-right: 1rem;
   padding-top: 0%;
-  background-color: #fff;
+  /* background-color: #fff; */
   animation: fade-in 0.5s ease-in-out;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   background-color: var(--color2);
@@ -124,7 +124,6 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #000;
   text-align: center;
   animation: slide-up 0.5s ease-in-out;
 }
@@ -134,7 +133,8 @@
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 5px;
-  color: #000;
+  color: var(--color1);
+  text-align: start;
   text-decoration: underline;
   animation: slide-up 0.5s ease-in-out;
 }
@@ -145,6 +145,7 @@
   margin-left: 20px;
   color: #000;
   line-height: 1.5;
+  text-align: start;
   animation: fade-in 0.5s ease-in-out;
 }
 

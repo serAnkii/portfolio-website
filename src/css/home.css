@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins:wght@100&family=Rubik+Wet+Paint&display=swap');
+
+#imgeye
+{
+  padding: 3rem;
+  border: 0.1rem solid white;
+  margin: 1rem;
+}
+
 #home{
     display: flex;
     min-height: 100vh;
@@ -103,6 +111,8 @@
     text-shadow: 0.7rem 0rem .2rem grey,-0.7rem 0rem .2rem rgb(221, 201, 201) ;
   }
   #seperate{
-    text-shadow: 0.3rem 0.3rem 0.3rem red !important;
+    text-shadow: 0.2rem 0.2rem 0.5rem red !important;
     color: red;
   }
+
+  
