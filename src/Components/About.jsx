@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 import "./about.css";
-
+import styled from "styled-components";
 export function About() {
   const [imageSource, setImageSource] = useState("Exams.gif");
 
@@ -34,12 +34,13 @@ export function About() {
       .start();
   }
 
+
   return (
     <>
       <div className="about">
         <div id="section1">
           <div id="typewrite">
-            <h2>I'am Ankit Negi</h2>
+            <Customh1>I'm Ankit Negi</Customh1>
             <div>
               <p id="item2">
                 <TypewriterComponent
@@ -106,3 +107,40 @@ export function About() {
     </>
   );
 }
+
+const Customh1 = styled.h1`
+margin: 0;
+
+font-size: 6rem !important;
+color: transparent;
+-webkit-text-stroke: 0.5px #0055d6;
+position: relative;
+cursor:none;
+
+::after{
+  content: "I'm Ankit Negi";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color:#0055d6;
+  width:0%;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:6rem;
+}
+
+&:hover{
+  ::after{
+    animation:movetext 1s linear both;
+    @keyframes movetext {
+      to{
+        width:100%;
+        text-shadow:2px 2px 8px black;
+
+      }
+    }
+  }
+
+
+}
+`;

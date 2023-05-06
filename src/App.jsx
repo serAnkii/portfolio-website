@@ -60,28 +60,28 @@ export default function App() {
             <div className="shapes" id="s4"></div>
             <div className="shapes" id="s5"></div>
           </div>
-
-          <div id="title">
+          <div id="glass"></div>
+          {/* <div id="title">
             <div id="eye">
               <img src="/eyeback2.svg" alt="eye" id="eyeim1" />
               <img className="eys" id="eye1" src="/eye.png" alt="eye" />
               <img className="eys" id="eye2" src="/eye.png" alt="eye" />
             </div>
-          </div>
+          </div> */}
 
           <div id="links">
             <ul id="nav-list">
               <li className="list-item">
                 <Link className="link" to="/">
                 <h1>HOMEEE</h1>
-                  <div className="icon"><GiIndianPalace/></div>
+                  <div className="icon"><GiIndianPalace fontSize={"3rem"}/></div>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/about">
                   <h1>ABOUT</h1>
                   <div className="icon">
-                    <SiAboutdotme />
+                    <SiAboutdotme fontSize={"3rem"} />
                   </div>
                 </Link>
               </li>
@@ -89,7 +89,7 @@ export default function App() {
                 <Link className="link" to="/project">
                   <h1>PROJECTS</h1>
                   <div className="icon">
-                    <GiThorHammer />
+                    <GiThorHammer fontSize={"3rem"}/>
                   </div>
                 </Link>
               </li>

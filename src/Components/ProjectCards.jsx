@@ -1,31 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/projectcard.css";
-
-import { Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 export function ProjectCards(props) {
+  const [tilt, setTilt] = useState({});
+
+  const handleMouseMove = (e, id) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const tiltX = ((e.clientX - centerX) / rect.width) * 50;
+    const tiltY = ((e.clientY - centerY) / rect.height) * 50;
+    setTilt({ ...tilt, [id]: { tiltX, tiltY } });
+  };
+
   return (
     <>
       {props.data.map((ele) => {
+        const { id, name, image, description, shadowcolor } = ele;
+        const { tiltX = 0, tiltY = 0 } = tilt[id] || {};
+
         return (
           <div
             className="card"
-            key={ele.id}
-            style={{ 
-              background: ele.image,
+            key={id}
+            style={{
+              background: image,
               backgroundSize: "35rem 40rem",
               backgroundRepeat: "no-repeat",
+              transform: `rotateY(${tiltX}deg) rotateX(${tiltY}deg)`,
             }}
+            onMouseMove={(e) => handleMouseMove(e, id)}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = `2rem 2rem 7rem ${ele.shadowcolor},-2rem -2rem 7rem ${ele.shadowcolor}`;
-              e.currentTarget.style.transition = "box-shadow 0.2s ease";
+              e.currentTarget.style.boxShadow = `1rem 1rem 2rem ${shadowcolor}, -1rem -1rem 2rem ${shadowcolor}`;
+              e.currentTarget.style.transition = "box-shadow 0.3s ease";
               e.currentTarget.querySelector(".description").style.display =
                 "flex";
+
+              const ele = document.createElement("div");
+              ele.className = "crsr";
             }}
             onMouseLeave={(e) => {
+              setTilt({ ...tilt, [id]: { tiltX: 0, tiltY: 0 } });
               e.currentTarget.style.boxShadow = "none";
-              e.currentTarget.style.transition = "box-shadow 0.2s ease";
+              e.currentTarget.style.transition = "box-shadow 0.3s ease";
               e.currentTarget.querySelector(".description").style.display =
                 "none";
             }}
@@ -43,7 +61,7 @@ export function ProjectCards(props) {
                 padding: "0.5rem",
               }}
             >
-              {ele.name}
+              {name}
             </div>
 
             <div
@@ -62,12 +80,12 @@ export function ProjectCards(props) {
                 padding: "2rem",
                 boxSizing: "border-box",
                 overflow: "scroll",
-                flexDirection:"column",
-                alignItems:"center",
-                justifyContent:"center"
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              {ele.description}
+              {description}
               <br />
               <br />
               <h1
@@ -78,7 +96,7 @@ export function ProjectCards(props) {
                 }}
               >
                 <Link
-                  to={`/projects/${ele.id}`}
+                  to={`/projects/${id}`}
                   className="linktosite"
                   style={{ textDecoration: "none", color: "white" }}
                 >

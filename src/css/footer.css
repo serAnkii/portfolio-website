@@ -45,14 +45,24 @@ footer {
     text-decoration: none;
     gap: 2rem;
     color: var(--color2);
-    transition:  200ms;
+    transition:  100ms;
     border-radius: 1.8rem;
+    padding: 1rem;
+    
   }
 
 #footcontact div h1 a:hover{
-  box-shadow: 0.1rem 0rem 1rem var(--color2),-0.1rem 0rem 1rem var(--color2);
-  font-size: 4.2srem;
+  box-shadow: 0.1rem 0rem 1rem var(--color1),-0.1rem 0rem 1rem var(--color2);
+  transform: scale(1.2);
 
+}
+
+#footcontact h1
+{
+  
+  background: linear-gradient(to right,rgb(0, 132, 185),grey,black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 /* #footcontact div h1 a:first-child:hover{
@@ -86,7 +96,7 @@ footer {
 
  .social {
   margin: 3rem;
-  width: fit-content;
+  width: fit-content;;
 }
 .social:hover {
   box-shadow: 0.3rem 0rem 1.5rem var(--color2), -0.3rem 0rem 1.5rem var(--color2);
@@ -99,4 +109,10 @@ footer {
 .icns{
   fill: var(--color2);
   
+}
+
+#footsocial h1{
+  background: linear-gradient(to right,rgb(180, 180, 180),rgb(70, 70, 70),black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }

@@ -5,9 +5,12 @@ import { ProjectCards } from "./ProjectCards";
 import { data } from "./api";
 export function Projects() {
   //state variable
-  const [currele, setele] = React.useState(data);
+  const [currele, setele] = React.useState([]);
   const [filterstate, changestate] = React.useState(0);
 
+  React.useEffect(() => {
+    setele(data);
+  },[data]);
   //function to show filter menu
   const menu = document.getElementById("buttons");
   function showfilter() {
@@ -78,7 +81,7 @@ export function Projects() {
         </div>
         <div id="parentcontainer">
           <div id="container">
-            <ProjectCards data={currele} />
+            <ProjectCards data={currele}/>
           </div>
         </div>
       </div>

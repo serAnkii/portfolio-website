@@ -1,6 +1,7 @@
 #name {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: fit-content;
   margin-top: 2rem;
 }
@@ -9,7 +10,7 @@
   height: 2rem;
   min-width: 2rem;
   margin-right: 2rem;
-  background-color: var(--color1)smoke;
+  background-color: var(--color1) smoke;
 }
 
 #s1 {
@@ -34,7 +35,7 @@
 
 @keyframes shapechangea {
   15% {
-    background-color: var(--color1);
+    background: linear-gradient(108deg, black, grey, white);
     clip-path: polygon(
       0% 100%,
       0% 1%,
@@ -53,7 +54,6 @@
   20% {
     background-color: var(--color1);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    
   }
   40% {
     background-color: var(--color1);
@@ -84,7 +84,7 @@
     clip-path: circle(50% at 50% 50%);
   }
   20% {
-    background-color: var(--color1);
+    background: linear-gradient(108deg, black, grey, white);
     clip-path: polygon(
       0% 77%,
       0 0,
@@ -141,7 +141,7 @@
     clip-path: circle(50% at 50% 50%);
   }
   40% {
-    background-color: var(--color1);
+    background: linear-gradient(108deg, black, grey, white);
     clip-path: polygon(
       49% 0,
       28% 0,
@@ -190,7 +190,7 @@
     clip-path: circle(50% at 50% 50%);
   }
   60% {
-    background-color: var(--color1);
+    background: linear-gradient(108deg, black, grey, white);
     clip-path: polygon(
       0 0,
       100% 0,
@@ -239,7 +239,7 @@
     clip-path: circle(50% at 50% 50%);
   }
   100% {
-    background-color: var(--color1);
+    background: linear-gradient(108deg, black, grey, white);
     clip-path: polygon(
       10% 25%,
       35% 25%,
@@ -256,3 +256,20 @@
     );
   }
 }
+
+#glass {
+  height: 90px;
+  width: 20rem;
+  position: fixed;
+  left: 204px;
+  top: 0;
+
+  background: rgba(4, 150, 147, 0.18);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+

@@ -3,10 +3,34 @@
   grid-template-rows: 25rem 5rem 10rem 10rem;
   height: 40rem;
   width: 40rem;
-  cursor: help;
+  cursor: none;
   margin: 3rem;
   border-radius: 3rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+  animation: fade 0.7s alternate;
+  transform-style: preserve-3d;
+
+}
+
+
+.crsr
+{
+  height: 10rem;
+  width: 10rem;
+  background-color: aqua;
+  z-index: 1000;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to{
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+  
 }
 
 .card:hover {
@@ -16,4 +40,8 @@
 .linktosite:hover{
   text-decoration: underline;
   cursor: pointer !important;
+
 }
+
+/* projectcard.css */
+
