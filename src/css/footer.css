@@ -8,6 +8,11 @@ footer {
   width: 100%;
   gap: 1rem;
   color: var(--color2);
+  
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+  /* Add any additional styles you want for the footer */
+  
+  
   /* clip-path: polygon(49.65% 0%, 0% 30%, 0% 100%, 100% 100%, 100% 30%); */
 }
 

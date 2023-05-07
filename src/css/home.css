@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins:wght@100&family=Rubik+Wet+Paint&display=swap');
 
 #home{
-  height: 100vh;
+  height: 92.5vh;
   width: 100%;
   margin: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 

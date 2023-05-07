@@ -20,33 +20,35 @@ import "./css/navbar.css";
 import { SiAboutdotme, SiTwitter } from "react-icons/si";
 import { GiThorHammer } from "react-icons/gi";
 import { GiIndianPalace } from "react-icons/gi";
+
+
 //code to change the eye balls position
-document.addEventListener("mousemove", (e) => {
-  const mousex = e.clientX;
-  const mousey = e.clientY;
-  const eye = document.getElementById("eyeim1");
-  const rekt = eye.getBoundingClientRect();
-  const eyex = rekt.left + rekt.width / 2;
-  const eyey = rekt.top + rekt.height / 2;
+// document.addEventListener("mousemove", (e) => {
+//   const mousex = e.clientX;
+//   const mousey = e.clientY;
+//   const eye = document.getElementById("eyeim1");
+//   const rekt = eye.getBoundingClientRect();
+//   const eyex = rekt.left + rekt.width / 2;
+//   const eyey = rekt.top + rekt.height / 2;
 
-  const ang = angle(mousex, mousey, eyex, eyey);
+//   const ang = angle(mousex, mousey, eyex, eyey);
 
-  const eyes = document.querySelectorAll(".eys");
+//   const eyes = document.querySelectorAll(".eys");
 
-  eyes.forEach((temp) => {
-    temp.style.transform = `rotate(${90 + ang}deg)`;
-    eye.style.filter = `hue-rotate(${ang}deg)`;
-  });
-});
+//   eyes.forEach((temp) => {
+//     temp.style.transform = `rotate(${90 + ang}deg)`;
+//     eye.style.filter = `hue-rotate(${ang}deg)`;
+//   });
+// });
 
-function angle(cx, cy, ex, ey) {
-  const dx = ex - cx;
-  const dy = ey - cy;
-  const rad = Math.atan2(dy, dx);
+// function angle(cx, cy, ex, ey) {
+//   const dx = ex - cx;
+//   const dy = ey - cy;
+//   const rad = Math.atan2(dy, dx);
 
-  const angdeg = (rad * 180) / Math.PI;
-  return angdeg;
-}
+//   const angdeg = (rad * 180) / Math.PI;
+//   return angdeg;
+// }
 
 export default function App() {
   return (
