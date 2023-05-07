@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-import styled from "styled-components";
+
 import { ProjectCards } from "./ProjectCards";
 import { data } from "./api";
 export function Projects() {
@@ -37,9 +37,9 @@ export function Projects() {
     <>
       <div id="projectsection">
         <div id="filter">
-          <Button onClick={showfilter} id="mainbutton" className="category" >
-           filters
-          </Button>
+          <button id="mainbutton"  onClick={showfilter}>
+           {filterstate?"X":"Filter"}
+          </button>
 
           <div id="buttons">
             <button
@@ -88,23 +88,3 @@ export function Projects() {
     </>
   );
 }
-
-const Button = styled.a`
-height:10rem;
-width:10rem;
-font-size:3rem;
-background:transparent;
-color:transparent;
--webkit-text-stroke:1px white;
-position:relative;
-
-::after{
-  content:"filters"
-  position:absolute;
-  top:0;
-  left:0;
-  color:white;
-  z-index:100;
-}
-
-`
