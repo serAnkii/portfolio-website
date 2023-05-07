@@ -119,6 +119,7 @@ export default function App() {
               />
             }
           />
+          
           <Route
             path="/projects/2"
             element={
