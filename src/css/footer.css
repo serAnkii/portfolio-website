@@ -62,13 +62,7 @@ footer {
 
 }
 
-#footcontact h1
-{
-  
-  background: linear-gradient(to right,rgb(0, 132, 185),grey,black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
-}
+
 
 /* #footcontact div h1 a:first-child:hover{
   border-top-left-radius: 4rem;
@@ -101,23 +95,51 @@ footer {
 
  .social {
   margin: 3rem;
-  width: fit-content;;
-}
-.social:hover {
-  box-shadow: 0.3rem 0rem 1.5rem var(--color2), -0.3rem 0rem 1.5rem var(--color2);
+  width: fit-content;
+  background: transparent;
   transform: scale(1.25);
-  cursor: pointer;
   border-radius: 6rem;
 }
+.social:hover {
+  transform: scale(1);
+  box-shadow: none;
+  transform: scale(1.25);
+  cursor: pointer;
+  border-radius: none;
+
+}
+
+svg:hover{
+  transition: fill 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  stroke:none;
+}
+
+#twitter svg:hover{
+  fill: #1DA1F2;
+
+}
+#insta svg:hover{
+  
+  fill:url(#instagram-gradient);
+}
+
+#github svg:hover{
+  fill:black
+}
 
 
-.icns{
-  fill: var(--color2);
+
+#footsocial h1{
+  -webkit-text-stroke: 0.1px black ;
+  -webkit-text-fill-color: transparent;
   
 }
 
-#footsocial h1{
-  background: linear-gradient(to right,rgb(180, 180, 180),rgb(70, 70, 70),black);
-  -webkit-background-clip: text;
+
+#footcontact h1
+{
+  -webkit-text-stroke: 0.1px black;
   -webkit-text-fill-color: transparent
 }
+
+

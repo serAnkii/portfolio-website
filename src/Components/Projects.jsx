@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-
+import styled from "styled-components";
 import { ProjectCards } from "./ProjectCards";
 import { data } from "./api";
 export function Projects() {
@@ -12,7 +12,7 @@ export function Projects() {
     setele(data);
   },[data]);
   //function to show filter menu
-  const menu = document.getElementById("buttons");
+  
   function showfilter() {
     const menu = document.getElementById("buttons");
     if(filterstate === 0) {
@@ -37,9 +37,9 @@ export function Projects() {
     <>
       <div id="projectsection">
         <div id="filter">
-          <button id="mainbutton" className="category" onClick={showfilter}>
+          <Button onClick={showfilter} id="mainbutton" className="category" >
            filters
-          </button>
+          </Button>
 
           <div id="buttons">
             <button
@@ -88,3 +88,23 @@ export function Projects() {
     </>
   );
 }
+
+const Button = styled.a`
+height:10rem;
+width:10rem;
+font-size:3rem;
+background:transparent;
+color:transparent;
+-webkit-text-stroke:1px white;
+position:relative;
+
+::after{
+  content:"filters"
+  position:absolute;
+  top:0;
+  left:0;
+  color:white;
+  z-index:100;
+}
+
+`
