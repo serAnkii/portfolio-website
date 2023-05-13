@@ -196,7 +196,7 @@ export default function App() {
             }
           />
         </Routes>
-        <div className="wave">
+        {/* <div className="wave">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1000 100"
@@ -209,47 +209,20 @@ export default function App() {
 	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
             ></path>
           </svg>
-        </div>
+        </div> */}
         <footer>
-          <DivC webkit id="footcontact">
-            <h1>CONTACT</h1>
-            <hr
-              style={{
-                background: "black",
-                color: "#fffff",
-                width: "40%",
-                height: "0.1rem",
-              }}
-            />
+          <div id="footcontact">
+            <h2>{"Array.find('Contact Details')"}</h2>
             <div>
-              <h1>
-                <a
-                  href="www.gmail.com/recruitankitnegi2023@gmail.com"
-                  target="_blank"
-                >
-                  E-mail
-                </a>
-              </h1>
-              <h1>
-                <a
-                  href="https://drive.google.com/file/d/1z2XeeXXY2rpnAwvYelsHdli3Xo1Kk3WZ/view?usp=share_link"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </h1>
+              <a
+                href="www.gmail.com/recruitankitnegi2023@gmail.com"
+                target="_blank"
+              >
+                E-mail
+              </a>
             </div>
-          </DivC>
-          <DivS id="footsocial" webkit>
-            <h1>SOCIAL </h1>
-            <hr
-              style={{
-                background: "black",
-                color: "#fffff",
-                width: "40%",
-                height: "0.1rem",
-              }}
-            />
+          </div>
+          <div id="footsocial">
             <div>
               <h1 className="social" id="twitter">
                 <a
@@ -260,8 +233,8 @@ export default function App() {
                   <svg
                     xmlns=""
                     viewBox="0 0 50 50"
-                    width="64px"
-                    height="64px"
+                    width="54px"
+                    height="54px"
                     fill="white"
                     stroke="black"
                   >
@@ -320,47 +293,20 @@ export default function App() {
                 </a>
               </h1>
             </div>
-          </DivS>
+          </div>
+          <div id="resume">
+            <h2>{"axios.get('resume')"} </h2>
+            <br />
+            <h2>{".then((response)=>console.log(response.data))"}</h2>
+            <a
+              href="https://drive.google.com/file/d/1z2XeeXXY2rpnAwvYelsHdli3Xo1Kk3WZ/view?usp=share_link"
+              target="_blank"
+            >
+              {".data"}
+            </a>
+          </div>
         </footer>
       </div>
     </>
   );
 }
-
-const DivC = styled.div`
-  &:hover {
-    h1 {
-      background: linear-gradient(
-        to right,
-        rgb(180, 180, 180),
-        rgb(70, 70, 70),
-        black
-      );
-      -webkit-background-clip: text;
-      ${(props) =>
-        props.webkit &&
-        css`
-          -webkit-text-stroke: 0px black;
-        `}
-    }
-  }
-`;
-
-const DivS = styled.div`
-  &:hover {
-    h1 {
-      background: linear-gradient(
-        to right,
-        rgb(180, 180, 180),
-        rgb(70, 70, 70),
-        black
-      );
-      -webkit-background-clip: text;
-      ${(props) =>
-        props.webkit &&
-        css`
-          -webkit-text-stroke: 0px;
-        `}
-    }
-  }
-`;
