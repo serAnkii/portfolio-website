@@ -20,7 +20,7 @@ import "./css/navbar.css";
 import { SiAboutdotme, SiTwitter } from "react-icons/si";
 import { GiThorHammer } from "react-icons/gi";
 import { GiIndianPalace } from "react-icons/gi";
-import styled ,{css} from "styled-components";
+import styled, { css } from "styled-components";
 
 //code to change the eye balls position
 // document.addEventListener("mousemove", (e) => {
@@ -76,25 +76,16 @@ export default function App() {
               <li className="list-item">
                 <Link className="link" to="/">
                   <h1>HOMEEE</h1>
-                  <div className="icon">
-                    <GiIndianPalace fontSize={"3rem"} />
-                  </div>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/about">
                   <h1>ABOUT</h1>
-                  <div className="icon">
-                    <SiAboutdotme fontSize={"3rem"} />
-                  </div>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/project">
                   <h1>PROJECTS</h1>
-                  <div className="icon">
-                    <GiThorHammer fontSize={"3rem"} />
-                  </div>
                 </Link>
               </li>
             </ul>
@@ -257,7 +248,6 @@ export default function App() {
                 color: "#fffff",
                 width: "40%",
                 height: "0.1rem",
-                
               }}
             />
             <div>
@@ -340,9 +330,14 @@ export default function App() {
 const DivC = styled.div`
   &:hover {
     h1 {
-      background: linear-gradient(to right, rgb(180, 180, 180), rgb(70, 70, 70), black);
+      background: linear-gradient(
+        to right,
+        rgb(180, 180, 180),
+        rgb(70, 70, 70),
+        black
+      );
       -webkit-background-clip: text;
-      ${props =>
+      ${(props) =>
         props.webkit &&
         css`
           -webkit-text-stroke: 0px black;
@@ -354,9 +349,14 @@ const DivC = styled.div`
 const DivS = styled.div`
   &:hover {
     h1 {
-      background: linear-gradient(to right, rgb(180, 180, 180), rgb(70, 70, 70), black);
+      background: linear-gradient(
+        to right,
+        rgb(180, 180, 180),
+        rgb(70, 70, 70),
+        black
+      );
       -webkit-background-clip: text;
-      ${props =>
+      ${(props) =>
         props.webkit &&
         css`
           -webkit-text-stroke: 0px;

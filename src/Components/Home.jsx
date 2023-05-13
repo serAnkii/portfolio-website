@@ -1,13 +1,22 @@
 import { Canvas } from "@react-three/fiber";
 import "../css/home.css";
 import styled from "styled-components";
+import { AiOutlineStar } from "react-icons/ai";
 
 const Home = () => {
   return (
     <>
       <div id="home">
         <Container1>
-          <Text1>A WEB-DEVELOPER</Text1>
+          <Text1 id="text1">
+            A WEB-DEVELOPER
+            {/* <span id="stars">
+              <h1>*</h1>
+              <h1>*</h1>
+              <h1>*</h1>
+              <h1>*</h1>
+            </span> */}
+          </Text1>
           <Text2>Your company can rely upon</Text2>
         </Container1>
         {/* <Container1>
@@ -34,14 +43,14 @@ const Home = () => {
 export { Home };
 
 const Container1 = styled.div`
-position: relative;
-flex-direction:column;
-height: 92vh;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-scroll-snap-align: center;
+  position: relative;
+  flex-direction: column;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: center;
 `;
 
 const Text1 = styled.h1`

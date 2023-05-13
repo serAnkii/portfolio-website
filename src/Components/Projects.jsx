@@ -15,13 +15,26 @@ export function Projects() {
   
   function showfilter() {
     const menu = document.getElementById("buttons");
-    if(filterstate === 0) {
-      changestate(1);
-      menu.style.left = "0";
-    } else if (filterstate === 1) {
-      changestate(0);
-      menu.style.left = "-100rem";
-    }
+  const buttons = Array.from(menu.getElementsByClassName("category"));
+
+  if (filterstate === 0) {
+    changestate(1);
+    menu.style.left = "0";
+
+    // Calculate positions for circular layout
+    const radius = 140; // Adjust the radius as per your preference
+    const angleStep = (2 * Math.PI) / buttons.length;
+
+    buttons.forEach((button, index) => {
+      const angle = index * angleStep;
+      const x = radius * Math.cos(angle);
+      const y = radius * Math.sin(angle);
+      button.style.transform = `translate(${x-5}px, ${y-90}px)`;
+    });
+  } else if (filterstate === 1) {
+    changestate(0);
+    menu.style.left = "-100rem";
+  }
   }
 
   //function to show only pirticualr cateogary of cards

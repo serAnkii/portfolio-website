@@ -9,3 +9,27 @@
   scroll-snap-type: y mandatory;
 }
 
+#stars{
+  font-size: 10;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+#text1{
+  
+  background: url("/public/texture5.webp");
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveback 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes moveback {
+  from{
+    background-position: 0% center;
+  }
+  to{
+    background-position: -200% center;
+  }
+}

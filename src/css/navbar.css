@@ -4,6 +4,8 @@
   align-items: center;
   /* background-color: black; */
   height: 10rem;
+  position: relative;
+  right: 50px;
 }
 
 #nav-list {
@@ -15,10 +17,20 @@
   margin-left: 1.875rem;
 }
 .list-item h1{
-  background: linear-gradient(90deg,black,grey,rgb(130, 123, 125),white);
+  background: url(/public/texture3.webp);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  animation: moveback 7s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  opacity: 0.8;
 }
+
+.list-item h1:hover{
+  opacity: 1;
+  text-shadow: 1px 0px 10px white,-1px 0px 10px white,0px 1px 10px white,0px -1px 10px white;
+  animation: none;
+}
+
 .link {
   display: flex;
   align-items: center;
@@ -34,31 +46,5 @@
   overflow: hidden;
 }
 
-.link::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 0.25rem;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-}
 
-.link:hover::before {
-  width: 100%;
-}
 
-.link:hover {
-  color: black;
-}
-
-.icon {
-  margin-right: 0.625rem;
-  transform: scale(0.8);
-  transition: all 0.3s ease-in-out;
-}
-
-.link:hover .icon {
-  transform: scale(1.2);
-}

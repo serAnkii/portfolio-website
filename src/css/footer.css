@@ -42,7 +42,6 @@ footer {
 
 #footcontact div {
   display: flex;
-  font-size: 2rem;
   gap: 2rem;
 }
 
@@ -53,12 +52,13 @@ footer {
     transition:  100ms;
     border-radius: 1.8rem;
     padding: 1rem;
+    font-size: 3rem;
     
   }
 
 #footcontact div h1 a:hover{
   box-shadow: 0.1rem 0rem 1rem var(--color1),-0.1rem 0rem 1rem var(--color2);
-  transform: scale(1.2);
+  transform: scale(1.7);
 
 }
 

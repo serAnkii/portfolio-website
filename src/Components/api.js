@@ -26,7 +26,7 @@ export const data = [
     group: "ml",
     image: "url('facerecog.gif')",
     repo: "",
-    deploy: "",
+    
     shadowcolor:"#68c9c0"
   },
   {
