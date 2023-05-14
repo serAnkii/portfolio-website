@@ -16,16 +16,28 @@
 /* Name of Project */
 #nameofproject {
   margin-bottom: 2rem;
-  background: linear-gradient(to right, #000000, #333333, #555555, #808080, #C0C0C0, #D3D3D3, #DCDCDC, #F5F5F5, #FFFFFF);
+  background-position: center;
+  animation: neon6 3s ease-in-out infinite;
+}
+
+#headingdesc{
+  text-align: center;
+  background: url("/3T2W.gif");
+  background-size: 8%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transform: rotate(-20deg);
+  position: absolute;
+  font-size: 5rem;
+  left: 10%;
+  
 }
 
 #nameofproject h1 {
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 1rem;
+  letter-spacing:1rem;
   text-transform: capitalize;
 }
 

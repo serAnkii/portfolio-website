@@ -23,18 +23,12 @@ footer {
   gap: 1rem;
 }
 
-#footsocial div {
+#footsocial div{
   display: flex;
-  font-size: 2rem;
   gap: 3rem;
 }
 
 
-
-#footcontact div {
-  display: flex;
-  gap: 2rem;
-}
 
 
 

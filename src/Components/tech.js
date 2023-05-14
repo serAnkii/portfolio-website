@@ -1,0 +1,18 @@
+export const images = [
+  { id: 0, name: "cpp", primary_url: "icons/c-plus-plus.svg" },
+  { id: 1, name: "java", primary_url: "icons/java.svg" },
+  { id: 2, name: "html", primary_url: "icons/html.svg" },
+  { id: 3, name: "css", primary_url: "icons/css3.svg" },
+  { id: 4, name: "sass", primary_url: "icons/sass.svg" },
+  { id: 5, name: "tailwind-css", primary_url: "icons/tailwind-css.svg" },
+  { id: 6, name: "javaScript", primary_url: "icons/javascript.svg" },
+  { id: 7, name: "jquery", primary_url: "icons/jquery.svg" },
+  { id: 8, name: "react.js", primary_url: "icons/react.svg" },
+  { id: 9, name: "redux", primary_url: "icons/redux.svg" },
+  { id: 10, name: "node.js", primary_url: "icons/nodejs.svg" },
+  { id: 11, name: "php", primary_url: "icons/php.svg" },
+  { id: 12, name: "mongoDB", primary_url: "icons/mongodb.svg" },
+  { id: 13, name: "mysql", primary_url: "icons/mysql.svg" },
+  { id: 14, name: "blockchain", primary_url: "icons/blockchain.svg" },
+  { id: 15, name: "git", primary_url: "icons/git.svg" },
+];

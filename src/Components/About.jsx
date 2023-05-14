@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 import "./about.css";
 import styled from "styled-components";
+
+import { images } from "./tech.js";
+
 export function About() {
   const [imageSource, setImageSource] = useState("Exams.gif");
 
@@ -34,33 +37,112 @@ export function About() {
       .start();
   }
 
-
   return (
     <>
       <div className="about">
-        <div id="section1">
+        <div id="section1" className="section">
           <div id="typewrite">
-            <Customh1>I'm Ankit Negi</Customh1>
-            <div>
-              <p id="item2">
+            <Customh1a>I'm Ankit Negi</Customh1a>
+            <div
+              style={{ textAlign: "center", fontFamily: "Arial, sans-serif" }}
+            >
+              <p
+                id="item2"
+                style={{
+                  fontStyle: "italic",
+                  fontSize: "1.5rem",
+                  marginBottom: "2rem",
+                }}
+              >
                 <TypewriterComponent
                   onInit={text}
                   options={{ autoStart: true, loop: true }}
                 />
               </p>
-              <p>
-                Hi there! I was born and raised in Dehradun. My main expertise
-                lies in website design, though I do dabble in Blockchain and
-                machine learning. If you like my site, don’t hesitate to reach
-                out!
-              </p>
+              <div id="illustrations">
+                <img id="img1" src={imageSource} />
+              </div>
             </div>
           </div>
-          <div id="illustrations">
-            <img id="img1" src={imageSource} />
+
+          <div id="poetry">
+            <p
+              style={{
+                textAlign: "start",
+                lineHeight: "1.5",
+                marginBottom: "2rem",
+              }}
+            >
+              In the realm of India's digital sphere,
+              <br />
+              I, the web maestro, craft experiences premier.
+              <br />
+              With engineering prowess and rhythmic finesse,
+              <br />I weave interfaces that leave viewers impressed.
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+                lineHeight: "1.5",
+                marginBottom: "2rem",
+              }}
+            >
+              Employing the MERN stack, a symphony profound,
+              <br />
+              I orchestrate designs where rhythm is found.
+              <br />
+              Lines of code dance, a synchronized sensation,
+              <br />
+              Creating immersive worlds with flawless coordination.
+            </p>
+            <p
+              style={{
+                textAlign: "start",
+                lineHeight: "1.5",
+                marginBottom: "2rem",
+              }}
+            >
+              Each pixel aligns with meticulous care,
+              <br />
+              Forming a symphony of visuals rare.
+              <br />
+              A composition of colors, a professional endeavor,
+              <br />
+              Engaging users with a sense of awe and fervor.
+            </p>
+            <p
+              style={{
+                textAlign: "start",
+                lineHeight: "1.5",
+                marginBottom: "2rem",
+              }}
+            >
+              Witness the artistry, behold the grand display,
+              <br />
+              Where digital realms unfold in a masterful way.
+              <br />
+              In India's domain, where excellence resides,
+              <br />
+              Web experiences flourish with professional strides.
+            </p>
           </div>
         </div>
-        <div id="section2">
+        <div id="section2" className="section">
+          <Customh1b>My Tech Stack</Customh1b>
+          <div id="tech">
+            {images.map((image, index) => {
+              return (
+                <>
+                  <div className="skillsec">
+                    <Img key={index} src={image.primary_url} alt={image.name} />
+                    <h1>{image.name}</h1>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </div>
+        {/* <div id="section3" className="section">
           <div id="details">
             <h1>What i Like</h1>
             <div id="likes">
@@ -73,74 +155,88 @@ export function About() {
                 <li>Improving myself </li>
               </ul>
             </div>
-            <h1>My Tech Stack</h1>
-            <div id="tech">
-              <ul>
-                <h2>Development</h2>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <h2>Programming</h2>
-                <li>Java</li>
-                <li>C++</li>
-                <h2>Machine Learning</h2>
-                <li>Python</li>
-                <h2>Blockchain</h2>
-                <li>Solidity</li>
-                <h2>Database</h2>
-                <li>mySQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
-            <h1>What I'm learning</h1>
-            <div id="likes">
-              <ul>
-                <li>Node.js</li>
-                <li>Deep Learning</li>
-                <li>DevOps</li>
-              </ul>
-            </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
 }
 
-const Customh1 = styled.h1`
-margin: 0;
+const Img = styled.img`
+  height: 10rem;
+  width: 10rem;
+`;
 
-font-size: 6rem !important;
-color: transparent;
--webkit-text-stroke: 0.5px #0055d6;
-position: relative;
-cursor:none;
+const Customh1a = styled.h1`
+  margin: 0;
 
-::after{
-  content: "I'm Ankit Negi";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color:#0055d6;
-  width:0%;
-  overflow:hidden;
-  white-space:nowrap;
-  font-size:6rem;
-}
+  font-size: 4.5rem !important;
+  color: transparent;
+  -webkit-text-stroke: 0.3px white;
+  position: relative;
+  cursor: none;
 
-&:hover{
-  ::after{
-    animation:movetext 1s linear both;
-    @keyframes movetext {
-      to{
-        width:100%;
-        text-shadow:2px 2px 8px black;
+  ::after {
+    // content: ${(props) => props.data};
+    content: "I'm Ankit Negi";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0055d6;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 4.5rem;
+  }
 
+  &:hover {
+    -webkit-text-stroke: 1px #0055d6;
+    ::after {
+      text-decoration: underline;
+      animation: movetext 1s linear both;
+      @keyframes movetext {
+        to {
+          width: 100%;
+          text-shadow: -10px -10px 8px #0055d6;
+        }
       }
     }
   }
+`;
 
+const Customh1b = styled.h1`
+  margin: 0;
 
-}
+  font-size: 6rem !important;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: relative;
+  cursor: none;
+
+  ::after {
+    // content: ${(props) => props.data};
+    content: "My Tech Stack";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0055d6;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 6rem;
+  }
+
+  &:hover {
+    -webkit-text-stroke: 0.5px #0055d6;
+    ::after {
+      text-decoration: underline;
+      animation: movetext 1s linear both;
+      @keyframes movetext {
+        to {
+          width: 100%;
+          text-shadow: -10px -10px 8px #0055d6;
+        }
+      }
+    }
+  }
 `;

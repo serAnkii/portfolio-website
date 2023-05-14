@@ -111,7 +111,7 @@ export function ProjectCards(props) {
                 }}
               >
                 <Link
-                  to={`/projects/${id}`}
+                  to={{pathname:`/projects/${id}`,state:{projectid:id}}}
                   style={{
                     textDecoration: "none",
                     color: "transparent",

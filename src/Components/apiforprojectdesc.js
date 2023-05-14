@@ -10,7 +10,10 @@ export const ele = [
     role: "From Scratch to hatch",
     skills: ["React", "FireBase", "CSS"],
     outcome: "Developed a fully functional social media platform with key features similar to Twitter",
-    visuals: ["/block.jpeg", "/credit.jpeg", "/eyeback.jpg"]
+    Text_shadow:"red",
+    visual: ["/block.jpeg", "/credit.jpeg", "/eyeback.jpg"],
+    
+
   },
   {
     id: 2,
@@ -23,6 +26,7 @@ export const ele = [
     role: "Sole developer",
     skills: ["React", "CSS", "HTML"],
     outcome: "Developed a visually appealing and interactive platform to showcase my skills and experience",
+    Text_shadow:"blue",
     visuals: ["Homepage", "Projects page", "About page"]
   },
   {
@@ -36,6 +40,7 @@ export const ele = [
     role: "sole developer",
     skills: ["Python", "OpenCV"],
     outcome: "Developed an automated system to track attendance using facial recognition technology",
+    Text_shadow:"green",
     visuals: ["User interface", "Attendance records dashboard"]
   },
   {
@@ -45,6 +50,8 @@ export const ele = [
     image: "url('credit.jpeg')",
     repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
     deploy: "",
+    Text_shadow:"",
+    visuals:"",
   },
   {
     id: 5,
@@ -53,7 +60,8 @@ export const ele = [
     image: "url('block.jpeg')",
     repo: "",
     deploy: "",
-    shadowcolor: "rgb(182 23 23)",
+    Text_shadow:"",
+    visuals:"",
   },
   {
     id: 6,
@@ -63,6 +71,7 @@ export const ele = [
     image: "url('tic-tac-toe.png')",
     repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
     deploy: "",
-    shadowcolor: "orange",
+    Text_shadow:"",
+    visuals:"",
   },
 ];

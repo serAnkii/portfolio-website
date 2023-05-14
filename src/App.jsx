@@ -3,6 +3,7 @@ import "./style.css";
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Projects } from "./Components/Projects";
+import {Contact} from "./Components/Contact"
 import { Error } from "./Components/Error";
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -10,47 +11,14 @@ import { Link } from "react-router-dom";
 import Projectdescription from "./Components/Projectdescription";
 import { ele } from "./Components/apiforprojectdesc";
 
-import "./css/eye.css";
+
 import "./css/shapes.css";
 import "./css/footer.css";
 import "./css/navbar.css";
 
-//icons
-
-import { SiAboutdotme, SiTwitter } from "react-icons/si";
-import { GiThorHammer } from "react-icons/gi";
-import { GiIndianPalace } from "react-icons/gi";
-import styled, { css } from "styled-components";
-
-//code to change the eye balls position
-// document.addEventListener("mousemove", (e) => {
-//   const mousex = e.clientX;
-//   const mousey = e.clientY;
-//   const eye = document.getElementById("eyeim1");
-//   const rekt = eye.getBoundingClientRect();
-//   const eyex = rekt.left + rekt.width / 2;
-//   const eyey = rekt.top + rekt.height / 2;
-
-//   const ang = angle(mousex, mousey, eyex, eyey);
-
-//   const eyes = document.querySelectorAll(".eys");
-
-//   eyes.forEach((temp) => {
-//     temp.style.transform = `rotate(${90 + ang}deg)`;
-//     eye.style.filter = `hue-rotate(${ang}deg)`;
-//   });
-// });
-
-// function angle(cx, cy, ex, ey) {
-//   const dx = ex - cx;
-//   const dy = ey - cy;
-//   const rad = Math.atan2(dy, dx);
-
-//   const angdeg = (rad * 180) / Math.PI;
-//   return angdeg;
-// }
 
 export default function App() {
+  
   return (
     <>
       <div id="body">
@@ -63,13 +31,6 @@ export default function App() {
             <div className="shapes" id="s5"></div>
           </div>
           <div id="glass"></div>
-          {/* <div id="title">
-            <div id="eye">
-              <img src="/eyeback2.svg" alt="eye" id="eyeim1" />
-              <img className="eys" id="eye1" src="/eye.png" alt="eye" />
-              <img className="eys" id="eye2" src="/eye.png" alt="eye" />
-            </div>
-          </div> */}
 
           <div id="links">
             <ul id="nav-list">
@@ -88,6 +49,11 @@ export default function App() {
                   <h1>PROJECTS</h1>
                 </Link>
               </li>
+              <li className="list-item">
+                <Link className="link" to="/contact">
+                  <h1>CONTACT</h1>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -96,6 +62,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
 
           <Route
@@ -111,6 +78,7 @@ export default function App() {
                 visuals={ele[0].visuals}
                 code={ele[0].repo}
                 deploy={ele[0].deploy}
+                projectId={0}
               />
             }
           />
@@ -128,6 +96,7 @@ export default function App() {
                 visuals={ele[1].visuals}
                 code={ele[1].repo}
                 deploy={ele[1].deploy}
+                projectId={1}
               />
             }
           />
@@ -144,6 +113,7 @@ export default function App() {
                 visuals={ele[2].visuals}
                 code={ele[2].repo}
                 deploy={ele[2].deploy}
+                projectId={2}
               />
             }
           />
@@ -160,6 +130,7 @@ export default function App() {
                 visuals={ele[3].visuals}
                 code={ele[3].repo}
                 deploy={ele[3].deploy}
+                projectId={3}
               />
             }
           />
@@ -176,6 +147,7 @@ export default function App() {
                 visuals={ele[4].visuals}
                 code={ele[4].repo}
                 deploy={ele[4].deploy}
+                projectId={4}
               />
             }
           />
@@ -192,6 +164,7 @@ export default function App() {
                 visuals={ele[5].visuals}
                 code={ele[5].repo}
                 deploy={ele[5].deploy}
+                projectId={5}
               />
             }
           />
@@ -213,14 +186,12 @@ export default function App() {
         <footer>
           <div id="footcontact">
             <h2>{"Array.find('Contact Details')"}</h2>
-            <div>
-              <a
-                href="www.gmail.com/recruitankitnegi2023@gmail.com"
-                target="_blank"
-              >
-                E-mail
-              </a>
-            </div>
+            <a
+              href="www.gmail.com/recruitankitnegi2023@gmail.com"
+              target="_blank"
+            >
+              .E-mail
+            </a>
           </div>
           <div id="footsocial">
             <div>
@@ -264,9 +235,9 @@ export default function App() {
                         x2="100%"
                         y2="100%"
                       >
-                        <stop offset="0%" stop-color="#833ab4" />
-                        <stop offset="50%" stop-color="#fd1d1d" />
-                        <stop offset="100%" stop-color="#fcb045" />
+                        <stop offset="0%" stopColor="#833ab4" />
+                        <stop offset="50%" stopColor="#fd1d1d" />
+                        <stop offset="100%" stopColor="#fcb045" />
                       </linearGradient>
                     </defs>
                     <path d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z" />
