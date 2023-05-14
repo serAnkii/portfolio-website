@@ -49,8 +49,9 @@ export const ele = [
     description:"The credit card fraud detection project involves developing an automated system that can detect and prevent fraudulent transactions in real-time. The system utilizes machine learning techniques to analyze transaction data and flag potential fraud. The system is designed to reduce false positives and false negatives, ensuring accuracy and reliability. The system requires ongoing maintenance and updates to remain effective in detecting and preventing fraud. Overall, the credit card fraud detection project is a critical component of enhancing security and protecting customers from financial losses.",
     image: "url('credit.jpeg')",
     repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
+    skills:["pyhton","Supervised Learning"],
     deploy: "",
-    Text_shadow:"",
+    Text_shadow:"cyan",
     visuals:"",
   },
   {
@@ -59,8 +60,10 @@ export const ele = [
     description:"This project aims to use blockchain technology to create a more transparent and efficient food distribution system. It will connect farmers, distributors, retailers, and consumers in a decentralized platform, improving traceability and accountability in the food supply chain.",
     image: "url('block.jpeg')",
     repo: "",
+    skills:["Solidity","Remix"],
     deploy: "",
-    Text_shadow:"",
+
+    Text_shadow:"purple",
     visuals:"",
   },
   {
@@ -70,8 +73,9 @@ export const ele = [
     "The Tic-Tac-Toe game project involves creating a fun and engaging game that is easy to play and understand. The project requires designing a user-friendly interface that allows players to easily select their moves and track the progress of the game. The game can be developed using different programming languages, frameworks, and libraries. Testing and debugging are essential to ensure that the game is free from bugs and working correctly. Overall, the Tic-Tac-Toe game project is a great way to showcase programming skills and provide a fun experience for players.",
     image: "url('tic-tac-toe.png')",
     repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
+    skills:["MiniMax AI algo"],
     deploy: "",
-    Text_shadow:"",
+    Text_shadow:"magenta",
     visuals:"",
   },
 ];
