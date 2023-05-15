@@ -2,24 +2,33 @@ import { Canvas } from "@react-three/fiber";
 import "../css/home.css";
 import styled from "styled-components";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
-      <div id="home">
+      <motion.div
+        initial={{ opacity:0 }}
+        animate={{ opacity:1}}
+        exit={{ opacity:0}}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <Container1>
           <Div id="div1">
-          <Text1 id="text1">Code</Text1> <Text2>is my paintbrush,</Text2>
+            <Text1 id="text1">Code</Text1> <Text2>is my paintbrush,</Text2>
           </Div>
           <Div id="div2">
-          <Text2>
-            and the</Text2> <Text1 id="text1">Web</Text1><Text2> is my canvas.</Text2>
+            <Text2>and the</Text2> <Text1 id="text1">Web</Text1>
+            <Text2> is my canvas.</Text2>
           </Div>
           <Div id="div3">
-          <Text2 id="textdiv3">Let me craft an extraordinary online presence that leaves a lasting impression.</Text2>
+            <Text2 id="textdiv3">
+              Let me craft an extraordinary online presence that leaves a
+              lasting impression.
+            </Text2>
           </Div>
         </Container1>
-      </div>
+      </motion.div>
     </>
   );
 };
@@ -30,24 +39,23 @@ const Container1 = styled.div`
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-
 `;
 
 const Div = styled.div`
-  height:fit-content;
+  height: fit-content;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border:dashed 1px white;
-  width:60vw;
-  display:flex;
-  align-items:center;
+  border: dashed 1px white;
+  width: 60vw;
+  display: flex;
+  align-items: center;
   // justify-content:center;
-  gap:3rem;
-  padding:1rem;
-  letter-spacing:5px;
-`
+  gap: 3rem;
+  padding: 1rem;
+  letter-spacing: 5px;
+`;
 
 const Text1 = styled.h1`
   font-size: 5rem;
@@ -64,6 +72,6 @@ const Text2 = styled.h2`
   color: #4f4f4f;
   z-index: 1;
   color: white;
-  font-family:"Roboto mono";
-  line-height:6rem;
+  font-family: "Roboto mono";
+  line-height: 6rem;
 `;

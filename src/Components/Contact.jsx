@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { motion as m } from "framer-motion";
 const Contact = () => {
   const [isTyping, setIsTyping] = React.useState(false);
 
@@ -10,31 +10,39 @@ const Contact = () => {
   };
   return (
     <>
-      <Container>
-        <FormContainer>
-          <Title>Impressed with what you see?</Title>
-          <Description>
-            Let's chat about everything! I'm eager to hear from you, so go ahead
-            and shoot me a message.
-          </Description>
-          <FormWrapper action="https://formspree.io/f/xwkjzqpr" method="post">
-            <FormGroup>
-              <Label htmlFor="email">Your email:</Label>
-              <Input type="email" id="email" name="email" required />
-            </FormGroup>
-            <FormGroup>
-              <Label htmlFor="message">Your message:</Label>
-              <Textarea required
-                id="message"
-                name="message"
-                isTyping={isTyping}
-                onChange={handleTyping}
-              ></Textarea>
-            </FormGroup>
-            <Button type="submit">Send</Button>
-          </FormWrapper>
-        </FormContainer>
-      </Container>
+      <m.div
+      initial={{ width:0 }}
+      animate={{ width:"100%" }}
+      exit={{ left:window.innerWidth }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
+        <Container>
+          <FormContainer>
+            <Title>Impressed with what you see?</Title>
+            <Description>
+              Let's chat about everything! I'm eager to hear from you, so go
+              ahead and shoot me a message.
+            </Description>
+            <FormWrapper action="https://formspree.io/f/xwkjzqpr" method="post">
+              <FormGroup>
+                <Label htmlFor="email">Your email:</Label>
+                <Input type="email" id="email" name="email" required />
+              </FormGroup>
+              <FormGroup>
+                <Label htmlFor="message">Your message:</Label>
+                <Textarea
+                  required
+                  id="message"
+                  name="message"
+                  isTyping={isTyping}
+                  onChange={handleTyping}
+                ></Textarea>
+              </FormGroup>
+              <Button type="submit">Send</Button>
+            </FormWrapper>
+          </FormContainer>
+        </Container>
+      </m.div>
     </>
   );
 };
@@ -102,7 +110,7 @@ const Textarea = styled.textarea`
   border: 1px solid #cccccc;
   border-radius: 0.3rem;
   resize: vertical;
-  height:20rem;
+  height: 20rem;
   background-image: ${(props) => (props.isTyping ? `url("/cat.gif")` : "none")};
   background-repeat: no-repeat;
   background-size: cover;

@@ -2,14 +2,18 @@ import React from "react";
 import "../css/projectdesc.css";
 import styled from "styled-components";
 import { data } from "./api";
-import { Position } from "@react-three/drei/helpers/Position";
-
+import { motion as m } from "framer-motion";
 const Projectdescription = (props) => {
   return (
-    <div id="maincontainer">
-      <div style={{ Position: "relative" ,
-    }}>
-        <h1 id="headingdesc">#project{props.projectId+1}</h1>
+    <m.div
+      id="maincontainer"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
+      <div style={{ Position: "relative" }}>
+        <h1 id="headingdesc">#project{props.projectId + 1}</h1>
         <Divname
           id="nameofproject"
           className="pulse"
@@ -66,7 +70,7 @@ const Projectdescription = (props) => {
           View Deployment
         </a>
       </div>
-    </div>
+    </m.div>
   );
 };
 

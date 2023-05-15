@@ -4,6 +4,7 @@ import "./about.css";
 import styled from "styled-components";
 
 import { images } from "./tech.js";
+import {motion as m} from "framer-motion"
 
 export function About() {
   const [imageSource, setImageSource] = useState("Exams.gif");
@@ -39,7 +40,22 @@ export function About() {
 
   return (
     <>
-      <div className="about">
+      <m.div
+        className="about"
+        initial={{
+          opacity: 0,
+          backdropFilter: "invert(50%)",
+        }}
+        animate={{
+          opacity: 1,
+          backdropFilter: "invert(0%)",
+        }}
+        exit={{
+          opacity: 0,
+          backdropFilter: "blur(0)",
+        }}
+        transition={{ duration: 1, ease: "easeIn" }}
+      >
         <div id="section1" className="section">
           <div id="typewrite">
             <Customh1a>I'm Ankit Negi</Customh1a>
@@ -157,7 +173,7 @@ export function About() {
             </div>
           </div>
         </div> */}
-      </div>
+      </m.div>
     </>
   );
 }
