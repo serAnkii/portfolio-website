@@ -20,11 +20,11 @@ const Contact = () => {
           <FormWrapper action="https://formspree.io/f/xwkjzqpr" method="post">
             <FormGroup>
               <Label htmlFor="email">Your email:</Label>
-              <Input type="email" id="email" name="email" />
+              <Input type="email" id="email" name="email" required />
             </FormGroup>
             <FormGroup>
               <Label htmlFor="message">Your message:</Label>
-              <Textarea
+              <Textarea required
                 id="message"
                 name="message"
                 isTyping={isTyping}
