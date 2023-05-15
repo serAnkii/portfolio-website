@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity:0 }}
-        animate={{ opacity:1}}
+        initial={{ width:0 }}
+        animate={{ width:"100%"}}
         exit={{ opacity:0}}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
       >
         <Container1>
           <Div id="div1">
