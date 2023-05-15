@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins:wght@100&family=Rubik+Wet+Paint&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 #home{
   height: 100vh;
   width: 100%;
@@ -15,13 +15,18 @@
 
 #text1{
   
-  background: url("/public/texture5.webp");
+  /* background: linear-gradient(to right,#FF4500, #000080, #800080, #FF00FF, #FF1493, #FF4500); */
+  background: linear-gradient(45deg, #12d31293,#00ff00,#12d31293);
   background-size: 200%;
+  animation: moveback 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: moveback 10s linear infinite;
+  font-family: 'Roboto Mono', monospace;
+  /* animation: moveback 5s linear infinite; */
   white-space: nowrap;
 }
+
+
 
 @keyframes moveback {
   from{
@@ -32,9 +37,19 @@
   }
 }
 
-#lights{
-  width: fit-content;
-  position: absolute;
-  top: 100px;
-  right: 100px;
+
+#div2{
+  align-self: center;
+}
+
+#div3{
+  align-self: flex-end;
+  width: 70%;
+}
+
+#textdiv3{
+  font-size: 3rem;
+  font-weight: 100;
+  color: transparent;
+  -webkit-text-stroke: 1px #12d312;
 }
