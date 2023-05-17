@@ -44,17 +44,18 @@
 
 
 #buttons p:hover{
-  background: linear-gradient(to right, #3a86ff, #6ac1ff, #92d6ff, #b8e9ff, #d3f5ff, #f3f3f3, #ffdfdf, #ff9797);
+  background: linear-gradient(45deg, #6F7C87 ,white, #CDD8DF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
 .category {
-  color: var(--color1 );
+  color:  #6F7C87 ;
   width: fit-content;
   font-size: 2rem;
-  font-family: "Merienda One";
+  font-family: cursive;
+  letter-spacing: 3px;
   background-color: var(--color2);
   border-radius: 3rem;
   border-width: 0.5rem;
@@ -65,11 +66,13 @@
 #mainbutton {
   font-size: 2rem;
   padding: 0.6em 2em;
-  font-family: "Merienda One";
+  font-family:cursive;
+  text-transform: uppercase;
+  color:  #6F7C87 ;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #111;
+  background:  #CDD8DF;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -83,15 +86,9 @@
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
+    #6F7C87,
+    white,
+    #CDD8DF
   );
   position: absolute;
   top: -2px;

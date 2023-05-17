@@ -60,7 +60,7 @@ const Div = styled.div`
 const Text1 = styled.h1`
   font-size: 5rem;
   font-weight: bold;
-  color: #2f2f2f;
+  color:  #6EC5E9;
   z-index: 1;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   height-fit-content;
@@ -69,7 +69,7 @@ const Text1 = styled.h1`
 
 const Text2 = styled.h2`
   font-size: 5rem;
-  color: #4f4f4f;
+  color: #F3F7FA !important;
   z-index: 1;
   color: white;
   font-family: "Roboto mono";

@@ -11,7 +11,7 @@ export const data = [
   },
   {
     id: 2,
-    name: "protfolio website",
+    name: "portfolio website",
     description: "As a website designed to showcase my work and professional accomplishments.",
     group: "development",
     image: "url('portfolio.gif')",

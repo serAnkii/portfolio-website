@@ -11,40 +11,35 @@
 #nav-list {
   display: flex;
   list-style: none;
+  gap: 2rem;
 }
 
-.list-item {
-  margin-left: 1.875rem;
-}
-.list-item h1{
-  background: url(/public/texture3.webp);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200%;
-  animation: moveback 7s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-  opacity: 0.8;
-}
-
-.list-item h1:hover{
-  opacity: 1;
-  text-shadow: 1px 0px 10px white,-1px 0px 10px white,0px 1px 10px white,0px -1px 10px white;
-  animation: none;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+.list-item .link{
   color: white;
-  font-size: 1rem;
-  gap: 5px;
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
+  text-decoration: none;
+  font-family: cursive;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  
+}
+
+.list-item:nth-child(1) .link
+{
+  color:  #6EC5E9;
+}
+
+.list-item:nth-child(2) .link
+{
+  color:  #FF8657 ;
 }
 
 
+.list-item:nth-child(3) .link
+{
+  color:   #6F7C87;
+}
 
+.list-item:nth-child(4) .link
+{
+  color:  #9D7FEA;
+}

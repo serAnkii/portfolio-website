@@ -25,8 +25,8 @@ const Contact = () => {
             </Description>
             <FormWrapper action="https://formspree.io/f/xwkjzqpr" method="post">
               <FormGroup>
-                <Label htmlFor="email">Your email:</Label>
-                <Input type="email" id="email" name="email" required />
+                <Label htmlFor="email" >Your email:</Label>
+                <Input type="email" id="email" name="email" required placeholder="Enter a Valid mail HERE"/>
               </FormGroup>
               <FormGroup>
                 <Label htmlFor="message">Your message:</Label>
@@ -34,6 +34,7 @@ const Contact = () => {
                   required
                   id="message"
                   name="message"
+                  placeholder="Type a Sweet Note HERE"
                   isTyping={isTyping}
                   onChange={handleTyping}
                 ></Textarea>
@@ -53,31 +54,34 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 `;
 
 const FormContainer = styled.div`
   display: flex;
+  margin-top:2%;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
-  padding: 2rem;
+  background: #EDE7FA;
+  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
 const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #333333;
+  color: #9D7FEA;
   text-align: center;
+  font-family:cursive;
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: #666666;
+  color:  #3D281D;
   text-align: center;
+  font-family:cursive;
 `;
 
 const FormWrapper = styled.form`
@@ -93,41 +97,52 @@ const FormGroup = styled.div`
 `;
 
 const Label = styled.label`
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
+  font-family:cursive;
   margin-bottom: 0.5rem;
   color: #333333;
 `;
 
 const Input = styled.input`
   padding: 0.5rem;
-  border: 1px solid #cccccc;
+  border:none;
+  outline:none;
   border-radius: 0.3rem;
+  background: none;
+  font-family:cursive;
+
 `;
 
 const Textarea = styled.textarea`
+  outline:none;
   padding: 0.5rem;
-  border: 1px solid #cccccc;
+  border:none;
   border-radius: 0.3rem;
   resize: vertical;
   height: 20rem;
+  background:none;
   background-image: ${(props) => (props.isTyping ? `url("/cat.gif")` : "none")};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family:cursive;
 `;
 
 const Button = styled.button`
+  width:fit-content;
   padding: 0.5rem 1rem;
-  background: #0055d6;
-  color: #ffffff;
+  background: #9D7FEA;
+  color:  #3D281D;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-
+  padding:1rem;
   &:hover {
-    background-color: #0041a8;
+    background: url("/submit2.gif");
+    background-position:center;
+    background-size:100%;
   }
 `;

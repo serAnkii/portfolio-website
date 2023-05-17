@@ -3,7 +3,7 @@ import "./style.css";
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
 import { Projects } from "./Components/Projects";
-import {Contact} from "./Components/Contact"
+import { Contact } from "./Components/Contact";
 import { Error } from "./Components/Error";
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -11,14 +11,35 @@ import { Link } from "react-router-dom";
 import Projectdescription from "./Components/Projectdescription";
 import { ele } from "./Components/apiforprojectdesc";
 
+import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
 import "./css/shapes.css";
 import "./css/footer.css";
 import "./css/navbar.css";
 
-
 export default function App() {
   
+  const [dynamicclass, changeclass] = React.useState("");
+  const location = useLocation();
+  console.log(location);
+  useEffect(()=>{
+    changeclolours();
+  },[location])
+  function changeclolours() {
+    if (location.pathname === "/") {
+      changeclass("homeglass");
+    }
+    if (location.pathname === "/project") {
+      changeclass("projectglass");
+    }
+    if (location.pathname === "/about") {
+      changeclass("aboutglass");
+    }
+    if (location.pathname === "/contact") {
+      changeclass("contactglass");
+    }
+  }
   return (
     <>
       <div id="body">
@@ -30,7 +51,7 @@ export default function App() {
             <div className="shapes" id="s4"></div>
             <div className="shapes" id="s5"></div>
           </div>
-          <div id="glass"></div>
+          <div id="glass" className={dynamicclass}></div>
 
           <div id="links">
             <ul id="nav-list">

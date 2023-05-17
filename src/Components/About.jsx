@@ -20,7 +20,7 @@ export function About() {
   function changeimage3() {
     setImageSource("Exams.gif");
   }
-
+  
   function text(typewriter) {
     typewriter
       .typeString("STUDENT")
@@ -57,15 +57,16 @@ export function About() {
         transition={{ duration: 1, ease: "easeIn" }}
       >
         <div id="section1" className="section">
+          <div id="typewriteandname">
+          <h1 className="mainh1">I'm Ankit Negi</h1>
           <div id="typewrite">
-            <Customh1a>I'm Ankit Negi</Customh1a>
             <div
-              style={{ textAlign: "center", fontFamily: "Arial, sans-serif" }}
+              style={{ textAlign: "center", fontFamily: "cursive" }}
             >
               <p
                 id="item2"
                 style={{
-                  fontStyle: "italic",
+                  color:"#FFECE8",
                   fontSize: "1.5rem",
                   marginBottom: "2rem",
                 }}
@@ -77,10 +78,11 @@ export function About() {
               </p>
               <div id="illustrations">
                 <img id="img1" src={imageSource} />
+
               </div>
             </div>
           </div>
-
+          </div>
           <div id="poetry">
             <p
               style={{
@@ -144,13 +146,13 @@ export function About() {
           </div>
         </div>
         <div id="section2" className="section">
-          <Customh1b>My Tech Stack</Customh1b>
+          <h1 className="mainh1">My Tech Stack</h1>
           <div id="tech">
             {images.map((image, index) => {
               return (
                 <>
                   <div className="skillsec">
-                    <Img key={index} src={image.primary_url} alt={image.name} />
+                    <Img key={index} src={image.primary_url} alt={image.name} changeimg={image.secondary_url} />
                     <h1>{image.name}</h1>
                   </div>
                 </>
@@ -181,78 +183,7 @@ export function About() {
 const Img = styled.img`
   height: 10rem;
   width: 10rem;
-`;
-
-const Customh1a = styled.h1`
-  margin: 0;
-
-  font-size: 4.5rem !important;
-  color: transparent;
-  -webkit-text-stroke: 0.3px white;
-  position: relative;
-  cursor: none;
-
-  ::after {
-    // content: ${(props) => props.data};
-    content: "I'm Ankit Negi";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #0055d6;
-    width: 0%;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 4.5rem;
-  }
-
   &:hover {
-    -webkit-text-stroke: 1px #0055d6;
-    ::after {
-      text-decoration: underline;
-      animation: movetext 1s linear both;
-      @keyframes movetext {
-        to {
-          width: 100%;
-          text-shadow: -10px -10px 8px #0055d6;
-        }
-      }
-    }
-  }
-`;
-
-const Customh1b = styled.h1`
-  margin: 0;
-
-  font-size: 6rem !important;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  position: relative;
-  cursor: none;
-
-  ::after {
-    // content: ${(props) => props.data};
-    content: "My Tech Stack";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #0055d6;
-    width: 0%;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 6rem;
-  }
-
-  &:hover {
-    -webkit-text-stroke: 0.5px #0055d6;
-    ::after {
-      text-decoration: underline;
-      animation: movetext 1s linear both;
-      @keyframes movetext {
-        to {
-          width: 100%;
-          text-shadow: -10px -10px 8px #0055d6;
-        }
-      }
-    }
+    content: url(${(props) => props.changeimg});
   }
 `;
