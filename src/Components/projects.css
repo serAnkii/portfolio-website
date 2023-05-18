@@ -1,57 +1,75 @@
-#projectsection{
-  display: flex;
-  background-color: var(--color2);
-  gap: 5rem;
-  padding-top: 2rem;
-  justify-content: space-evenly;
+#projectsection {
+  /* height: 100vh; */
+  width: 90vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-#filter{
-  background: var(--color2);
+
+h1,
+p,
+h2,
+h3 {
+  font-family: cursive;
+}
+
+#filter {
   display: flex;
-  flex-direction: column;
-  width: 40%;
-  gap: 3rem;
-  height: 100vh;
+
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  
+  -webkit-box-shadow: 0 8px 6px -6px #6f7c87;
+  -moz-box-shadow: 0 8px 6px -6px #6f7c87;
+  box-shadow: 0 8px 6px -6px #6f7c87;
+  margin-bottom: 1rem;
+}
+
+#parentcontainer {
+  display: flex;
   justify-content: center;
 }
 
+@media (max-width: 1300px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+}
 
 #buttons {
   width: fit-content;
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  height:auto;
+  height: auto;
   justify-content: center;
   align-items: center;
   gap: -1rem;
   position: relative;
-  left: -100rem; 
-  transition: 0.3s ease-in-out; 
+  left: -100rem;
+  transition: 0.3s ease-in-out;
   border-radius: 1rem;
-
 }
 
-#buttons:hover{
-  gap:3rem;
-}
-#buttons p
-{
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-
-#buttons p:hover{
-  background: linear-gradient(45deg, #6F7C87 ,white, #CDD8DF);
+#buttons p:hover {
+  background: linear-gradient(45deg, #6f7c87, white, #cdd8df);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
 .category {
-  color:  #6F7C87 ;
+  color: #6f7c87;
   width: fit-content;
   font-size: 2rem;
   font-family: cursive;
@@ -62,49 +80,44 @@
   border-color: var(--color1);
 }
 
-/*/////////////////////////////////////////////////////*/
 #mainbutton {
-  font-size: 2rem;
+  /* font-size: 2rem;
   padding: 0.6em 2em;
-  font-family:cursive;
+  font-family: cursive;
   text-transform: uppercase;
-  color:  #6F7C87 ;
+  color: #6f7c87;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background:  #CDD8DF;
+  background: #cdd8df;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 3rem !important;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  touch-action: manipulation; */
 }
-
-#mainbutton:before {
+/* #mainbutton:before {
+  display: none;
   content: "";
-  background: linear-gradient(
-    45deg,
-    #6F7C87,
-    white,
-    #CDD8DF
-  );
+  background: url("/public//gifs//LCPT.gif");
+  background-position: center;
   position: absolute;
   top: -2px;
   left: -2px;
-  background-size: 400%;
+  background-size: 150%;
   z-index: -1;
   filter: blur(5px);
   -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
   animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
-}
+} */
 
-@keyframes glowing-button-85 {
+/* @keyframes glowing-button-85 {
   0% {
     background-position: 0 0;
   }
@@ -114,9 +127,9 @@
   100% {
     background-position: 0 0;
   }
-}
+} */
 
-#mainbutton:after {
+/* #mainbutton:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -126,33 +139,35 @@
   left: 0;
   top: 0;
   border-radius: 10px;
-}
-
-#parentcontainer {
-  background-color: var(--color2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -3rem;
-  width: 100%;
-  overflow: scroll;
-  height: max-content;
-  border-radius: 3rem;
-}
-
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: fit-content;
-  
-}
-
-
-
+} */
 .category {
   position: absolute;
-  width: 13rem;
-  
+
   /* animation: rotatec 0.5s ease  infinite; */
+}
+
+#mainbutton{
+  font-size: 2rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #6f7c87;
+  background: linear-gradient(to right,#143751,#51b5df);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: cursive;
+
+}
+#mainbutton:hover{
+  cursor: pointer;
+}
+#random{
+  background: url("/public/gifs/LCPT.gif");
+  background-position: 60% 50%;
+  background-size: 140%;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

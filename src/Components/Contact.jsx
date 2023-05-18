@@ -65,7 +65,7 @@ const FormContainer = styled.div`
   background: #EDE7FA;
   padding: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px #9D7FEA;
 `;
 
 const Title = styled.h1`

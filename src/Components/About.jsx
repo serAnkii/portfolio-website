@@ -83,7 +83,7 @@ export function About() {
             </div>
           </div>
           </div>
-          <div id="poetry">
+          <div id="poetry" style={{overflow:"scroll"}}>
             <p
               style={{
                 textAlign: "start",

@@ -22,14 +22,14 @@ export function Projects() {
       menu.style.left = "0";
 
       // Calculate positions for circular layout
-      const radius = 140; // Adjust the radius as per your preference
+      const radius = 170; // Adjust the radius as per your preference
       const angleStep = (2 * Math.PI) / buttons.length;
 
       buttons.forEach((button, index) => {
         const angle = index * angleStep;
         const x = radius * Math.cos(angle);
         const y = radius * Math.sin(angle);
-        button.style.transform = `translate(${x - 5}px, ${y - 90}px)`;
+        button.style.transform = `translate(${x - 140}px, ${y}px)`;
       });
     } else if (filterstate === 1) {
       changestate(0);
@@ -55,10 +55,11 @@ export function Projects() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <div id="filter">
+          <div id="random">
           <button id="mainbutton" onClick={showfilter}>
             {filterstate ? "X" : "Filter"}
           </button>
-
+          </div>
           <div id="buttons">
             <button
               className="category"

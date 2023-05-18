@@ -1,6 +1,7 @@
 footer {
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 1rem;
   /* background-color: var(--color1); */
   /* background: url("/public/texture6.webp"); */
   background-color: white;
