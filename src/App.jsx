@@ -20,23 +20,27 @@ import "./css/navbar.css";
 
 export default function App() {
   
+  const [dynamicid, changeid] = React.useState("colour1");
   const [dynamicclass, changeclass] = React.useState("");
   const location = useLocation();
-  console.log(location);
   useEffect(()=>{
     changeclolours();
   },[location])
   function changeclolours() {
     if (location.pathname === "/") {
+      changeid("colour1");
       changeclass("homeglass");
     }
     if (location.pathname === "/project") {
+      changeid("colour3")
       changeclass("projectglass");
     }
     if (location.pathname === "/about") {
+      changeid("colour2")
       changeclass("aboutglass");
     }
     if (location.pathname === "/contact") {
+      changeid("colour4")
       changeclass("contactglass");
     }
   }
@@ -45,7 +49,7 @@ export default function App() {
       <div id="body">
         <div id="main">
           <div id="name">
-            <div className="shapes" id="s1"></div>
+            <div className="shapes" id={dynamicid}></div>
             <div className="shapes" id="s2"></div>
             <div className="shapes" id="s3"></div>
             <div className="shapes" id="s4"></div>

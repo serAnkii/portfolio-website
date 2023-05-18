@@ -14,18 +14,33 @@
   min-width: 2rem;
   margin-right: 2rem;
   background-size: 200%;
-  background: url(/public/texture4.webp);
-  
+  background: url(/texture4.webp);
 }
 
 
 
-
-
-#s1 {
-  animation: shapechangea 7s both infinite,moveback 10s linear infinite;
-  
+/* ///////////////////////////////////// */
+#colour1{
+    background: #6ec4e9 !important;
+    animation: shapechangea 7s both infinite;
 }
+#colour2{
+  background: #ff8757 !important;
+  animation: shapechangea 7s both infinite;
+}
+#colour3{
+  background: #6f7c87;
+  animation: shapechangea 7s both infinite;
+}
+#colour4{
+  background: #9d7fea;
+  animation: shapechangea 7s both infinite;
+}
+
+
+/* ///////////////////////////////////// */
+
+
 
 #s2 {
   animation: shapechangen 7s step-start infinite,moveback 5s linear infinite;
@@ -36,7 +51,7 @@
 }
 
 #s4 {
-  animation: shapechangei 10s reverse infinite,moveback 8s linear infinite;
+  animation: shapechangei 6s reverse infinite,moveback 8s linear infinite;
 }
 
 #s5 {
@@ -49,6 +64,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   20% {
+    
     /* background: linear-gradient(108deg, rgb(1, 59, 1), rgba(255, 255, 0, 0.644), rgb(3, 246, 3)); */
     clip-path: polygon(
       0% 100%,
@@ -94,6 +110,7 @@
     clip-path: circle(50% at 50% 50%);
   }
   20% {
+    
     /* background: linear-gradient(108deg, black, grey, white); */
     clip-path: polygon(
       0% 77%,
@@ -147,6 +164,7 @@
     );
   }
   20% {
+    
     /* background: linear-gradient(108deg, black, grey, white); */
     clip-path: polygon(
       49% 0,
@@ -183,6 +201,7 @@
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
   20% {
+    
     /* background: linear-gradient(108deg, black, grey, white); */
     clip-path: polygon(
       0 0,
@@ -228,6 +247,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
   20% {
+    
     /* background: linear-gradient(108deg, black, grey, white); */
     clip-path: polygon(
       10% 25%,
@@ -276,19 +296,19 @@
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10  px) !important;
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .homeglass{
-  background-color:  #6ec4e95e;
+  background-color:  #6ec4e930;
 }
 .aboutglass{
-  background-color:  #ff875786;
+  background-color:  #ff875730;
 }
 .projectglass{
-  background-color: #6f7c8775;
+  background-color: #6f7c8730;
 }
 .contactglass{
-  background-color: #9d7fea81;
+  background-color: #9d7fea30;
 }
