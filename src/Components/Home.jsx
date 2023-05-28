@@ -3,10 +3,12 @@ import "../css/home.css";
 import styled from "styled-components";
 import React from "react";
 import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const Home = () => {
   return (
     <>
+      <AnimatePresence>
       <motion.div
         initial={{ width:0 }}
         animate={{ width:"100%"}}
@@ -29,6 +31,7 @@ const Home = () => {
           </Div>
         </Container1>
       </motion.div>
+      </AnimatePresence>
     </>
   );
 };

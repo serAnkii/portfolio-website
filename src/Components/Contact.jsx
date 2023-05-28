@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { motion as m } from "framer-motion";
+import { motion as m , AnimatePresence } from "framer-motion";
 const Contact = () => {
   const [isTyping, setIsTyping] = React.useState(false);
 
@@ -10,10 +10,11 @@ const Contact = () => {
   };
   return (
     <>
+    <AnimatePresence>
       <m.div
       initial={{ width:0 }}
       animate={{ width:"100%" }}
-      exit={{ left:window.innerWidth }}
+      exit={{ position:"relative",left:window.innerWidth }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <Container>
@@ -44,6 +45,7 @@ const Contact = () => {
           </FormContainer>
         </Container>
       </m.div>
+      </AnimatePresence>
     </>
   );
 };

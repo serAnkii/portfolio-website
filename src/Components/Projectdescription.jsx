@@ -66,9 +66,9 @@ const Projectdescription = (props) => {
         <a className="code-link" href={props.code}>
           View Code
         </a>
-        <a className="deploy-link" href={props.deploy}>
+        {/* <a className="deploy-link" href={props.deploy}>
           View Deployment
-        </a>
+        </a> */}
       </div>
     </m.div>
   );

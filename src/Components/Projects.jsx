@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-
+import { AnimatePresence } from "framer-motion";
 // import withAssetLoading from '../withAssetLoading.jsx';
 
 import { motion as m } from "framer-motion";
@@ -25,14 +25,14 @@ function Projects() {
       menu.style.left = "0";
 
       // Calculate positions for circular layout
-      const radius = 165; // Adjust the radius as per your preference
+      const radius = 155; // Adjust the radius as per your preference
       const angleStep = (2 * Math.PI) / buttons.length;
 
       buttons.forEach((button, index) => {
         const angle = index * angleStep;
         const x = radius * Math.cos(angle);
         const y = radius * Math.sin(angle);
-        button.style.transform = `translate(${x - 137}px, ${y}px)`;
+        button.style.transform = `translate(${x - 150}px, ${y}px)`;
       });
     } else if (filterstate === 1) {
       changestate(0);
@@ -50,6 +50,7 @@ function Projects() {
 
   return (
     <>
+    <AnimatePresence>
       <m.div
         id="projectsection"
         initial={{ width: 0 }}
@@ -70,7 +71,7 @@ function Projects() {
                 filterItem("ml");
               }}
             >
-              <p>Machine L.</p>
+              <p>M.L.</p>
             </button>
 
             <button
@@ -107,6 +108,7 @@ function Projects() {
           </div>
         </div>
       </m.div>
+      </AnimatePresence>
     </>
   );
 }
