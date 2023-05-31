@@ -43,3 +43,47 @@
 {
   color:  #9D7FEA ;
 }
+
+#nav-list:has(.fancy:hover) .word:not(.fancy:hover){
+  opacity: 0.5;
+}
+
+
+.letter{
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+
+
+
+.word:hover .letter:nth-child(1){
+  transform: translate(-80% , 60%) rotate(8deg);
+
+}
+
+.word:hover .letter:nth-child(2){
+  transform: translate(-40% , 20%) rotate(4deg);
+
+}
+.word:hover .letter:nth-child(3){
+  transform: translate(-10% , 60%) rotate(-6deg);
+}
+.word:hover .letter:nth-child(4){
+  transform: translate(0% , 8%) rotate(-8deg);
+}
+
+.word:hover .letter:nth-child(5){
+  transform: translate(0% , -20%) rotate(5deg);
+}
+.word:hover .letter:nth-child(6){
+  transform: translate(0% , 20%) rotate(-3deg);
+}
+
+.word:hover .letter:nth-child(7){
+  transform: translate(0% , -40%) rotate(-5deg);
+}
+
+.word:hover .letter:nth-child(8){
+  transform: translate(0% , 15%) rotate(10deg);
+}

@@ -48,6 +48,30 @@ export default function App() {
       changeclassfooter("contactfooter")
     }
   }
+
+  async function enhance(id)
+  {
+    const element = document.getElementById(id);
+    const text = element.innerText.split("");
+    console.table(text)
+    element.innerText = "";
+    text.map(letter=>{
+      const span = document.createElement("span")
+      span.innerText = letter;
+      span.className = "letter";
+      element.appendChild(span);
+    })
+
+    
+
+  }
+
+  enhance("word1")
+  enhance("word2")
+  enhance("word3")
+  enhance("word4")
+  
+  
   return (
     <>
       <div id="body">
@@ -65,22 +89,22 @@ export default function App() {
             <ul id="nav-list">
               <li className="list-item">
                 <Link className="link" to="/">
-                  <h1>HOMEEE</h1>
+                  <h1 id="word1" className="word fancy">HOME</h1>
                 </Link>
               </li>
-              <li className="list-item">
+              <li className="list-item ">
                 <Link className="link" to="/about">
-                  <h1>ABOUT</h1>
+                  <h1 id="word2" className="word fancy">ABOUT</h1>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/project">
-                  <h1>PROJECTS</h1>
+                  <h1 id="word3" className="word fancy">PROJECTS</h1>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/contact">
-                  <h1>CONTACT</h1>
+                  <h1 id="word4" className="word fancy">CONTACT</h1>
                 </Link>
               </li>
             </ul>

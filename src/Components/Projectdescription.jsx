@@ -17,6 +17,7 @@ const Projectdescription = (props) => {
         <Divname
           id="nameofproject"
           className="pulse"
+          
           shadowcolor={data[props.projectId].shadowcolor}
         >
           <h1>{props.name}</h1>
