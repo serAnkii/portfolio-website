@@ -51,7 +51,7 @@ const Div = styled.div`
   height: fit-content;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: dashed 1px white;
-  width: 60vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   // justify-content:center;
@@ -68,6 +68,7 @@ const Text1 = styled.h1`
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   height-fit-content;
   margin:0;
+  font-family:cursive !important;
 `;
 
 const Text2 = styled.h2`
@@ -75,6 +76,6 @@ const Text2 = styled.h2`
   color: #F3F7FA !important;
   z-index: 1;
   color: white;
-  font-family: "Roboto mono";
-  line-height: 6rem;
+  font-family: cursive;
+  line-height: 5rem;
 `;

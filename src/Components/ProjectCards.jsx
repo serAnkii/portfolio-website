@@ -154,17 +154,34 @@ const CardContainer = styled.div`
   position: relative;
 
   &:hover {
+    ::before{
+      content: "";
+      transform: translate(
+        ${(props) => props.coordinates.x}px,
+        ${(props) => props.coordinates.y}px
+      );
+      width: 50px;
+      height: 50px;
+      z-index:3;
+      position:absolute;
+      backdrop-filter:blur(1px);
+      left:-6%;
+      top:-6%;
+      border-radius:50%;
+    }
     ::after {
       content: "";
       transform: translate(
         ${(props) => props.coordinates.x}px,
         ${(props) => props.coordinates.y}px
       );
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: white;
-      box-shadow: 0px 0px 15px 15px ${(props) => props.shadow};
+      width: 3px;
+      height: 3px;
+      position:absolute;
+      border-radius: 100%;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 3px 5px ${(props) => props.shadow};
+      
     }
   }
 `;

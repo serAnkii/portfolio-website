@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 import "./about.css";
 import styled from "styled-components";
-import { AnimatePresence } from "framer-motion";
 
 import { images } from "./tech.js";
 import {motion as m} from "framer-motion"
@@ -41,7 +40,6 @@ export function About() {
 
   return (
     <>
-      <AnimatePresence>
       <m.div
         className="about"
         initial={{
@@ -178,7 +176,6 @@ export function About() {
           </div>
         </div> */}
       </m.div>
-      </AnimatePresence>
     </>
   );
 }

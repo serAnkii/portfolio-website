@@ -15,16 +15,16 @@ footer {
 /* ////////////////////////////////////////////////////////////////// */
 
 .homefooter{
-  background-color:  #6ec4e9c5;
+  background: linear-gradient(14deg, #6ec5e9d1 64%, #ff8757d1 30%);
 }
 .aboutfooter{
-  background-color:  #ff8757;
+  background:  linear-gradient(14deg, #ff8757d1 64%,#6f7c87d1  30%);
 }
 .projectfooter{
-  background-color: #6f7c87;
+  background: linear-gradient(14deg, #6f7c87d1  64%,#9d7fead1 30%);
 }
 .contactfooter{
-  background-color: #9d7fea;
+  background: linear-gradient(14deg, #9d7fead1  64%,#6ec5e9d1 30%);
 }
 
 
