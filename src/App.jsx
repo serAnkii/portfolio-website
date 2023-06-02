@@ -1,8 +1,7 @@
 import "./style.css";
-//clamp
 import { Home } from "./Components/Home";
 import { About } from "./Components/About";
-import  Projects  from "./Components/Projects";
+import Projects from "./Components/Projects";
 import { Contact } from "./Components/Contact";
 import { Error } from "./Components/Error";
 import { Route, Routes } from "react-router-dom";
@@ -23,55 +22,56 @@ export default function App() {
   const [dynamicclass, changeclass] = React.useState("");
   const [dynamicclassfooter, changeclassfooter] = React.useState("");
   const location = useLocation();
-  useEffect(()=>{
+  useEffect(() => {
     changeclolours();
-  },[location])
+  }, [location]);
   function changeclolours() {
     if (location.pathname === "/") {
       changeid("colour1");
       changeclass("homeglass");
-      changeclassfooter("homefooter")
+      changeclassfooter("homefooter");
     }
     if (location.pathname === "/project") {
-      changeid("colour3")
+      changeid("colour3");
       changeclass("projectglass");
-      changeclassfooter("projectfooter")
+      changeclassfooter("projectfooter");
     }
     if (location.pathname === "/about") {
-      changeid("colour2")
+      changeid("colour2");
       changeclass("aboutglass");
-      changeclassfooter("aboutfooter")
+      changeclassfooter("aboutfooter");
     }
     if (location.pathname === "/contact") {
-      changeid("colour4")
+      changeid("colour4");
       changeclass("contactglass");
-      changeclassfooter("contactfooter")
+      changeclassfooter("contactfooter");
     }
   }
 
-  async function enhance(id)
-  {
+  async function enhance(id) {
     const element = document.getElementById(id);
     const text = element.innerText.split("");
-    console.table(text)
+    console.table(text);
     element.innerText = "";
-    text.map(letter=>{
-      const span = document.createElement("span")
+    text.map((letter) => {
+      const span = document.createElement("span");
       span.innerText = letter;
       span.className = "letter";
       element.appendChild(span);
-    })
-
-    
-
+    });
   }
 
-  enhance("word1")
-  enhance("word2")
-  enhance("word3")
-  enhance("word4")
-  
-  
+  enhance("word1");
+  enhance("word2");
+  enhance("word3");
+  enhance("word4");
+
+  // const pattern = document.getElementById("pattern");
+  // Array.from(document.getElementsByClassName("word")).forEach((val, ind) => {
+  //   val.onmouseover = () => {
+  //     pattern.dataset.activeIndex = ind;
+  //   };
+  // });
   return (
     <>
       <div id="body">
@@ -89,22 +89,30 @@ export default function App() {
             <ul id="nav-list">
               <li className="list-item">
                 <Link className="link" to="/">
-                  <h1 id="word1" className="word fancy">HOME</h1>
+                  <h1 id="word1" className="word fancy">
+                    HOME
+                  </h1>
                 </Link>
               </li>
               <li className="list-item ">
                 <Link className="link" to="/about">
-                  <h1 id="word2" className="word fancy">ABOUT</h1>
+                  <h1 id="word2" className="word fancy">
+                    ABOUT
+                  </h1>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/project">
-                  <h1 id="word3" className="word fancy">PROJECTS</h1>
+                  <h1 id="word3" className="word fancy">
+                    PROJECTS
+                  </h1>
                 </Link>
               </li>
               <li className="list-item">
                 <Link className="link" to="/contact">
-                  <h1 id="word4" className="word fancy">CONTACT</h1>
+                  <h1 id="word4" className="word fancy">
+                    CONTACT
+                  </h1>
                 </Link>
               </li>
             </ul>

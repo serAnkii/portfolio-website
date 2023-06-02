@@ -45,7 +45,9 @@
 }
 
 #nav-list:has(.fancy:hover) .word:not(.fancy:hover){
-  opacity: 0.5;
+  opacity: 0.5;  
+  transition:0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 
