@@ -60,7 +60,7 @@
 
 
 .word:hover .letter:nth-child(1){
-  transform: translate(-80% , 60%) rotate(8deg);
+  transform: translate(-80%, 60%) rotate(8deg);
 
 }
 
@@ -71,6 +71,7 @@
 .word:hover .letter:nth-child(3){
   transform: translate(-10% , 60%) rotate(-6deg);
 }
+
 .word:hover .letter:nth-child(4){
   transform: translate(0% , 8%) rotate(-8deg);
 }

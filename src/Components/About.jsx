@@ -43,7 +43,7 @@ export function About() {
       <m.div
         className="about"
         initial={{
-          opacity: 0,
+          opacity: 0.5,
           backdropFilter: "invert(50%)",
         }}
         animate={{

@@ -7,5 +7,9 @@
     opacity: 1;
     /* transform: scale(1); */
   }
-  
+}
+
+.card:nth-child(3)
+{
+  transform: rotate(30deg);
 }

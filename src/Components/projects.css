@@ -1,199 +1,81 @@
-#projectsection {
-  /* height: 100vh; */
-  width: 90vw;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-h1,
-p,
-h2,
-h3 {
-  font-family: cursive;
-}
-
-#filter {
+#projectsection{
   display: flex;
+  min-height: 92vh;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
 
-  justify-content: center;
+#cardcontain{
+  display: flex;
   align-items: center;
-  height: 100vh;
-}
-
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  height: 100vh;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  
-  -webkit-box-shadow: 0 8px 6px -6px #6f7c87;
-  -moz-box-shadow: 0 8px 6px -6px #6f7c87;
-  box-shadow: 0 8px 6px -6px #6f7c87;
-  margin-bottom: 1rem;
-}
-
-#parentcontainer {
-  display: flex;
   justify-content: center;
 }
+
+#buttoncontain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+
+.change{
+  position: relative;
+  font-size: 5rem;
+  color: black;
+  width: 20%;
+  font-family: cursive;
+  cursor: pointer;
+  border-radius: 2rem;
+  outline: none;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 3.275);
+  
+}
+
+@keyframes colourchange {
+  0%{
+    color: black;
+  }
+  50%{
+    color: rgb(0, 165, 253);
+  }
+  100%{
+    color: black;
+  }
+
+}
+
+.change:hover{
+  transform: scale(1.1);
+}
+
+.change:hover #path1{
+  animation: colourchange 1s ease 0.8s infinite alternate;
+}
+
+.change:hover #path2{
+  animation: colourchange 1s ease 0.6s infinite alternate;
+}
+
+.change:hover #path3{
+  animation: colourchange 1s ease 0.2s infinite alternate;
+}
+
+
+.change:hover #path4{
+  /* box-shadow: 0px 10px 10px white; */
+  transform: scale(1.2);
+  animation: colourchange 1s ease 0.2s infinite alternate;
+}
+
+.change:hover #path5{
+  animation: colourchange 1s ease 0.6s infinite alternate;
+}
+
+.change:hover #path6{
+  animation: colourchange 1s ease 0.8s infinite alternate;
+}
+
 
 @media (max-width: 1300px) {
-  #container {
-    grid-template-columns: 1fr;
-  }
-}
-
-#buttons {
-  width: fit-content;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  gap: -1rem;
-  position: relative;
-  left: -100rem;
-  transition: 0.3s ease-in-out;
-  border-radius: 1rem;
-}
-
-#buttons p:hover {
-  background: linear-gradient(45deg, #6f7c87, white, #cdd8df);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-
-.category {
-  color: #6f7c87;
-  width: fit-content;
-  font-size: 2rem;
-  font-family: cursive;
-  letter-spacing: 3px;
-  background-color: var(--color2);
-  border-color: var(--color1);
-  outline: none;
-}
-
-/* #mainbutton { */
-  /* font-size: 2rem;
-  padding: 0.6em 2em;
-  font-family: cursive;
-  text-transform: uppercase;
-  color: #6f7c87;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #cdd8df;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 3rem !important;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation; */
-/* } */
-/* #mainbutton:before {
-  display: none;
-  content: "";
-  background: url("/public//gifs//LCPT.gif");
-  background-position: center;
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 150%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-} */
-
-/* @keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-} */
-
-/* #mainbutton:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-} */
-.category {
-  position: absolute;
-
-  /* animation: rotatec 0.5s ease  infinite; */
-}
-
-#mainbutton{
-  font-size: 2rem;
-  background: transparent;
-  outline: none;
-  border: none;
-  color: #6f7c87;
-  background: linear-gradient(to right,#143751,#51b5df);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: cursive;
-
-}
-#mainbutton:hover{
-  cursor: pointer;
-  text-shadow: 0px -0px 100px 10px #51b5df;
-  
-}
-#random{
-  background: url("/public/gifs/LCPT.gif");
-  background-position: 60% 50%;
-  background-size: 140%;
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30rem;
-}
-
-.category:nth-child(3){
-  border-right-width: 0;
-  padding-left: 10px 20px;
-  border-radius: 0 10px 10px 0;
-}
-
-.category:nth-child(1){
-  border-left-width: 0;
-  padding-right: 10px 20px;
-  border-radius: 10px 0 0 10px;
-}
-
-.category:nth-child(2){
-  border-top-width: 0;
-  padding-bottom: 10px 20px;
-  border-radius: 10px 10px 0 0;
-}
-
-.category:nth-child(4){
-  border-bottom-width: 0;
-  padding-top: 10px 20px;
-  border-radius:0 0 10px 10px;
 }

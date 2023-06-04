@@ -6,7 +6,7 @@ import styled from "styled-components";
 export function ProjectCards(props) {
   const [tilt, setTilt] = useState({});
   const [dotPosition, setDotPosition] = useState({ x: 0, y: 0 });
-
+  document.getElementsByClassName("card");
   const handleMouseMove = (e, id) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
@@ -27,7 +27,6 @@ export function ProjectCards(props) {
       {props.data.map((ele) => {
         const { id, name, image, description, shadowcolor } = ele;
         const { tiltX = 0, tiltY = 0 } = tilt[id] || {};
-
         return (
           <Link
             to={{
@@ -40,12 +39,14 @@ export function ProjectCards(props) {
               fontFamily: "cursive",
               WebkitTextStroke: "1px white",
               cursor: "none",
+              position: "absolute",
             }}
           >
             <CardContainer
               coordinates={dotPosition}
               shadow={shadowcolor}
               className="card"
+              id="card"
               key={id}
               style={{
                 background: image,
@@ -129,7 +130,7 @@ export function ProjectCards(props) {
                     transition: "text-decoration 0.5s ease-in",
                   }}
                 >
-                  <P>to see detailed verson Click Anywhere</P>
+                  <P>to see detailed verson Click Anywhere</P>  
                 </h1>
               </div>
             </CardContainer>
@@ -141,8 +142,7 @@ export function ProjectCards(props) {
 }
 
 const CardContainer = styled.div`
-  display: grid;
-  grid-template-rows:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 40rem;
   width: 40rem;
   cursor: none;
@@ -152,9 +152,9 @@ const CardContainer = styled.div`
   animation: fade 0.7s alternate;
   transform-style: preserve-3d;
   position: relative;
-
+  display: grid;
   &:hover {
-    ::before{
+    ::before {
       content: "";
       transform: translate(
         ${(props) => props.coordinates.x}px,
@@ -162,12 +162,12 @@ const CardContainer = styled.div`
       );
       width: 50px;
       height: 50px;
-      z-index:3;
-      position:absolute;
-      backdrop-filter:blur(1px);
-      left:-6%;
-      top:-6%;
-      border-radius:50%;
+      z-index: 3;
+      position: absolute;
+      backdrop-filter: blur(1px);
+      left: -6%;
+      top: -6%;
+      border-radius: 50%;
     }
     ::after {
       content: "";
@@ -177,11 +177,10 @@ const CardContainer = styled.div`
       );
       width: 3px;
       height: 3px;
-      position:absolute;
+      position: absolute;
       border-radius: 100%;
       background-color: #ffffff;
       box-shadow: 0px 0px 3px 5px ${(props) => props.shadow};
-      
     }
   }
 `;
@@ -189,6 +188,6 @@ const CardContainer = styled.div`
 const P = styled.p`
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
-  color:#6f7c87;
-  text-align:center;
+  color: #6f7c87;
+  text-align: center;
 `;
