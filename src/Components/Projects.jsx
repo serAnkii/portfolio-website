@@ -12,18 +12,16 @@ function Projects() {
   const handlePreviousClick = () => {
     if (currentCardIndex > 0) {
       setCurrentCardIndex(currentCardIndex - 1);
-    }
-    else{
-      window.alert("That's e-nough mate'")
+    } else {
+      window.alert("That's e-nough mate'");
     }
   };
 
   const handleNextClick = () => {
     if (currentCardIndex < data.length - 1) {
       setCurrentCardIndex(currentCardIndex + 1);
-    }
-    else{
-      window.alert("That's E-nough mate'")
+    } else {
+      window.alert("That's E-nough mate'");
     }
   };
 
@@ -39,7 +37,9 @@ function Projects() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <div id="cardcontain">
-          <ProjectCards data={currele} />
+          <AnimatePresence mode="wait">
+            <ProjectCards data={currele} />
+          </AnimatePresence>
         </div>
         <div id="buttoncontain">
           <button className="change" onClick={handlePreviousClick}>
