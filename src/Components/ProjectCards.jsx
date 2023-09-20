@@ -38,6 +38,7 @@ export function ProjectCards(props) {
               color: "transparent",
               fontFamily: "cursive",
               WebkitTextStroke: "1px white",
+              
               cursor: "none",
               position: "absolute",
             }}
@@ -50,6 +51,7 @@ export function ProjectCards(props) {
               key={id}
               style={{
                 background: image,
+                
                 backgroundSize: "40rem 40rem",
                 backgroundRepeat: "no-repeat",
                 transform: `rotateY(${tiltX}deg) rotateX(${tiltY}deg)`,

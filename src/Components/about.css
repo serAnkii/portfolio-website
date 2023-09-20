@@ -63,31 +63,19 @@
   cursor: none;
 }
 #poetry{
-  background-size: 130%;
-  border-top-left-radius:5rem ;
-  border-bottom-right-radius: 7rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
+  height: 70%;
+  width: 45%;
+  justify-content: center;
   align-items: center;
-  height: 85%;
-  padding: 2rem;
-  margin: 2rem;
-  background: linear-gradient(45deg,#FF8657 ,#ffffff,#FFECE8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  box-shadow: 5px 5px 20px #FF8657;
+  display: flex;
 }
-#poetry p{
-  font-size: 1.7rem;
-  letter-spacing: .4rem;
-  text-align: center;
-  color: white;
-  font-family: cursive;
-  font-weight: 800;
-  font-style: italic;
+#poetry img{
+  
+  box-shadow: 1px 0px 10px #FF8657,-1px 0px 10px #FF8657;
+  height: 100%;
+  width: 80%;
+  border-radius: 50%;
+  
 }
 
 /*////////////////////////////////////////////////*/

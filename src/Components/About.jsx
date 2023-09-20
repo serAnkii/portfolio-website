@@ -84,65 +84,7 @@ export function About() {
           </div>
           </div>
           <div id="poetry" style={{overflow:"scroll"}}>
-            <p
-              style={{
-                textAlign: "start",
-                lineHeight: "1.5",
-                marginBottom: "2rem",
-              }}
-            >
-              In the realm of India's digital sphere,
-              <br />
-              I, the web maestro, craft experiences premier.
-              <br />
-              With engineering prowess and rhythmic finesse,
-              <br />I weave interfaces that leave viewers impressed.
-            </p>
-            <p
-              style={{
-                textAlign: "center",
-                lineHeight: "1.5",
-                marginBottom: "2rem",
-              }}
-            >
-              Employing the MERN stack, a symphony profound,
-              <br />
-              I orchestrate designs where rhythm is found.
-              <br />
-              Lines of code dance, a synchronized sensation,
-              <br />
-              Creating immersive worlds with flawless coordination.
-            </p>
-            <p
-              style={{
-                textAlign: "start",
-                lineHeight: "1.5",
-                marginBottom: "2rem",
-              }}
-            >
-              Each pixel aligns with meticulous care,
-              <br />
-              Forming a symphony of visuals rare.
-              <br />
-              A composition of colors, a professional endeavor,
-              <br />
-              Engaging users with a sense of awe and fervor.
-            </p>
-            <p
-              style={{
-                textAlign: "start",
-                lineHeight: "1.5",
-                marginBottom: "2rem",
-              }}
-            >
-              Witness the artistry, behold the grand display,
-              <br />
-              Where digital realms unfold in a masterful way.
-              <br />
-              In India's domain, where excellence resides,
-              <br />
-              Web experiences flourish with professional strides.
-            </p>
+            <img src="/ankit.jpg" alt="myimage" />
           </div>
         </div>
         <div id="section2" className="section">

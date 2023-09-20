@@ -2,12 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { motion as m , AnimatePresence } from "framer-motion";
 const Contact = () => {
-  const [isTyping, setIsTyping] = React.useState(false);
-
-  const handleTyping = (event) => {
-    const { value } = event.target;
-    setIsTyping(value !== "");
-  };
   return (
     <>
     <AnimatePresence>
@@ -19,7 +13,7 @@ const Contact = () => {
       >
         <Container>
           <FormContainer>
-            <Title>Impressed with what you see?</Title>
+            <Title>Feel Free to Contact Me !!!</Title>
             <Description>
               Let's chat about everything! I'm eager to hear from you, so go
               ahead and shoot me a message.
@@ -36,8 +30,6 @@ const Contact = () => {
                   id="message"
                   name="message"
                   placeholder="Type a Sweet Note HERE"
-                  isTyping={isTyping}
-                  onChange={handleTyping}
                 ></Textarea>
               </FormGroup>
               <Button type="submit">Send</Button>
@@ -142,9 +134,4 @@ const Button = styled.button`
   font-weight: bold;
   transition: background-color 0.3s ease;
   padding:1rem;
-  &:hover {
-    background: url("/submit2.gif");
-    background-position:center;
-    background-size:100%;
-  }
 `;

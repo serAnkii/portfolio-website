@@ -24,15 +24,19 @@
   font-family: 'Roboto Mono', monospace;
   /* animation: moveback 5s linear infinite; */
   white-space: nowrap;
+  
 }
-
+  
 
 
 @keyframes moveback {
+
   from{
+    
     background-position: 0% center;
   }
   to{
+    
     background-position: -200% center;
   }
 }
