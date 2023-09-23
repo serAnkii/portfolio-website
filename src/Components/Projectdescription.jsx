@@ -2,10 +2,9 @@ import React from "react";
 import "../css/projectdesc.css";
 import styled from "styled-components";
 import { data } from "./api";
-import { motion as m } from "framer-motion";
 const Projectdescription = (props) => {
   return (
-    <m.div
+    <div
       id="maincontainer"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -71,7 +70,7 @@ const Projectdescription = (props) => {
           View Deployment
         </a> */}
       </div>
-    </m.div>
+    </div>
   );
 };
 

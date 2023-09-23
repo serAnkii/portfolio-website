@@ -1,62 +1,25 @@
-:root{
-  --color2: black;
-  --color1: white;
-  --linkcolor:#0077cc
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
 }
 
-html {
-  font-size: 10px;
-  margin: 0;
-  padding: 0;
-  background: var(--color2) !important;
-  font-family: "cursive";
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-#body {
-  background-color: var(--color2);
-  margin-top: 8vh;
-  margin-left: 0vh;
-  margin-right: 0vh;
-  color: var(--color1);
-  background-attachment: fixed;
-  
-}
-#main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 25px;
+#wrapper{
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-snap-type:y mandatory;
   width: 100%;
-  height: 8vh;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  background: rgba(24, 24, 24, 0.26);
-  backdrop-filter: blur(6px);
-  background-attachment: fixed;
-  /* box-shadow:rgba(224, 224, 224, 0.45) 0px 25px 20px -20px; */
-
-
+  height: 100vh; /* Adjust the height as needed */
+  perspective: 200px;
 }
 
-#main #title {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  
+.common{
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+  transition: 0.5s;
 }
 
 ::-webkit-scrollbar{
-  display: none;
-}
-
-#res{
   display: none;
 }

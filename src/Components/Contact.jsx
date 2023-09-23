@@ -1,137 +1,79 @@
 import React from "react";
-import styled from "styled-components";
-import { motion as m , AnimatePresence } from "framer-motion";
+import "../css/contact.css";
+import {AiOutlineGithub ,AiOutlineLinkedin, AiOutlineInstagram,AiOutlineTwitter} from 'react-icons/ai'
 const Contact = () => {
   return (
-    <>
-    <AnimatePresence>
-      <m.div
-      initial={{ width:0 }}
-      animate={{ width:"100%" }}
-      exit={{ position:"relative",left:window.innerWidth }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        <Container>
-          <FormContainer>
-            <Title>Feel Free to Contact Me !!!</Title>
-            <Description>
-              Let's chat about everything! I'm eager to hear from you, so go
-              ahead and shoot me a message.
-            </Description>
-            <FormWrapper action="https://formspree.io/f/xwkjzqpr" method="post">
-              <FormGroup>
-                <Label htmlFor="email" >Your email:</Label>
-                <Input type="email" id="email" name="email" required placeholder="Enter a Valid mail HERE"/>
-              </FormGroup>
-              <FormGroup>
-                <Label htmlFor="message">Your message:</Label>
-                <Textarea
-                  required
-                  id="message"
-                  name="message"
-                  placeholder="Type a Sweet Note HERE"
-                ></Textarea>
-              </FormGroup>
-              <Button type="submit">Send</Button>
-            </FormWrapper>
-          </FormContainer>
-        </Container>
-      </m.div>
-      </AnimatePresence>
-    </>
+    <div className="common" id="contactdiv">
+      <span class="bigcircle"></span>
+      <img src="/shape.png" class="square" alt="" />
+      <div className="form">
+        <div className="contactinfo">
+          <h3 className="title">Let's get in touch</h3>
+          <p className="text">
+            Feel Free to Connect!
+          </p>
+
+          <div className="info">
+            <div className="information">
+              <img src="/location.png" class="icon" alt="" />
+              <p>Dehradun , INDIA</p>
+            </div>
+            <div className="information">
+              <img src="/email.png" class="icon" alt="" />
+              <p>recruitankitnegi2023@gmail.com</p>
+            </div>
+            <div className="information">
+              <img src="/phone.png" className="icon" alt="" />
+              <p>+91 9548623471</p>
+            </div>
+          </div>
+
+          <div className="socialmedia">
+            <p>Find me here :</p>
+            <div className="socialicons">
+              <a href="">
+                <i><AiOutlineGithub/></i>
+              </a>
+              <a href="#">
+                <i><AiOutlineLinkedin/></i>
+              </a>
+              <a href="#">
+                <i><AiOutlineInstagram/></i>
+              </a>
+              <a href="#">
+                <i><AiOutlineTwitter/></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="contactform">
+          <span className="circle one"></span>
+          <span className="circle two"></span>
+          <form action="index.html" autocomplete="off">
+            <h3 className="title">Contact me</h3>
+            <div className="inputcontainer">
+              <input type="text" name="name" className="input" required />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div className="inputcontainer">
+              <input type="email" name="email" className="input" required />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div className="inputcontainer textarea">
+              <textarea name="message" className="input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" className="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
 
 export { Contact };
 
-const Container = styled.div`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-`;
-
-const FormContainer = styled.div`
-  display: flex;
-  margin-top:2%;
-  flex-direction: column;
-  align-items: center;
-  background: #EDE7FA;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 10px #9D7FEA;
-`;
-
-const Title = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #9D7FEA;
-  text-align: center;
-  font-family:cursive;
-`;
-
-const Description = styled.p`
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color:  #3D281D;
-  text-align: center;
-  font-family:cursive;
-`;
-
-const FormWrapper = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-`;
-
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Label = styled.label`
-  font-size: 2rem;
-  font-weight: bold;
-  font-family:cursive;
-  margin-bottom: 0.5rem;
-  color: #333333;
-`;
-
-const Input = styled.input`
-  padding: 0.5rem;
-  border:none;
-  outline:none;
-  border-radius: 0.3rem;
-  background: none;
-  font-family:cursive;
-
-`;
-
-const Textarea = styled.textarea`
-  outline:none;
-  padding: 0.5rem;
-  border:none;
-  border-radius: 0.3rem;
-  resize: vertical;
-  height: 20rem;
-  background:none;
-  background-image: ${(props) => (props.isTyping ? `url("/cat.gif")` : "none")};
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family:cursive;
-`;
-
-const Button = styled.button`
-  width:fit-content;
-  padding: 0.5rem 1rem;
-  background: #9D7FEA;
-  color:  #3D281D;
-  border: none;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  padding:1rem;
-`;
+// https://formspree.io/f/xwkjzqpr

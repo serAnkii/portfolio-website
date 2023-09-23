@@ -1,83 +1,62 @@
-#projectsection{
-  display: flex;
-  min-height: 92vh;
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-}
-
-#cardcontain{
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
-}
-
-#buttoncontain{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-  
-}
-
-
-.change{
+#projectdiv{
   position: relative;
-  font-size: 5rem;
-  color: black;
-  width: 20%;
-  font-family: cursive;
-  cursor: pointer;
-  border-radius: 2rem;
-  outline: none;
-  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 3.275);
-  
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #1e1e1e;
 }
 
-@keyframes colourchange {
-  0%{
-    color: black;
+#gridcontainer{
+  position: relative;
+  display: flex;
+  height: 480px;
+  border-radius: 18px;
+  width: fit-content;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding: 1rem;
+  top: 10%;
+}
+
+#cardcontainer{
+  height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  column-gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  /* overflow: hidden; */
+  background: #1e1e1e;
+
+}
+
+@media only screen and (min-width: 600px ) and (max-width:900px) {
+  #cardcontainer{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
   }
-  50%{
-    color: rgb(0, 165, 253);
-  }
-  100%{
-    color: black;
+
+  #gridcontainer{
+    height: 490px;
   }
 
 }
 
-.change:hover{
-  transform: scale(1.1);
-}
+@media screen and (min-width:900px) {
+  #cardcontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
 
-.change:hover #path1{
-  animation: colourchange 1s ease 0.8s infinite alternate;
-}
+  #gridcontainer{
+    height: 490px;
+    padding-bottom: 20rem;
+  }
 
-.change:hover #path2{
-  animation: colourchange 1s ease 0.6s infinite alternate;
-}
-
-.change:hover #path3{
-  animation: colourchange 1s ease 0.2s infinite alternate;
-}
-
-
-.change:hover #path4{
-  /* box-shadow: 0px 10px 10px white; */
-  transform: scale(1.2);
-  animation: colourchange 1s ease 0.2s infinite alternate;
-}
-
-.change:hover #path5{
-  animation: colourchange 1s ease 0.6s infinite alternate;
-}
-
-.change:hover #path6{
-  animation: colourchange 1s ease 0.8s infinite alternate;
-}
-
-
-@media (max-width: 1300px) {
 }
