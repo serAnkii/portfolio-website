@@ -19,4 +19,4 @@ const Projectnav = () => {
   );
 };
 
-export default Projectnav;
+export {Projectnav};

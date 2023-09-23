@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.css";
-import Projectnav from "./projectnav";
+import {Projectnav} from "./Projectnav"
 import { ProjectCards } from "./ProjectCards";
 import { data } from "./api";
 function Projects() {
