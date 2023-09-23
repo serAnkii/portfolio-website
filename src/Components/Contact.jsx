@@ -1,9 +1,11 @@
 import React from "react";
 import "../css/contact.css";
+import ContactNav from "./ContactNav ";
 import {AiOutlineGithub ,AiOutlineLinkedin, AiOutlineInstagram,AiOutlineTwitter} from 'react-icons/ai'
 const Contact = () => {
   return (
     <div className="common" id="contactdiv">
+      <ContactNav/>
       <span class="bigcircle"></span>
       <img src="/shape.png" class="square" alt="" />
       <div className="form">
@@ -31,16 +33,16 @@ const Contact = () => {
           <div className="socialmedia">
             <p>Find me here :</p>
             <div className="socialicons">
-              <a href="">
+              <a href="https://github.com/serAnkii/" target="_blank">
                 <i><AiOutlineGithub/></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ankit-negi-63289621a/" target="_blank">
                 <i><AiOutlineLinkedin/></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/ankit_negi______/" target="_blank">
                 <i><AiOutlineInstagram/></i>
               </a>
-              <a href="#">
+              <a href="https://twitter.com/AnkitNe14613482" target="_blank">
                 <i><AiOutlineTwitter/></i>
               </a>
             </div>
@@ -49,7 +51,7 @@ const Contact = () => {
         <div className="contactform">
           <span className="circle one"></span>
           <span className="circle two"></span>
-          <form action="index.html" autocomplete="off">
+          <form action="https://formspree.io/f/xwkjzqpr" autocomplete="off" method="post">
             <h3 className="title">Contact me</h3>
             <div className="inputcontainer">
               <input type="text" name="name" className="input" required />
@@ -76,4 +78,3 @@ const Contact = () => {
 
 export { Contact };
 
-// https://formspree.io/f/xwkjzqpr
