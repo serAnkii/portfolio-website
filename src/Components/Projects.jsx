@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./projects.css";
 import Projectnav from "./projectnav";
 import { ProjectCards } from "./ProjectCards";
@@ -11,7 +11,6 @@ function Projects() {
         <div id="cardcontainer">
           <ProjectCards data={data} />
         </div>
-
       </div>
     </div>
   );
