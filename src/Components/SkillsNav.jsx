@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/skillnav.css"
+
 const SkillsNav = () => {
   return (
     <div id="skillsnav">

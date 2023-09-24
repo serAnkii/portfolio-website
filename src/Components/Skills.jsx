@@ -1,34 +1,53 @@
 import React from "react";
-import "../css/skills.css"
+import "../css/skills.css";
 import SkillsNav from "./SkillsNav.jsx";
+import {
+  SiCplusplus,
+  SiCsharp,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiPhp,
+  SiReact,
+  SiNextdotjs,
+  SiDotnet,
+  SiPython,
+  SiMysql,
+  SiMongodb,
+  SiGit,
+  SiGithub,
+  SiAdobephotoshop,
+} from "react-icons/si";
 import styled from "styled-components";
 import { images } from "./tech.js";
 const Skills = () => {
   return (
     <div id="skills" className="common">
-      <SkillsNav/>
-      
-      {/* <h1 className="mainh1">My Tech Stack</h1> */}
-      {/* <div id="techcontain">
-      <div id="tech">
-        {images.map((image, index) => {
-          return (
-            <>
-              <div className="skillsec">
-                <Img
-                  key={index}
-                  src={image.primary_url}
-                  alt={image.name}
-                  changeimg={image.secondary_url}
-                />
-                <h1>{image.name}</h1>
-              </div>
-            </>
-          );
-
-        })}
+      <SkillsNav />
+      <div id="skillscontainer">
+        <div id="techstack">
+          <SiCplusplus className="skillicons" fill="#00427e" />
+          <SiCsharp className="skillicons" fill="#95478e" />
+          <SiHtml5 className="skillicons" fill="#dd4b25"/>
+          <SiCss3 className="skillicons" fill="blue"/>
+          <SiJavascript className="skillicons" fill="#f3c900" />
+          
+          <SiPhp className="skillicons" fill="#7377ad"/>
+          <div className="gridheading">
+            <h1>Tech stack</h1>
+          </div>
+          <SiNextdotjs className="skillicons" />
+          
+          <SiReact className="skillicons"fill="#05bbdd" />
+          <SiPython className="skillicons" fill="#3470a2"/>
+          <SiMysql className="skillicons" fill="#045f87" />
+          <SiMongodb className="skillicons" fill="#4ea441" />
+          <SiGit className="skillicons" fill="#e84d31" />
+          <SiGithub className="skillicons" />
+          <SiDotnet className="skillicons" fill="#5c2d91" />
+          
+        </div>
       </div>
-      </div> */}
     </div>
   );
 };

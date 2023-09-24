@@ -7,29 +7,136 @@
   border-bottom: none;
 }
 
-#techcontain {
+#skillscontainer {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-  overflow-y: scroll;
 }
 
-#tech {
-  /* background-color: aqua; */
-  overflow: hidden;
+#techstack {
+  height: fit-content;
+  width: fit-content;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.148);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 1.5rem;
+  /* grid-template-columns: repeat(15,minmax(40px,1fr)); */
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,1fr);
+  /* grid-template-areas:
+    "a b c d e"
+    "n o o o f"
+    "m o o o g"
+    "l k j i h"; */
+
+  /* grid-template-rows: repeat(4, 25%); */
+}
+
+/* .skillicons:nth-child(1) {
+  grid-area: a;
+}
+
+.skillicons:nth-child(2) {
+  grid-area: b;
+}
+
+.skillicons:nth-child(3) {
+  grid-area: c;
+}
+
+.skillicons:nth-child(4) {
+  grid-area: d;
+}
+
+.skillicons:nth-child(5) {
+  grid-area: e;
+}
+
+.skillicons:nth-child(6) {
+  grid-area: f;
+}
+
+.skillicons:nth-child(7) {
+  grid-area: g;
+}
+
+.skillicons:nth-child(8) {
+  grid-area: h;
+}
+
+.skillicons:nth-child(9) {
+  grid-area: i;
+}
+
+.skillicons:nth-child(10) {
+  grid-area: j;
+}
+
+.skillicons:nth-child(11) {
+  grid-area: k;
+}
+
+.skillicons:nth-child(12) {
+  grid-area: l;
+}
+
+.skillicons:nth-child(13) {
+  grid-area: m;
+}
+
+.skillicons:nth-child(14) {
+  grid-area: n;
+} */
+
+.skillicons {
+  font-size: 4rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+#techstack h1 {
+  /* background-color: aqua */
+  font-family: "Rubik Pixels";
+}
+
+.gridheading {
+  grid-area: o;
   height: 100%;
   width: 100%;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/grid.jpg");
+  border-radius: 18px;
+  background-size: cover;
+  grid-row: span 2;
+  grid-column: span 2;
 }
 
-.skillsec h1 {
-  line-height: 10px;
-  color: #fbfbfb;
-  text-transform: uppercase;
+@media screen and (max-width: 560px) {
+  #techstack {
+    grid-template-columns: repeat(auto-fill,2fr); /* Define your desired grid layout for small screens */
+    grid-template-rows: repeat(auto-fill,2fr) ;
+    /* height: 80%; */
+    position: relative;
+    top: 5%;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .gridheading {
+    display: none;
+  }
+
+  .skillicons{
+    font-size: 3rem;
+  }
 }

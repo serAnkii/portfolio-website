@@ -2,6 +2,7 @@ import React from "react";
 import "../css/aboutnavbar.css";
 const AboutNav = () => {
   return (
+
     <div id="aboutnav">
       <div id="logo">
         <h1>ANKIT</h1>
@@ -13,9 +14,8 @@ const AboutNav = () => {
         <li className="link"><a href="#projectdiv">Projects</a></li>
         <li className="link"><a href="#contactdiv">Contact</a></li>
       </ul>
-
-      
     </div>
+
   );
 };
 
