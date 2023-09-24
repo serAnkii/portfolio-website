@@ -54,14 +54,20 @@
   text-shadow: 0 0 3px black;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 850px) {
   
-  #aboutnav{
-    margin-top:2% ;
+  #contactnav{
+    top: 1%;
   }
 
   #links{
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media screen and (max-height:554px) {
+  #contactnav{
+    display: none;
   }
 }

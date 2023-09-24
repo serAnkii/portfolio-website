@@ -299,6 +299,9 @@ form {
   }
   
   @media (max-width: 850px) {
+  
+
+
     .form {
       grid-template-columns: 1fr;
     }
@@ -382,4 +385,10 @@ form {
     .btn {
       padding: 0.45rem 1.2rem;
     }
+  }
+
+  @media screen and (max-height:554px) {
+    #contactdiv{
+      padding-top: 2rem;
+  }
   }

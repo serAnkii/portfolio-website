@@ -64,3 +64,9 @@
         top: -5%;
     }
 }
+
+@media screen and (max-height:554px) {
+ #projectnav{
+  display: none;
+ }
+}

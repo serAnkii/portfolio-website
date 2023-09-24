@@ -102,3 +102,39 @@ box-shadow: 2px 8px 10px #9d2ab4,2px -8px 10px #ea8643;
     left: 20%;
   }
 }
+
+
+@media screen and (max-height:554px) {
+  #greeting{
+    
+    top: calc(50% - 200px);
+    backdrop-filter: blur(1px);
+  }
+
+  #profile{
+    display: none;
+  }
+
+  #about{
+    background: url("/ankit.jpg");
+    background-color: #f3f3f3;
+    /* background-size: 50%; */
+    background-size: contain;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+  }
+
+  #para{
+    height: 50vh;
+    width: 80%;
+    right: -1%;
+    bottom: 10%;
+    background-color: #9d2ab481;
+    backdrop-filter: blur(1px);
+  }
+
+  #para p{
+    color: black;
+  }
+
+}

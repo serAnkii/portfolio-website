@@ -62,3 +62,14 @@
   }
 
 }
+
+
+@media screen and (max-height:554px) {
+  #gridcontainer{
+    
+    height: 480px;
+    top: 0%;
+  }
+  
+}
+

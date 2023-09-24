@@ -8,8 +8,8 @@ const Skills = () => {
     <div id="skills" className="common">
       <SkillsNav/>
       
-      <h1 className="mainh1">My Tech Stack</h1>
-      <div id="techcontain">
+      {/* <h1 className="mainh1">My Tech Stack</h1> */}
+      {/* <div id="techcontain">
       <div id="tech">
         {images.map((image, index) => {
           return (
@@ -28,7 +28,7 @@ const Skills = () => {
 
         })}
       </div>
-      </div>
+      </div> */}
     </div>
   );
 };

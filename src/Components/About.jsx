@@ -1,25 +1,9 @@
 import React, { useState } from "react";
-import TypewriterComponent from "typewriter-effect";
 import "./about.css";
 import AboutNav from "./AboutNav";
 
 export function About() {
-  function text(typewriter) {
-    typewriter
-      .typeString("STUDENT")
-      .pauseFor(2000)
-      .deleteAll()
-      .callFunction(changeimage1)
-      .typeString("PROGRAMMER")
-      .pauseFor(2000)
-      .deleteAll()
-      .callFunction(changeimage2)
-      .typeString("WEB_DEVELOPER")
-      .pauseFor(2000)
-      .deleteAll()
-      .callFunction(changeimage3)
-      .start();
-  }
+ 
 
   return (
     <div className="common" id="about">
