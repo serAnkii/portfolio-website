@@ -8,6 +8,7 @@
   border-top:none ;
   outline: none;
   position: relative;
+  overflow: hidden;
 }
 
 #greeting{
