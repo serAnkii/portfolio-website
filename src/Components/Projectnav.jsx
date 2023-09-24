@@ -8,12 +8,13 @@ const Projectnav = () => {
         <h2>Negi</h2>
       </div>
       <ul id="links">
-        <li className="link" id="active">
-        Projects
+      <li className="link" id="active">
+          Projects
         </li>
-        <li className="link">Contact</li>
-        <li className="link">About</li>
-        <li className="link">Skills</li>
+        <li className="link"><a href="#contactdiv">Contact </a></li>
+        <li className="link"> <a href="#about"> About </a></li>
+        <li className="link"> <a href="#skills"> Skills </a></li>
+        
       </ul>
     </div>
   );

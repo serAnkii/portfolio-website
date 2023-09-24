@@ -11,9 +11,9 @@ const SkillsNav = () => {
         <li className="link" id="active">
           Skills
         </li>
-        <li className="link">Projects</li>
-        <li className="link">Contact</li>
-        <li className="link">About</li>
+        <li className="link"> <a href="#projectdiv"> Projects </a></li>
+        <li className="link"><a href="#contactdiv">Contact </a></li>
+        <li className="link"> <a href="#about"> About </a></li>
       </ul>
     </div>
   );

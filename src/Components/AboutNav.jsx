@@ -9,9 +9,9 @@ const AboutNav = () => {
       </div>
       <ul id="links">
         <li className="link" id="active">About</li>
-        <li className="link">Skills</li>
-        <li className="link">Projects</li>
-        <li className="link">Contact</li>
+        <li className="link"><a href="#skills">Skills</a></li>
+        <li className="link"><a href="#projectdiv">Projects</a></li>
+        <li className="link"><a href="#contactdiv">Contact</a></li>
       </ul>
 
       
