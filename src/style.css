@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins:wght@100&family=Press+Start+2P&family=Rubik+Wet+Paint&display=swap');
 
 *,*::after,*::before{
   padding: 0;
@@ -11,7 +12,8 @@
 a{
   text-decoration: none;
   color: #f3f3f3;
-  font-family: "Rubik Pixels";
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
 }
 
 #wrapper{

@@ -47,20 +47,18 @@
   text-shadow: 0 0 3px black;
 }
 
+
 @media only screen and (min-width: 768px) {
   
-  #aboutnav{
-    margin-top:2% ;
-  }
-
+  
   #links{
-    flex-direction: row;
+    flex-direction: row !important;
     gap: 20px;
   }
 }
 
 @media screen and (max-height:554px) {
-  #aboutnav{
+  #skillsnav{
     display: none;
   } 
 

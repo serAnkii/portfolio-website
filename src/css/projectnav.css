@@ -63,6 +63,11 @@
     #projectnav{
         top: -5%;
     }
+
+    #links{
+      flex-direction: row !important;
+      gap: 20px;
+    }
 }
 
 @media screen and (max-height:554px) {

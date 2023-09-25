@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/skills.css";
 import SkillsNav from "./SkillsNav.jsx";
+
 import {
   SiCplusplus,
   SiCsharp,
@@ -18,34 +19,119 @@ import {
   SiGithub,
   SiAdobephotoshop,
 } from "react-icons/si";
+import { GiRobotGolem } from "react-icons/gi";
+import { TbHexagonLetterA } from "react-icons/tb";
+import { MdInterests } from "react-icons/md";
 import styled from "styled-components";
-import { images } from "./tech.js";
 const Skills = () => {
+  const skillsData = [
+    {
+      icon: <SiCplusplus className="skillicons" fill="#00427e" />,
+      name: "C++",
+    },
+    {
+      icon: <SiCsharp className="skillicons" fill="#95478e" />,
+      name: "Csharp",
+    },
+    {
+      icon: <SiHtml5 className="skillicons" fill="#dd4b25" />,
+      name: "HTML5",
+    },
+    {
+      icon: <SiCss3 className="skillicons" fill="blue" />,
+      name: "CSS3",
+    },
+    {
+      icon: <SiJavascript className="skillicons" fill="#f3c900" />,
+      name: "Javascript",
+    },
+    {
+      icon: <SiPhp className="skillicons" fill="#7377ad" />,
+      name: "Php",
+    },
+    {
+      icon: <SiReact className="skillicons" fill="#05bbdd" />,
+      name: "React",
+    },
+    {
+      icon: <SiNextdotjs className="skillicons" />,
+      name: "Next.js",
+    },
+    {
+      icon: <SiDotnet className="skillicons" fill="#5c2d91" />,
+      name: "Dotnet",
+    },
+    {
+      icon: <SiMysql className="skillicons" fill="#045f87" />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiMongodb className="skillicons" fill="#4ea441" />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiPython className="skillicons" fill="#3470a2" />,
+      name: "Python",
+    },
+    {
+      icon: <SiGit className="skillicons" fill="#e>84d31" />,
+      name: "Git",
+    },
+    {
+      icon: <SiGithub className="skillicons" />,
+      name: "GitHub",
+    },
+  ];
   return (
     <div id="skills" className="common">
-      <SkillsNav />
-      <div id="skillscontainer">
-        <div id="techstack">
-          <SiCplusplus className="skillicons" fill="#00427e" />
-          <SiCsharp className="skillicons" fill="#95478e" />
-          <SiHtml5 className="skillicons" fill="#dd4b25"/>
-          <SiCss3 className="skillicons" fill="blue"/>
-          <SiJavascript className="skillicons" fill="#f3c900" />
-          
-          <SiPhp className="skillicons" fill="#7377ad"/>
-          <div className="gridheading">
-            <h1>Tech stack</h1>
+      <aside>
+        <SkillsNav />
+        <div id="learning">
+          <div id="learninghead">
+            <h1>
+              INTERESTS
+            </h1>
+            <i>
+                <MdInterests fill="#19c37d" />
+              </i>
           </div>
-          <SiNextdotjs className="skillicons" />
-          
-          <SiReact className="skillicons"fill="#05bbdd" />
-          <SiPython className="skillicons" fill="#3470a2"/>
-          <SiMysql className="skillicons" fill="#045f87" />
-          <SiMongodb className="skillicons" fill="#4ea441" />
-          <SiGit className="skillicons" fill="#e84d31" />
-          <SiGithub className="skillicons" />
-          <SiDotnet className="skillicons" fill="#5c2d91" />
-          {/* blockchain,java,jquery,node.js,redux,sass,tailwind. */}
+          <div id="inter">
+          <h1>Improving Myself Everyday</h1>
+          <h1>Artificial Intelligence</h1>
+          <h1>DSA Problem Solving  </h1>
+          <h1>Playing Chess</h1>
+          <h1>Watching Movies/Shows </h1>
+          </div>
+        </div>
+      </aside>
+      <div id="skillsparent">
+        <div id="skill-heading">
+          <h1>Default (Skill-GPT-3.5)</h1>
+        </div>
+        <div id="responsecontainer">
+          <div id="question">
+            <TbHexagonLetterA
+              className="resicon"
+              fill="#5d6ac0"
+              stroke="white"
+            />
+            <h1>List all the Skills</h1>
+          </div>
+          <div id="response">
+            <GiRobotGolem
+              className="resicon"
+              id="responseicon"
+              fill="#19c37d"
+            />
+            <div className="skills-container">
+              {skillsData.map((skill, index) => (
+                <div className="skill" key={index}>
+                  <i className="skillicon">{skill.icon}</i>
+                  <h3 id="skill-name">{skill.name}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -54,10 +140,21 @@ const Skills = () => {
 
 export default Skills;
 
-const Img = styled.img`
-  height: 5rem;
-  width: 5rem;
-  &:hover {
-    content: url(${(props) => props.changeimg});
-  }
-`;
+//
+//
+//
+
+/* blockchain,java,jquery,node.js,redux,sass,tailwind. */
+
+//
+//
+
+//
+//
+//
+//
+//
+//
+//
+//
+//

@@ -1,74 +1,73 @@
-#skillsnav{
-    display: flex;
-    height: 10vh;
-    width: 90%;
-    justify-content: space-around;
-    background-color: #ffffff43;
-    box-shadow: 0 0 5px rgba(0,0,0,0.9);
-    margin-left:5%;
-    margin-top: 1%;
-    border-radius: 10px;
-    backdrop-filter: blur(2px);
-    z-index: 1000;
-    position: absolute ;
+  #skillsnav{
+    display: grid ;
+    grid-template-rows: 20% auto;
+    border-bottom: 1px solid #424549;
+    
   }
 
-#skillsnav a{
-  color: #a58cb2;
-}
-  
-#skillsnav  #logo{
+  #skillhead{
+    padding: 0.5rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    color: black;
-    text-shadow: 0 0 10px #013d7c;
-    line-height: 10px;
-  }
-#skillsnav  #logo h2{
-    color: #c8bca2;
-  }
-  
-  #links{
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-  
-  .link{
-    font-size: 30px;
-    scroll-snap-align: center;
-  }
-  
-  #active{
-    color: black;
-    text-transform: uppercase;
-    text-shadow: 0 0 3px black;
+    
   }
 
+  #skillsubhead{
+    border: 1px solid #4d4d4f;
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  #skillhead h1{
+    
+    color: #ffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  #skilllinks{
+    display: grid;
+    margin-left: 1rem;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .slink{
+    padding: 1rem;
+    transition: 0.1s;
+    width: 90%;
+    
+    border-radius: 18px;
+  }
+  .slink a{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #ececf1;
+    font-weight: 600;
+
+  }
   
+  .slink:hover{
+    background-color: #4d4d4f;
+  }
   
   @media only screen and (min-width: 768px) {
   
   
-    #links{
-      flex-direction: row;
-      gap: 20px;
-    }
   }
   
   @media screen and (max-height:554px) {
-    #skillsnav{
-      display: none;
-    } 
   
-    
   }
 
  

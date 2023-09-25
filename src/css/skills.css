@@ -2,141 +2,220 @@
   height: 100vh;
   width: 100%;
   z-index: 100;
-  background: url(/aboutbg.jpg);
-  background-size: 50%;
-  border-bottom: none;
-}
-
-#skillscontainer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#techstack {
-  height: fit-content;
-  width: fit-content;
-  padding: 4rem;
-  background: rgba(255, 255, 255, 0.148);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  border: 5px solid #f3f3f3;
   border-radius: 18px;
+  background: #343541;
   display: grid;
-  align-items: center;
+  grid-template-columns: 1.3fr 4.5fr;
+  grid-template-rows:1fr;
+}
+
+aside{
+  background-color: #202123;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow-y: scroll;
+  border-radius: 18px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#learning{
+  height: 100%;
+}
+
+#skillsparent{
+  display: grid;
+  overflow-y: scroll;
+  grid-template-rows:  10% 10fr !important;
+  position: relative;
+}
+
+
+
+#skill-heading{
+  border-bottom: 1px solid #2a2b32;
+  display: flex;
   justify-content: center;
   align-content: center;
-  gap: 1.5rem;
-  /* grid-template-columns: repeat(15,minmax(40px,1fr)); */
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(4,1fr);
-  /* grid-template-areas:
-    "a b c d e"
-    "n o o o f"
-    "m o o o g"
-    "l k j i h"; */
-
-  /* grid-template-rows: repeat(4, 25%); */
+  align-items: center;
 }
-
-/* .skillicons:nth-child(1) {
-  grid-area: a;
-}
-
-.skillicons:nth-child(2) {
-  grid-area: b;
-}
-
-.skillicons:nth-child(3) {
-  grid-area: c;
-}
-
-.skillicons:nth-child(4) {
-  grid-area: d;
-}
-
-.skillicons:nth-child(5) {
-  grid-area: e;
-}
-
-.skillicons:nth-child(6) {
-  grid-area: f;
-}
-
-.skillicons:nth-child(7) {
-  grid-area: g;
-}
-
-.skillicons:nth-child(8) {
-  grid-area: h;
-}
-
-.skillicons:nth-child(9) {
-  grid-area: i;
-}
-
-.skillicons:nth-child(10) {
-  grid-area: j;
-}
-
-.skillicons:nth-child(11) {
-  grid-area: k;
-}
-
-.skillicons:nth-child(12) {
-  grid-area: l;
-}
-
-.skillicons:nth-child(13) {
-  grid-area: m;
-}
-
-.skillicons:nth-child(14) {
-  grid-area: n;
-} */
-
-.skillicons {
-  font-size: 4rem;
+#skill-heading h1{
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #d9d9e3;
+  font-weight: 600;
   height: fit-content;
   width: fit-content;
 }
 
-#techstack h1 {
-  /* background-color: aqua */
-  font-family: "Rubik Pixels";
-}
-
-.gridheading {
-  grid-area: o;
-  height: 100%;
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(auto-fill,1fr);
   width: 100%;
-  display: flex;
-  align-items: center;
+}
+
+.skill {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  margin-left: 2%;
+  text-align: center;
+  border: 1px solid #565869;
+  /* padding-top: 0.5rem; */
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  color: #272822; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
   justify-content: center;
-  background: url("/grid.jpg");
-  border-radius: 18px;
-  background-size: cover;
-  grid-row: span 2;
-  grid-column: span 2;
+  align-items: center;
+  justify-items: center;
+  /* margin-right: auto;*/
+  margin-left: 7%; 
 }
 
-@media screen and (max-width: 560px) {
-  #techstack {
-    grid-template-columns: repeat(auto-fill,2fr); /* Define your desired grid layout for small screens */
-    grid-template-rows: repeat(auto-fill,2fr) ;
-    /* height: 80%; */
-    position: relative;
-    top: 5%;
+
+.skillicon {
+  font-size: 48px;
+  /* margin-bottom: 10px; */
+  color: #0084ff; /* Icon color */
+}
+
+#skill-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #272822; /* Text color */
+}
+
+#responsecontainer{
+  /* background-color: black; */
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+
+#question{
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  justify-content: center;
+  align-content: center;
+}
+
+#question h1{
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ececf1;
+  /* background-color: #0084ff; */
+  /* text-align: center; */
+
+  font-weight: 600;
+  /* height: fit-content; */
+  /* width: fit-content; */
+  margin-left: 3%;
+
+}
+
+.resicon{
+  font-size: 2rem;
+  margin-left: auto !important;
+  margin-right: 3% !important;
+}
+
+
+
+#response{
+  background-color: #444654;
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: top;
+  padding-top: 1rem;
+  
+}
+
+
+
+#response h3{
+  font-family: sans-serif;
+  color: #d1d5db;
+}
+
+
+
+#learning{
+  display: grid;
+  padding: 1rem;
+  grid-template-rows: 20% auto;
+}
+
+#learninghead{
+  border: 1px solid #4d4d4f;
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
     gap: 0.5rem;
-    padding: 1rem;
-  }
-
-  .gridheading {
-    display: none;
-  }
-
-  .skillicons{
-    font-size: 3rem;
-  }
+    align-items: center;
+    padding-left: 1rem;
 }
+
+#learninghead h1{
+  color: #ffff !important;
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+#inter{
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+}
+
+#inter h1{
+  font-size: 15px;
+  color: #8e8ea0;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  
+  #skills{
+    grid-template-columns: 1fr;
+  }
+
+  aside{
+    display: none;
+    
+  }
+
+  
+}
+
+@media (max-width: 922px) {
+  
+  
+.skills-container {
+  
+  grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (max-width: 516px) {
+  
+  #question h1{
+    margin-left: 10%;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  }

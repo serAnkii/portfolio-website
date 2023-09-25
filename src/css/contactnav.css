@@ -54,14 +54,14 @@
   text-shadow: 0 0 3px black;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 768px) {
   
   #contactnav{
     top: 1%;
   }
 
   #links{
-    flex-direction: column;
+    flex-direction: row !important;
     gap: 20px;
   }
 }
@@ -71,3 +71,4 @@
     display: none;
   }
 }
+

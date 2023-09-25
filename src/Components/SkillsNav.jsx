@@ -1,20 +1,19 @@
 import React from "react";
 import "../css/skillnav.css"
-
+import {MdOutlineArrowUpward ,MdOutlineArrowDownward} from "react-icons/md"
 const SkillsNav = () => {
   return (
     <div id="skillsnav">
-      <div id="logo">
-        <h1>ANKIT</h1>
-        <h2>Negi</h2>
+      <div id="skillhead">
+        <div id="skillsubhead">
+        <h1>Navigations</h1>
+        </div>
       </div>
-      <ul id="links">
-        <li className="link" id="active">
-          Skills
-        </li>
-        <li className="link"> <a href="#projectdiv"> Projects </a></li>
-        <li className="link"><a href="#contactdiv">Contact </a></li>
-        <li className="link"> <a href="#about"> About </a></li>
+      <ul id="skilllinks">
+        <li className="slink"> <a href="#about"> About <MdOutlineArrowUpward/></a> </li>
+        <li className="slink"> <a href="#projectdiv"> Projects <MdOutlineArrowDownward/></a></li>
+        <li className="slink"><a href="#contactdiv">Contact <MdOutlineArrowDownward/></a></li>
+        
       </ul>
     </div>
   );
