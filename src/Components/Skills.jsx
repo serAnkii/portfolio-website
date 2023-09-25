@@ -45,7 +45,7 @@ const Skills = () => {
           <SiGit className="skillicons" fill="#e84d31" />
           <SiGithub className="skillicons" />
           <SiDotnet className="skillicons" fill="#5c2d91" />
-          
+          {/* blockchain,java,jquery,node.js,redux,sass,tailwind. */}
         </div>
       </div>
     </div>
