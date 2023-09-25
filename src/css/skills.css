@@ -8,9 +8,11 @@
   display: grid;
   grid-template-columns: 1.3fr 4.5fr;
   grid-template-rows:1fr;
+  position: relative;
 }
 
 aside{
+  position: relative;
   background-color: #202123;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -185,30 +187,77 @@ aside{
   font-family: 'Courier New', Courier, monospace;
 
 }
-/* Media Queries for Responsiveness */
+
+#statebutton{
+  z-index: 100000;
+  position: absolute;
+  display: none;
+}
+
+#closestate{
+  position: absolute;
+  display: none;
+}
+
 @media (max-width: 768px) {
   
   #skills{
     grid-template-columns: 1fr;
   }
 
+  #statebutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 5vw;
+    width: 15%;
+    height: 4%;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: #d9d9e3;
+    font-family: 'Press Start 2P', cursive;
+
+
+  }
+  /*this component is present in skillnav.jsx*/
+  #closestate{
+    display: flex;
+    z-index: 100000000;
+    color: #ffff;
+    right: 5vw;
+    width: 20%;
+    font-family: 'Press Start 2P', cursive;
+ 
+    border-radius: 18px;
+    background-color: transparent;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
   aside{
-    display: none;
-    
+    z-index: 10000000;
+    position: absolute;
+    height: 100%;
   }
 
   
 }
 
-@media (max-width: 922px) {
-  
-  
-.skills-container {
-  
-  grid-template-columns: repeat(2,1fr);
-}
-}
 
+
+
+  @media (max-width: 922px) {
+  
+  
+    .skills-container {
+      
+      grid-template-columns: repeat(2,1fr);
+    }
+    }
+
+    
 @media (max-width: 516px) {
   
   #question h1{

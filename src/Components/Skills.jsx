@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import "../css/skills.css";
 import SkillsNav from "./SkillsNav.jsx";
 
@@ -24,6 +24,7 @@ import { TbHexagonLetterA } from "react-icons/tb";
 import { MdInterests } from "react-icons/md";
 import styled from "styled-components";
 const Skills = () => {
+  const [isAsideOpen, setIsAsideOpen] = useState(false); // State to track aside position
   const skillsData = [
     {
       icon: <SiCplusplus className="skillicons" fill="#00427e" />,
@@ -82,10 +83,19 @@ const Skills = () => {
       name: "GitHub",
     },
   ];
+
+  const toggleAside = () => {
+    setIsAsideOpen(!isAsideOpen); // Toggle the state to open/close the aside
+  };
+
+  const asideStyle = {
+    left: isAsideOpen ? "0px" : "-1000px", // Set the left position based on the state
+  };
+
   return (
     <div id="skills" className="common">
-      <aside>
-        <SkillsNav />
+      <aside id="sidediv" style={asideStyle}>
+        <SkillsNav  func={toggleAside}/>
         <div id="learning">
           <div id="learninghead">
             <h1>
@@ -106,6 +116,7 @@ const Skills = () => {
       </aside>
       <div id="skillsparent">
         <div id="skill-heading">
+        <button id="statebutton" onClick={toggleAside}>+</button>
           <h1>Default (Skill-GPT-3.5)</h1>
         </div>
         <div id="responsecontainer">

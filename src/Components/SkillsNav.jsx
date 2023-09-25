@@ -1,11 +1,13 @@
 import React from "react";
 import "../css/skillnav.css"
 import {MdOutlineArrowUpward ,MdOutlineArrowDownward} from "react-icons/md"
-const SkillsNav = () => {
+const SkillsNav = (props) => {
   return (
     <div id="skillsnav">
       <div id="skillhead">
         <div id="skillsubhead">
+        
+      <button id="closestate" onClick={props.func}>X</button>
         <h1>Navigations</h1>
         </div>
       </div>

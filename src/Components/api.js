@@ -62,3 +62,4 @@ export const data = [
   shadowcolor:"#ff4c4c"
 },
 ];
+
