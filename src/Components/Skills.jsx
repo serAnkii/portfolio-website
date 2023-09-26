@@ -24,7 +24,7 @@ import { TbHexagonLetterA } from "react-icons/tb";
 import { MdInterests } from "react-icons/md";
 import styled from "styled-components";
 const Skills = () => {
-  const [isAsideOpen, setIsAsideOpen] = useState(false); // State to track aside position
+  const [isAsideOpen, setIsAsideOpen] = useState(true); // State to track aside position
   const skillsData = [
     {
       icon: <SiCplusplus className="skillicons" fill="#00427e" />,
