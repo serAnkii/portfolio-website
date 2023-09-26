@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React , {useState, useEffect} from "react";
 import "../css/skills.css";
 import SkillsNav from "./SkillsNav.jsx";
 
@@ -84,6 +84,7 @@ const Skills = () => {
     },
   ];
 
+
   const toggleAside = () => {
     document.getElementById("sidediv").style.left = "0px"
     setIsAsideOpen(!isAsideOpen); // Toggle the state to open/close the aside
@@ -93,9 +94,31 @@ const Skills = () => {
     document.getElementById("sidediv").style.left = "-1000px"
     setIsAsideOpen(!isAsideOpen); // Toggle the state to open/close the aside
   };
-  // const asideStyle = {
-  //   left: isAsideOpen ? "-1000px" : "0px" , // Set the left position based on the state
-  // };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      const sidediv = document.getElementById("sidediv");
+
+      if (windowWidth > 780) {
+        sidediv.style.left = "0px";
+      } else {
+        sidediv.style.left = "-1000px";
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <div id="skills" className="common">
