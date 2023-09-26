@@ -100,7 +100,7 @@ const Skills = () => {
       const windowWidth = window.innerWidth;
       const sidediv = document.getElementById("sidediv");
 
-      if (windowWidth > 780) {
+      if (windowWidth > 760) {
         sidediv.style.left = "0px";
       } else {
         sidediv.style.left = "-1000px";
