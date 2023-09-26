@@ -85,17 +85,22 @@ const Skills = () => {
   ];
 
   const toggleAside = () => {
+    document.getElementById("sidediv").style.left = "0px"
     setIsAsideOpen(!isAsideOpen); // Toggle the state to open/close the aside
   };
 
-  const asideStyle = {
-    left: isAsideOpen ? "0px" : "-1000px", // Set the left position based on the state
+  const closeaside = () => {
+    document.getElementById("sidediv").style.left = "-1000px"
+    setIsAsideOpen(!isAsideOpen); // Toggle the state to open/close the aside
   };
+  // const asideStyle = {
+  //   left: isAsideOpen ? "-1000px" : "0px" , // Set the left position based on the state
+  // };
 
   return (
     <div id="skills" className="common">
-      <aside id="sidediv" style={asideStyle}>
-        <SkillsNav  func={toggleAside}/>
+      <aside id="sidediv" >
+        <SkillsNav  func={closeaside}/>
         <div id="learning">
           <div id="learninghead">
             <h1>
