@@ -25,7 +25,7 @@ export const data = [
     name: "FaceSync-Attendance-Automation",
     description:"This uses KNN classifier to automatically identify and record attendance of individuals based on their unique facial features.",
     group: "ml",
-    image: "",
+    image: "url('/face.png')",
     repo: "",
     
     shadowcolor:"#68c9c0"
@@ -47,7 +47,7 @@ export const data = [
   description:
     "The food distribution system using blockchain is a transparent and secure network that tracks the movement of food from farm to table, ensuring food safety and reducing waste.",
   group: "blockchain",
-  image: "",
+  image: "url('/block.png')",
   repo: "",
   deploy: "",
   shadowcolor:"#37bc9b"

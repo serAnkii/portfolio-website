@@ -25,7 +25,7 @@
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-position: center !important;
-  background-size: 50% !important;
+  background-size: cover !important;
 
   background-repeat: no-repeat !important;
 }
