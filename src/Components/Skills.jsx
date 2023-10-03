@@ -106,7 +106,7 @@ const Skills = () => {
         sidediv.style.left = "-1000px";
       }
     };
-
+    
     // Initial check
     handleResize();
 

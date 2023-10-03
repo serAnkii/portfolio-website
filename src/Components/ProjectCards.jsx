@@ -15,7 +15,7 @@ const ProjectCards = (props) => {
               </div>
 
               <div id="linktogithub">
-                <a href={repo}>Code <sup>Link</sup></a>
+                <a href={repo}>Code Link</a>
               </div>
 
               <div id="cardtext">

@@ -5,9 +5,9 @@
     width: 90%;
     top: 0;
     justify-content: space-around;
-    background-color: #3735358b;
+    background-color: #f3f3f38b;
     margin-left:5%;
-    margin-top: 5%;
+    margin-top: 4%;
     border-radius: 10px;
     backdrop-filter: blur(5px);
   }
@@ -18,15 +18,15 @@
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 0 0 10px #013d7c;
+    text-shadow: 0 0 10px #1abc9d;
     line-height: 10px;
   }
 #projectnav  #logo h2{
-    color: #04579b;
+    color: #1abc9d;
   }
   
   #links{
-    color: #f3f3f3;
+    color: #1abc9d !important;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -47,6 +47,7 @@
     text-shadow: 0 0 3px black;
   }
   
+
   @media only screen and (min-width: 768px) {
     
     #aboutnav{

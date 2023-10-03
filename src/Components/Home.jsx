@@ -20,6 +20,7 @@ const Home = () => {
         
       </div>
       {/* <img src="/paralleximg/fog_2.png" alt="" className="parallex" id="fog" /> */}
+      <img id="bub" className="parallex" src="/nezubub.png" alt="" />
       <h1 id="fog" className="parallex">YOU JUST FOUND THE RIGHT GUY</h1>
       <img src="/paralleximg/trees.png" className="parallex" id="trees" />
       <img src="/paralleximg/rocks.png" className="parallex" id="rocks" />

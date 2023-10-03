@@ -70,6 +70,13 @@
   top: 45vh;
 }
 
+#bub{
+  transform: translateZ(-150px) scale(1.5);
+  font-family: 'Press Start 2P', cursive;
+  top: -20%;
+  display: none;
+}
+
 
 
 #hometext{

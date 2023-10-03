@@ -14,8 +14,8 @@ export default function App() {
       <div id="wrapper">        
         <Home />
         <About />
-        <Skills/>
         <Projects />
+        <Skills/>
         <Contact />
         {/* <Footer /> */}
       </div>

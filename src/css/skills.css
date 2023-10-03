@@ -4,7 +4,8 @@
   z-index: 100;
   border: 5px solid #f3f3f3;
   border-radius: 18px;
-  background: #343541;
+  /* background: #343541; */
+  /* background-color: #1abc9c; */
   display: grid;
   grid-template-columns: 1.3fr 4.5fr;
   grid-template-rows:1fr;
@@ -13,7 +14,8 @@
 
 aside{
   position: relative;
-  background-color: #202123;
+  /* background-color: #202123; */
+  background-color: #1abc9c;
   display: grid;
   grid-template-rows: 1fr 1fr;
   overflow-y: scroll;
@@ -36,7 +38,7 @@ aside{
 
 
 #skill-heading{
-  border-bottom: 1px solid #2a2b32;
+  border-bottom: 1px solid #1abc9c;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -45,7 +47,8 @@ aside{
 #skill-heading h1{
   font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #d9d9e3;
+  /* color: #d9d9e3; */
+  color: #1abc9c;
   font-weight: 600;
   height: fit-content;
   width: fit-content;
@@ -63,7 +66,7 @@ aside{
   margin: 10px;
   margin-left: 2%;
   text-align: center;
-  border: 1px solid #565869;
+  border: 1px solid #1abc9c;
   /* padding-top: 0.5rem; */
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -72,7 +75,8 @@ aside{
   height: fit-content;
   width: fit-content;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  color: #272822; 
+  /* color: #272822;  */
+  color: #1abc9c;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
@@ -87,13 +91,13 @@ aside{
 .skillicon {
   font-size: 48px;
   /* margin-bottom: 10px; */
-  color: #0084ff; /* Icon color */
+  color: #1abc9c; /* Icon color */
 }
 
 #skill-name {
   font-size: 18px;
   margin: 10px 0;
-  color: #272822; /* Text color */
+  color: #1abc9c; /* Text color */
 }
 
 #responsecontainer{
@@ -112,7 +116,8 @@ aside{
 #question h1{
   font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #ececf1;
+  /* color: #ececf1; */
+  color: #1abc9c;
   /* background-color: #0084ff; */
   /* text-align: center; */
 
@@ -132,7 +137,7 @@ aside{
 
 
 #response{
-  background-color: #444654;
+  background-color: #f3f3f3;
   display: grid;
   grid-template-columns: 1.5fr 5fr;
   justify-content: center;
@@ -146,7 +151,8 @@ aside{
 
 #response h3{
   font-family: sans-serif;
-  color: #d1d5db;
+  /* color: #d1d5db; */
+  color: #1abc9c;
 }
 
 
@@ -158,7 +164,7 @@ aside{
 }
 
 #learninghead{
-  border: 1px solid #4d4d4f;
+  border: 1px solid #f3f3f3;
     height: 100%;
     width: 100%;
     border-radius: 18px;
@@ -183,7 +189,7 @@ aside{
 
 #inter h1{
   font-size: 15px;
-  color: #8e8ea0;
+  color: #f3f3f3;
   font-family: 'Courier New', Courier, monospace;
 
 }
@@ -213,9 +219,11 @@ aside{
     width: 15%;
     height: 4%;
     border-radius: 6px;
-    background-color: transparent;
+    background-color: #1abc9c;
     padding: 0.5rem;
-    color: #d9d9e3;
+    border: none;
+    color: #f3f3f3;
+    
     font-family: 'Press Start 2P', cursive;
 
 
@@ -224,13 +232,14 @@ aside{
   #closestate{
     display: flex;
     z-index: 100000000;
-    color: #ffff;
+    color: #1abc9c;
+    border:none ;
     right: 5vw;
     width: 20%;
     font-family: 'Press Start 2P', cursive;
  
     border-radius: 18px;
-    background-color: transparent;
+    background-color: #f3f3f3;
     padding: 0.5rem;
     align-items: center;
     justify-content: center;

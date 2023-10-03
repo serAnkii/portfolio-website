@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .form{
@@ -22,7 +23,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
 }
 
@@ -32,8 +33,10 @@
 */
 .contactform{
     background-color: #1abc9c;
+
     position: relative;
-} 
+    height: 120%;
+  } 
 
 .contactform::before{
     content: "";
@@ -74,14 +77,19 @@ form {
     z-index: 10;
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   
   .title {
     color: #fff;
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 0.9;
+    letter-spacing: 1px;
+ 
     margin-bottom: 0.7rem;
+    
+    font-family: 'Press Start 2P', cursive !important;
   }
   
   .inputcontainer {
@@ -299,8 +307,23 @@ form {
   }
   
   @media (max-width: 850px) {
-  
+    
 
+
+   .info{
+    display: none;
+   }
+   .text{
+    display: none;
+   }
+
+   .title{
+    display: none;
+   }
+
+   .findme{
+    font-family: 'Press Start 2P', cursive !important;
+   }
 
     .form {
       grid-template-columns: 1fr;

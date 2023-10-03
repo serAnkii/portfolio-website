@@ -1,19 +1,24 @@
 .card{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 210px 40px 200px ;
+  grid-template-rows: 220px 40px 200px ;
   grid-template-areas: "image" "link" "text";
   font-family: Roboto;
   border-radius: 18px;
-  background: #1d1d1d;
+  
   color: white;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  /* border: 1px solid #1abc9c; */
+  box-shadow: 5px 5px 15px #1abc9c69;
   text-align: justify;
   transform-style: flat;
   perspective: 10px;
   z-index: -1000;
   gap: 10px;
   scroll-snap-align: center;
+  height: 65vh;
+  width: 45vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #cardimage{
@@ -23,10 +28,12 @@
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+
 }
 
 #cardtext{
   grid-area: "text";
+  color: black;
   margin: 20px;
 }
 
@@ -34,7 +41,7 @@
   color: grey;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;;
+  /* text-align: center; */
 }
 
 #cardtext h2{
@@ -58,9 +65,19 @@
 
 #linktogithub a{
   text-decoration: none;
-  color: purple;
+  color: #1abc9caf;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
 
 }
 
+
+@media screen and (max-width:790px) {
+  .card{
+    width: 65vw;
+    height: 75vh;
+    background: #00000096;
+    backdrop-filter: blur(10px);
+  grid-template-rows: 210px 40px 200px ;
+  }
+}

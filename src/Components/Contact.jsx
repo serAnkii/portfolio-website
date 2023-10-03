@@ -5,7 +5,7 @@ import {AiOutlineGithub ,AiOutlineLinkedin, AiOutlineInstagram,AiOutlineTwitter}
 const Contact = () => {
   return (
     <div className="common" id="contactdiv">
-      <ContactNav/>
+      {/* <ContactNav/> */}
       <span class="bigcircle"></span>
       <img src="/shape.png" class="square" alt="" />
       <div className="form">
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
 
           <div className="socialmedia">
-            <p>Find me here :</p>
+            <p className="findme">Find me here :</p>
             <div className="socialicons">
               <a href="https://github.com/serAnkii/" target="_blank">
                 <i><AiOutlineGithub/></i>

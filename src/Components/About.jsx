@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./about.css";
+import "../css/about.css";
 import AboutNav from "./AboutNav";
 
 export function About() {

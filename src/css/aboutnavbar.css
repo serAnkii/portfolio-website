@@ -4,7 +4,8 @@
   height: 10vh;
   width: 90%;
   justify-content: space-around;
-  background-color: #5a61df8b;
+  background-color: #f3f3f38b;
+  box-shadow: 0 0 15px #1abc9d;
   margin-left:5%;
   margin-top: 5%;
   border-radius: 10px;
@@ -17,16 +18,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #f3f3f3;
+
   line-height: 10px;
   transform: perspective(1000px) rotateX(-25deg) rotateY(25deg) ;
 }
 #logo h2{
-  color: black;
+  color: #1abc9d;
+}
+#logo h1{
+  background-color: transparent;
 }
 
 #links{
-  color: #f3f3f3;
   display: flex;
   flex-direction: column;
   list-style: none;
