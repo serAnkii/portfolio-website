@@ -1,14 +1,14 @@
-.card{
+.card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 220px 40px 200px ;
+  grid-template-rows: 290px 40px 200px;
   grid-template-areas: "image" "link" "text";
   font-family: Roboto;
   border-radius: 18px;
-  
+
   color: white;
   /* border: 1px solid #1abc9c; */
-  box-shadow: 5px 5px 15px #1abc9c69;
+  box-shadow: 0px 0px 15px #1abc9d;
   text-align: justify;
   transform-style: flat;
   perspective: 10px;
@@ -17,67 +17,71 @@
   scroll-snap-align: center;
   height: 65vh;
   width: 45vw;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-#cardimage{
+#cardimage {
   grid-area: "image";
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-position: center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
+  background-size: 50% !important;
 
+  background-repeat: no-repeat !important;
 }
 
-#cardtext{
+#cardtext {
   grid-area: "text";
   color: black;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #cardtext p {
-  color: grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  /* text-shadow: 0 0 15px #1abc9d; */
   font-size: 14px;
   font-weight: 300;
   /* text-align: center; */
 }
 
-#cardtext h2{
+#cardtext h2 {
   margin-top: 0;
-  font-size: 22px;
+  font-size: 30px;
   text-align: center;
-  
-  text-transform: uppercase
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
 }
-#linktogithub{
+#linktogithub {
   grid-area: "link";
 }
 
-#linktogithub{
+#linktogithub {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100%;
-  margin-top: 20px;
+  background-color: #1abc9d;
+  
 }
 
-#linktogithub a{
+#linktogithub a {
   text-decoration: none;
-  color: #1abc9caf;
+  color: #f3f3f3 !important;
   cursor: pointer;
   font-size: 20px;
-
 }
 
-
-@media screen and (max-width:790px) {
-  .card{
+@media screen and (max-width: 790px) {
+  .card {
     width: 65vw;
-    height: 75vh;
-    background: #00000096;
+    height: 60vh;
+    background: #ffffff96;
     backdrop-filter: blur(10px);
-  grid-template-rows: 210px 40px 200px ;
+    grid-template-rows: 210px 40px 200px;
   }
 }

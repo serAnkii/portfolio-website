@@ -1,9 +1,9 @@
 export const data = [
   {
     id: 1,
-    name: "Twitter Clone",
-    description: "A Twitter clone project is a web application that replicates the basic functionalities of the popular social media platform Twitter, such as tweeting, following, and liking posts.",
-    image: "linear-gradient(#fff0 0%,#fff0 70%,#1d1d1d 100%),url('twitter.png')",
+    name: "Twitter X",
+    description: "Twitter X is a web application built using NEXT.js that replicates the functionalities of the popular social media platform Twitter, such as tweeting, following, and liking posts.",
+    image: "url('twitter.png')",
     group: "development",
     repo: "https://github.com/serAnkii/twitter_clone",
     deploy: "",
@@ -11,34 +11,35 @@ export const data = [
   },
   {
     id: 2,
-    name: "portfolio website",
-    description: "As a website designed to showcase my work and professional accomplishments.",
-    group: "development",
-    image: "",
-    repo: "https://github.com/serAnkii/portfolio-website/blob/main/README.md",
-    deploy: "/",
-    shadowcolor:"white"
+    name: "credit card fraud detection",
+    description:
+      "A credit card fraud detection system is a software application that uses various algorithms and techniques to identify and prevent fraudulent activities associated with credit card transactions.",
+    group: "ml",
+    image: "url('/credit.png')",
+    repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
+    deploy: "",
+    shadowcolor:"#e64a5a"
   },
   {
     id: 3,
-    name: "Automated attendence system",
-    description:"A face recognition attendance system uses facial recognition technology to automatically identify and record attendance of individuals based on their unique facial features.",
+    name: "FaceSync-Attendance-Automation",
+    description:"This uses KNN classifier to automatically identify and record attendance of individuals based on their unique facial features.",
     group: "ml",
     image: "",
     repo: "",
     
     shadowcolor:"#68c9c0"
   },
+  
   {
     id: 4,
-    name: "credit card fraud detection",
-    description:
-      "A credit card fraud detection system is a software application that uses various algorithms and techniques to identify and prevent fraudulent activities associated with credit card transactions.",
-    group: "ml",
-    image: "",
-    repo: "https://github.com/serAnkii/Credit_Card_fraud_detection",
-    deploy: "",
-    shadowcolor:"#e64a5a"
+    name: "portfolio website",
+    description: "You are right now looking at me IRL :-).",
+    group: "development",
+    image: "url('/portfolio.png')",
+    repo: "https://github.com/serAnkii/portfolio-website/blob/main/README.md",
+    deploy: "/",
+    shadowcolor:"white"
   },
  { 
   id: 5,
@@ -54,9 +55,9 @@ export const data = [
 {
   id: 6,
   name: "tic-tac-toe game",
-  description: "Tic Tac Toe is a 2-player game where each player takes turns placing Xs or Os on a 3x3 grid in a race to get three in a row.",
+  description: "Obiviously not a project worth mentioning but still, It is the first thing i made when i jumped into the field of web development ",
   group: "development",
-  image: "",
+  image: "url('/tictactoe.png')",
   repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
   deploy: "",
   shadowcolor:"#ff4c4c"

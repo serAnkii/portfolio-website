@@ -66,9 +66,9 @@
 
   letter-spacing: 2px;
   line-height: 15px;
-  font-size: 10px;
+  font-size: 20px;
   
-  font-family: 'Press Start 2P', cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #para p::first-letter{
@@ -77,14 +77,15 @@
 }
 
 #profile{
-
-height: 25vh;
-width: 25vh;
+z-index: -1;
+height: 27vh;
+width: 40vh;
 position: absolute;
-border-radius: 50%;
-top: 33%;
-left: 8%;
+top: 31%;
+left: -10%;
+border-radius: 10%;
 
+box-shadow:0 0 15px #1abc9d;
 }
 
 
@@ -96,7 +97,8 @@ left: 8%;
   }
 
   #para p{
-    font-size: 15px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   #greeting{
@@ -117,6 +119,7 @@ left: 8%;
     width: 80vh;
     top: 17vh;
     left: 5%;
+    box-shadow:0 0 15px #1abc9d;
   }
 }
 

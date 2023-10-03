@@ -21,7 +21,7 @@
 
 #cardcontainer{
   position: relative;
-  right: 10%;
+  right: 0%;
   gap: 5rem;
   height: fit-content;
   width: 50%;
@@ -39,7 +39,8 @@
   justify-content: space-around;
   /* width: 100%; */
   gap: 90%;
-  padding-left: 10%;
+  position: relative;
+  padding-left: 22%;
   
 }
 
@@ -61,28 +62,34 @@
 
 @media screen and (max-width:790px) {
   #projectdiv{
-    justify-items: center;
+    /* justify-items: center; */
     align-items: center;
     align-content: center;
     background-position: center;
     background-size: cover;
+
   }
 
   #cardcontainer{
     width: 80%;
-    height: 78vh;
+    height: 70vh;
     right: 0;
+    top: -10%;
     gap: 2rem;
   }
 
-}
+  #buttondiv{
+    top: -10%;
+    padding-left: 5%;
 
-
-@media screen and (max-height:554px) {
-  #gridcontainer{
-    height: 480px;
-    top: 0%;
   }
-  
+  #buttondiv button{
+  padding: 10px;
+  background-color: #1abc9c;
+  color: #f3f3f3;
+  border-radius: 20%;
+  font-size: 1rem;  
+  }
 }
+
 

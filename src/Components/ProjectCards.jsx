@@ -6,14 +6,20 @@ const ProjectCards = (props) => {
   return (
     <>
       {props.data.map((ele) => {
-        const { id, name, image, description, repo} = ele;
+        const { id, name, image, description, repo } = ele;
         return (
-          <Tilt key={id} glareEnable={true} glareBorderRadius="18px" glarePosition="top" tiltMaxAngleX={5} tiltReverse={true} gyroscope={true}>
+          <Tilt
+            key={id}
+            glareEnable={true}
+            glareBorderRadius="18px"
+            glarePosition="top"
+            tiltMaxAngleX={5}
+            tiltReverse={true}
+            gyroscope={true}
+          >
             <div className="card">
-              <div id="cardimage" style={{background:`${image}`}}>
-
-              </div>
-
+              <div id="cardimage" style={{ background: `${image}` }}></div>
+              
               <div id="linktogithub">
                 <a href={repo}>Code Link</a>
               </div>

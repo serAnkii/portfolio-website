@@ -27,7 +27,8 @@
 }
 #logo h1{
   background-color: transparent;
-  
+  color: #f3f3f3;
+  text-shadow:0 0 15px #1abc9d;
 }
 
 #links{
