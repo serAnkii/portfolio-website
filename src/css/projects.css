@@ -6,7 +6,7 @@
   align-items: last baseline;
   justify-items: center;
   display: flex;
-  background-color: #f3f3f3;
+  background-color: var(--whiteshade);
   background-image: url(/public/illustration.jpg);
   background-size: 40% 100%;
   
@@ -29,7 +29,7 @@
   align-items: center;
   overflow-x: scroll;
   padding: 1rem;
-  background: #f3f3f300;
+  background: var(--whiteshade)00;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -49,8 +49,8 @@
   padding: 2px;
   outline: none;
   border: none;
-  background-color: #1abc9c;
-  color: #f3f3f3;
+  background-color: var(--cyanshade);
+  color: var(--whiteshade);
   border-radius: 20%;  
 }
 
@@ -65,8 +65,8 @@
     /* justify-items: center; */
     align-items: center;
     align-content: center;
-    background-position: center;
-    background-size: cover;
+    
+    background: none;
 
   }
 
@@ -85,11 +85,12 @@
   }
   #buttondiv button{
   padding: 10px;
-  background-color: #1abc9c;
-  color: #f3f3f3;
+  background-color: var(--cyanshade);
+  color: var(--whiteshade);
   border-radius: 20%;
   font-size: 1rem;  
   }
 }
+
 
 

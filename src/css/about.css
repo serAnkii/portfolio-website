@@ -1,7 +1,7 @@
 #about{
   height: 100vh;
   z-index: 100;
-  background-color: #f3f3f3;
+  background-color: var(--whiteshade);
   /* background: url(/portfolio.gif); */
 
   /* background: #1abc9c; */
@@ -15,8 +15,9 @@
 }
 
 #greeting{
-  background-color: #1abc9d8b;
-  height: 15vh;
+  background-color: var(--cyanshade);
+  height: fit-content;
+  min-height: 15vh;
   width: 60%;
   position: absolute;
   top: calc(50% - 190px);
@@ -25,6 +26,7 @@
   justify-content: center;
   top: 15%;
   right: -1%;
+  padding: 2rem;
   border-radius: 10px;
   backdrop-filter: blur(5px);
 
@@ -36,12 +38,13 @@
   width: fit-content;
   
   font-family: 'Press Start 2P', cursive;
-  color: #f3f3f3;
-  font-weight: 900;
+  color: var(--whiteshade);
+  font-weight: 400;
 
 }
 
 #para{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,25 +53,24 @@
   position: absolute;
   right: -1%;
   bottom: 10%;
-  background-color: #f3f3f3e5;
-  box-shadow: 0 0 15px #1abc9d;
+  background-color: var(--whiteshade);
+  box-shadow: 0 0 15px var(--cyanshade);
   border-radius: 10px;
   backdrop-filter: blur(5px);
-  overflow: auto;
+  overflow-y:visible;
   padding: 1rem;
+  
 }
 
 #para p{
-  color: #1abc9d;
+  color: var(--text);
   height: fit-content;
   width: fit-content;
   /* text-align: center; */
-
   letter-spacing: 2px;
   line-height: 15px;
   font-size: 20px;
-  
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Times New Roman', Times, serif; 
 }
 
 #para p::first-letter{
@@ -79,18 +81,36 @@
 #profile{
 z-index: -1;
 height: 27vh;
-width: 40vh;
+width: 30vh;
 position: absolute;
 top: 31%;
 left: -10%;
 border-radius: 10%;
 
-box-shadow:0 0 15px #1abc9d;
+box-shadow:0 0 15px var(--cyanshade);
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-
+#para a{
+  position: absolute;
+  top: -40%;
+  border-radius: 10%;
+  text-align: center;
+  background-color: var(--cyanshade);
+  padding: 1rem;
+  right: 7%;
+  color: var(--text);
+  font-weight: 100 !important;
+  font-size: 15px !important;
+}
 @media only screen and (min-width: 768px) {
 
+  #resume{
+    z-index: 1000000000000000000000000;
+    position: absolute;
+    /* top: 100%; */
+    background-color: aqua;
+  }
   #para{
     bottom: 4%;
     width: 50%;
@@ -103,13 +123,13 @@ box-shadow:0 0 15px #1abc9d;
 
   #greeting{
   width: 40%;
-  top: calc(50% - 140px);
+  top: calc(50% - 200px);
   }
 
 
   #greeting h1{
     
-  font-size: 50px;
+  font-size: 40px;
   }
 
   #profile{
@@ -119,9 +139,10 @@ box-shadow:0 0 15px #1abc9d;
     width: 80vh;
     top: 17vh;
     left: 5%;
-    box-shadow:0 0 15px #1abc9d;
+    box-shadow:0 0 15px var(--cyanshade);
   }
 }
+
 
 
 @media screen and (max-height:554px) {

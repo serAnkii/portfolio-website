@@ -1,35 +1,64 @@
 import React, { useState } from "react";
 import "../css/home.css";
-import styled from "styled-components"
+import styled from "styled-components";
+import { useRef } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { GiFallingStar } from "react-icons/gi";
+import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
+const Home = ({ isdark }) => {
+  const ref = useRef(null);
+  window.addEventListener("scroll", (e) => {});
 
-const Home = () => {
-
-    
-  
   return (
     <div className="common" id="header">
-      <div id="vignetee"></div>
-      <img src="/paralleximg/sky.png" className="parallex" id="sky" />
-      <img
-        src="/paralleximg/mountains.png"
-        className="parallex"
-        id="mountains"
-      />
-      <div id="hometext">
-        <h1 id="homeheading">WELCOME!</h1>
-        
+      {/* ////lightmode/////// */}
+      {/* {isdark && <img src="/parallex/bg.png" alt="bg" className="lightparallex" />}
+      {isdark && <img src="/parallex/4.png" alt="" className="lightparallex" />}
+      {isdark && <img src="/parallex/3.png" alt="" className="lightparallex" />}
+      {isdark && <img src="/parallex/2nd.png" alt="" className="lightparallex" />}
+      {isdark && <img src="/parallex/front.png" alt="" className="lightparallex" />} */}
+
+      {/* /////darkmode////// */}
+      {/* {!isdark && <div id="vignetee"></div>}
+      {!isdark && <img src="/moon.png" className="parallex" id="nightsky" />}
+      {!isdark && (
+        <h1 className="parallex" id="darkhomeheading">
+          Ohh! I see <br /> (ʘ ͜ʖ ʘ) !!!
+        </h1>
+      )}
+      {!isdark && (
+        <h2 id="darkhomepara" className="parallex">
+          You are searching for a potential Candidate.
+        </h2>
+      )}
+      {!isdark && (
+        <h1 className="parallex" id="darkhomepara2">
+          WELL
+        </h1>
+      )}
+      {!isdark && (
+        <h1 className="parallex" id="fourthpara">
+          You just Found The one
+        </h1>
+      )} */}
+
+      <h1>Creating Tommorow Together</h1>
+
+      <div id="starsdiv">
+        <h2>Imagine The possiblites O_O</h2>
+        <i className="stars">{isdark?<HiLightBulb/>:<HiOutlineLightBulb/>}</i>
+        <i className="stars">{<GiFallingStar/>}</i>
+        <i className="stars">{isdark?<AiFillStar/>:<AiOutlineStar/>}</i>
+        <i className="stars"></i>
+        <i className="stars"></i>
+        <i className="stars"></i>
+        <i className="stars"></i>
+        <i className="stars"></i>
+        <i className="stars"></i>
+        <i className="stars"></i>
       </div>
-      {/* <img src="/paralleximg/fog_2.png" alt="" className="parallex" id="fog" /> */}
-      <img id="bub" className="parallex" src="/nezubub.png" alt="" />
-      <h1 id="fog" className="parallex">YOU JUST FOUND THE RIGHT GUY</h1>
-      <img src="/paralleximg/trees.png" className="parallex" id="trees" />
-      <img src="/paralleximg/rocks.png" className="parallex" id="rocks" />
-      <img src="/paralleximg/rays.png" className="parallex" id="rays" />
     </div>
   );
 };
 
 export default Home;
-
-
-

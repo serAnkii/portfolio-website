@@ -1,11 +1,9 @@
 import React from "react";
 import "../css/contact.css";
-import ContactNav from "./ContactNav ";
 import {AiOutlineGithub ,AiOutlineLinkedin, AiOutlineInstagram,AiOutlineTwitter} from 'react-icons/ai'
 const Contact = () => {
   return (
     <div className="common" id="contactdiv">
-      {/* <ContactNav/> */}
       <span class="bigcircle"></span>
       <img src="/shape.png" class="square" alt="" />
       <div className="form">
@@ -54,21 +52,21 @@ const Contact = () => {
           <form action="https://formspree.io/f/xwkjzqpr" autocomplete="off" method="post">
             <h3 className="title">Contact me</h3>
             <div className="inputcontainer">
-              <input type="text" name="name" className="input" required />
-              <label for="">Name</label>
-              <span>Name</span>
+              <input type="text" name="name" placeholder="Please enter your name" className="input" required />
+             
+              
             </div>
             <div className="inputcontainer">
-              <input type="email" name="email" className="input" required />
-              <label for="">Email</label>
-              <span>Email</span>
+              <input type="email" placeholder="Enter a valid Email" name="email" className="input" required />
+              
+            
             </div>
-            <div className="inputcontainer textarea">
-              <textarea name="message" className="input" required></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
+            <div className="inputcontainer textarea" >
+              <textarea name="message" placeholder="Enter you message" className="input" required></textarea>
+              
+              
             </div>
-            <input type="submit" value="Send" className="btn" />
+            <input type="submit" value="Send"  className="btn" />
           </form>
         </div>
       </div>

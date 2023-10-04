@@ -4,8 +4,8 @@
   height: 10vh;
   width: 90%;
   justify-content: space-around;
-  background-color: #f3f3f38b;
-  box-shadow: 0 0 15px #1abc9d;
+  background-color: var(--whiteshade)8b;
+  box-shadow: 0 0 5px var(--cyanshade);
   margin-left:5%;
   margin-top: 5%;
   border-radius: 10px;
@@ -23,12 +23,12 @@
   transform: perspective(1000px) rotateX(-25deg) rotateY(25deg) ;
 }
 #logo h2{
-  color: #1abc9d;
+  color: var(--cyanshade);
 }
 #logo h1{
   background-color: transparent;
-  color: #f3f3f3;
-  text-shadow:0 0 15px #1abc9d;
+  color: var(--text);
+  text-shadow:0 0 5px var(--cyanshade);
 }
 
 #links{
@@ -47,9 +47,9 @@
 }
 
 #active{
-  color: black;
+  color: var(--text) !important;
   text-transform: uppercase;
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 3px var(--text) !important;
 }
 
 

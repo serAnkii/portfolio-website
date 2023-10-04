@@ -33,7 +33,7 @@
 }
 
 #links{
-  color: #f3f3f3;
+  color: var(--whiteshade);
   display: flex;
   flex-direction: column;
   list-style: none;
