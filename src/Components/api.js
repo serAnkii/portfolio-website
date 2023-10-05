@@ -26,7 +26,7 @@ export const data = [
     description:"This uses KNN classifier to automatically identify and record attendance of individuals based on their unique facial features.",
     group: "ml",
     image: "url('/face.png')",
-    repo: "",
+    repo: "https://github.com/serAnkii/FaceSync-Attendance-Automation",
     
     shadowcolor:"#68c9c0"
   },
