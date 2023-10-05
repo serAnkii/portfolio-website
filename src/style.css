@@ -15,6 +15,8 @@
   --cyanshade: #1abc9d;
   --text:#f3f3f3;
   --html:black;
+  --starposition:-500%;
+  --starpositionleft:35%;
 }
 
 .darkmode{
@@ -22,6 +24,8 @@
   --cyanshade: #1abc9d;
   --text:#000000;
   --html:#f3f3f3;
+  --starposition:-5000%;
+  --starpositionleft:-500%
 }
 
 
@@ -29,6 +33,7 @@
 body{
   
   background-color: var(--html);
+  scroll-behavior: smooth;
 }
 
 

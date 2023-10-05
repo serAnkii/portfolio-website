@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 0 0 15px var(--cyanshade);
 }
 
 #header h1{
@@ -44,8 +45,9 @@
 
 .stars:nth-child(3)
 {
-  top: -500%;
-  left: 35%;
+  top: var(--starposition);
+  left: var(--starpositionleft);
+  transition: all 2s ease-in-out;
 }
 
 .stars:nth-child(4){

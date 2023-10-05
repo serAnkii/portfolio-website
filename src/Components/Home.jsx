@@ -49,13 +49,7 @@ const Home = ({ isdark }) => {
         <i className="stars">{isdark?<HiLightBulb/>:<HiOutlineLightBulb/>}</i>
         <i className="stars">{<GiFallingStar/>}</i>
         <i className="stars">{isdark?<AiFillStar/>:<AiOutlineStar/>}</i>
-        <i className="stars"></i>
-        <i className="stars"></i>
-        <i className="stars"></i>
-        <i className="stars"></i>
-        <i className="stars"></i>
-        <i className="stars"></i>
-        <i className="stars"></i>
+        
       </div>
     </div>
   );
