@@ -3,6 +3,8 @@ import "../css/projects.css";
 import { Projectnav } from "./Projectnav";
 import { ProjectCards } from "./ProjectCards";
 import { data } from "./api";
+import Lottie  from "lottie-react";
+import animationdata from "../../public/project.json"
 import { useState, useRef } from "react";
 function Projects() {
   const cardcontref = useRef(null);
@@ -12,10 +14,14 @@ function Projects() {
     container.scrollLeft += direction * scrollAmount;
   };
 
+  const ref = useRef()
+
+  
+
   return (
     <div id="projectdiv" className="common">
       <Projectnav />
-
+      <Lottie animationData={animationdata} lottieRef={ref} loop={true} className="projectanimation"/>
       <div id="cardcontainer" ref={cardcontref}>
         <ProjectCards data={data} />
       </div>

@@ -15,7 +15,7 @@ export function About() {
 
       <div id="para">
         <p>
-          I'm a recent Computer Science graduate actively seeking job
+          I'm Ankit Negi, a recent B.tech(CSE) graduate actively seeking job
           opportunities. My education and enthusiasm for technology drive
           me to excel in the field.
           Let's connect and explore how I can contribute to your team.
@@ -28,7 +28,7 @@ export function About() {
         >Download <br /> Resume</a>
       </div>
 
-      <img src="/ankit.jpg" alt="" id="profile" />
+      <img src="/Background.png" alt="" id="profile" />
       
        
       

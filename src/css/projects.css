@@ -7,16 +7,19 @@
   justify-items: center;
   display: flex;
   background-color: var(--whiteshade);
-  background-image: url(/public/illustration.jpg);
-  background-size: 40% 100%;
   
-  background-repeat: no-repeat;
-  background-position: 0px opx;
   overflow: hidden;
   padding: 1rem;
   gap: 1rem;
   flex-direction: column;
   
+}
+
+.projectanimation{
+  position: absolute;
+  left: 0;
+  height: 70%;
+  width: 50%;
 }
 
 #info{
@@ -81,9 +84,11 @@
     /* justify-items: center; */
     align-items: center;
     align-content: center;
-    
-    background: none;
 
+  }
+
+  .projectanimation{
+    display: none;
   }
 
   #cardcontainer{
