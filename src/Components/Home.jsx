@@ -21,13 +21,12 @@ const Home = ({ isdark }) => {
           <span className="animetext" style={{ '--i': 7 }}>O</span>
           <span className="animetext" style={{ '--i': 8 }}>W</span>
           
-    
         </div>
         <h1>Together</h1>
       </div>
 
       <div id="starsdiv">
-        <h2>Imagine The possiblites O_O</h2>
+        <h2>Imagine The possiblites ✨</h2>
         <i className="stars">
           {isdark ? <HiLightBulb /> : <HiOutlineLightBulb />}
         </i>

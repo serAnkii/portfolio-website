@@ -52,15 +52,6 @@ export const data = [
   deploy: "",
   shadowcolor:"#37bc9b"
 },
-{
-  id: 6,
-  name: "tic-tac-toe game",
-  description: "Obiviously not a project worth mentioning but still, It is the first thing i made when i jumped into the field of web development ",
-  group: "development",
-  image: "url('/tictactoe.png')",
-  repo: "https://github.com/serAnkii/javascript/tree/main/Projects/Tic-tac-toe",
-  deploy: "",
-  shadowcolor:"#ff4c4c"
-},
+
 ];
 

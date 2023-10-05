@@ -47,8 +47,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  width: 80%;
+  height: 20vh;
+  width: 100%;
   position: absolute;
   right: -1%;
   bottom: 10%;
@@ -66,9 +66,9 @@
   width: fit-content;
   /* text-align: center; */
   letter-spacing: 2px;
-  line-height: 15px;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  /* line-height: 15px; */
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif ;
 }
 
 #para p::first-letter {

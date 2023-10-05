@@ -21,7 +21,7 @@ const ProjectCards = (props) => {
               <div id="cardimage" style={{ background: `${image}` }}></div>
               
               <div id="linktogithub">
-                <a href={repo}>Code Link</a>
+                <a href={repo} target="_blank">Code Link</a>
               </div>
 
               <div id="cardtext">
