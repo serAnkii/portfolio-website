@@ -19,6 +19,16 @@
   
 }
 
+#info{
+  position: absolute;
+  color: var(--cyanshade);
+  visibility: hidden;
+  top: -100%;
+  width: 100vw;
+  text-align: center;  
+  font-size: small;
+}
+
 #cardcontainer{
   position: relative;
   right: 0%;
@@ -60,6 +70,12 @@
 
 }
 
+@media screen and (min-width:400px) {
+  #info{
+    visibility: visible;
+  }
+}
+
 @media screen and (max-width:790px) {
   #projectdiv{
     /* justify-items: center; */
@@ -81,6 +97,7 @@
   #buttondiv{
     top: -10%;
     padding-left: 5%;
+    position: relative;
 
   }
   #buttondiv button{

@@ -19,7 +19,9 @@ function Projects() {
       <div id="cardcontainer" ref={cardcontref}>
         <ProjectCards data={data} />
       </div>
+      
       <div id="buttondiv">
+        <h1 id="info">Tilt mobile to move the card</h1>
         <button onClick={() => Slide(-1)}>Previous</button>
         <button onClick={() => Slide(1)}>Next</button>
       </div>
