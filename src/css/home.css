@@ -128,9 +128,10 @@
 
   .stars:nth-child(3)
   {
-    top: -439% !important;
+    top: var(--smallscreenstar) !important;
   }
   
+
 }
 
 

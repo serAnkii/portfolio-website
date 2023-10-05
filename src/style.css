@@ -17,6 +17,7 @@
   --html:black;
   --starposition:-500%;
   --starpositionleft:35%;
+  --smallscreenstar:-439%;
 }
 
 .darkmode{
@@ -25,7 +26,8 @@
   --text:#000000;
   --html:#f3f3f3;
   --starposition:-5000%;
-  --starpositionleft:-500%
+  --starpositionleft:-500%;
+  --smallscreenstar:-5000%;
 }
 
 
