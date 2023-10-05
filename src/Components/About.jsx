@@ -11,6 +11,8 @@ export function About() {
         <h1>HELLO! </h1>
       </div>
 
+     
+
       <div id="para">
         <p>
           I'm a recent Computer Science graduate actively seeking job
@@ -22,6 +24,7 @@ export function About() {
         <a
           href="/AnkitNegi.pdf"
           target="_blank"
+          id="resume"
         >Download <br /> Resume</a>
       </div>
 

@@ -151,8 +151,8 @@ const Skills = () => {
           <div id="question">
             <TbHexagonLetterA
               className="resicon"
-              fill="#5d6ac0"
-              stroke="white"
+              fill="var(--whiteshade)"
+              stroke="var(--text)"
             />
             <h1>List all the Skills</h1>
           </div>
@@ -160,7 +160,7 @@ const Skills = () => {
             <GiRobotGolem
               className="resicon"
               id="responseicon"
-              fill="#19c37d"
+              fill="var(--text)"
             />
             <div className="skills-container">
               {skillsData.map((skill, index) => (

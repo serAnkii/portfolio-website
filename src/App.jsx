@@ -16,7 +16,6 @@ export default function App() {
     document.body.classList.toggle("darkmode")
     setdark(!isdark);
     
-
   }
   
   return (

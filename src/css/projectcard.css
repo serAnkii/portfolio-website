@@ -6,7 +6,7 @@
   font-family: Roboto;
   border-radius: 18px;
   /* border: 1px solid #1abc9c; */
-  box-shadow: 0px 0px 5px var(--cyanshade);
+  box-shadow: inset 0px 0px 15px var(--cyanshade);
   text-align: justify;
   transform-style: flat;
   perspective: 10px;

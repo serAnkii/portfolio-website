@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/contact.css";
 import {AiOutlineGithub ,AiOutlineLinkedin, AiOutlineInstagram,AiOutlineTwitter} from 'react-icons/ai'
+import {FaXTwitter} from "react-icons/fa6"
 const Contact = () => {
   return (
     <div className="common" id="contactdiv">
@@ -31,17 +32,17 @@ const Contact = () => {
           <div className="socialmedia">
             <p className="findme">Find me here :</p>
             <div className="socialicons">
-              <a href="https://github.com/serAnkii/" target="_blank">
-                <i><AiOutlineGithub/></i>
+              <a href="https://github.com/serAnkii/" target="_blank"  className="socialicon">
+                <i><AiOutlineGithub /></i>
               </a>
-              <a href="https://www.linkedin.com/in/ankit-negi-63289621a/" target="_blank">
-                <i><AiOutlineLinkedin/></i>
+              <a href="https://www.linkedin.com/in/ankit-negi-63289621a/" target="_blank" className="socialicon">
+                <i><AiOutlineLinkedin fill="var(--whiteshade)" /></i>
               </a>
-              <a href="https://www.instagram.com/ankit_negi______/" target="_blank">
-                <i><AiOutlineInstagram/></i>
+              <a href="https://www.instagram.com/ankit_negi______/" target="_blank" className="socialicon">
+                <i><AiOutlineInstagram fill="var(--whiteshade)"/></i>
               </a>
-              <a href="https://twitter.com/AnkitNe14613482" target="_blank">
-                <i><AiOutlineTwitter/></i>
+              <a href="https://twitter.com/AnkitNe14613482" target="_blank" className="socialicon">
+                <i><FaXTwitter fill="var(--whiteshade)"/></i>
               </a>
             </div>
           </div>
