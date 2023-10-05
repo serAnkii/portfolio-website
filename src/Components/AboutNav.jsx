@@ -5,8 +5,7 @@ const AboutNav = () => {
 
     <div id="aboutnav">
       <div id="logo">
-        <h1>ANKIT</h1>
-        <h2>Negi</h2>
+        <img src="/logo.png" alt="" />
       </div>
       <ul id="links">
         <li className="link" id="active">About</li>
