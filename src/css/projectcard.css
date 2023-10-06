@@ -1,7 +1,7 @@
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 290px 40px 200px;
+  grid-template-rows: 2fr 0.5fr 2fr;
   grid-template-areas: "image" "link" "text";
   font-family: Roboto;
   border-radius: 18px;
@@ -44,7 +44,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--text);
   /* text-shadow: 0 0 15px var(--cyanshade); */
-  font-size: 24px;
+  font-size: 15px;
   font-weight: 300;
   /* text-align: center; */
 
@@ -84,10 +84,15 @@
     height: 60vh;
     background: var(--whiteshade);
     backdrop-filter: blur(10px);
-    grid-template-rows: 210px 40px 200px;
-
-
+    grid-template-rows: 2fr 0.5fr 3fr ;
+    background-color: black;
   }
+
+
+  #cardtext h2 {
+    font-size: 20px;
+  }
+
 
 
 }

@@ -66,9 +66,17 @@
 }
 
 @media screen and (max-height:554px) {
-  #skillsnav{
+  #aboutnav{
     display: none;
   } 
 
+  
+}
+
+@media only screen and (max-width: 459px) {
+
+  #aboutnav{
+    display: none;
+  }
   
 }

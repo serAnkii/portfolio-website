@@ -1,141 +1,191 @@
-#about {
+#about{
+  position: relative;
   height: 100vh;
-  z-index: 100;
-  background-color: var(--whiteshade);
-  /* background: url(/portfolio.gif); */
-
-  /* background: #1abc9c; */
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 1000px;
-  border-top: none;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-}
-
-#greeting {
-  background-color: var(--cyanshade);
-  height: fit-content;
-  min-height: 15vh;
-  width: 60%;
-  position: absolute;
-  top: calc(50% - 190px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 15%;
-  right: -1%;
-  padding: 2rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  box-shadow: inset 0 0 15px var(--whiteshade);
-}
-
-#greeting h1 {
-  font-size: 30px;
-  height: fit-content;
-  width: fit-content;
-
-  font-family: "Press Start 2P", cursive;
-  color: var(--whiteshade);
-  font-weight: 400;
-}
-
-#para {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
   width: 100%;
-  position: absolute;
-  right: -1%;
-  bottom: 10%;
-  background-color: var(--whiteshade);
-  box-shadow: inset 0 0 50px var(--cyanshade);
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  overflow-y: visible;
-  padding: 1rem;
+  overflow: hidden;
+  perspective: 1052px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
 }
 
-#para p {
-  color: var(--text);
-  height: fit-content;
-  width: fit-content;
-  /* text-align: center; */
-  letter-spacing: 2px;
-  /* line-height: 15px; */
-  font-size: 15px;
-  font-family:Arial, Helvetica, sans-serif ;
-}
-
-#para p::first-letter {
-  font-size: 30px;
-  font-weight: 900;
-}
-
-#profile {
-  z-index: -1;
-  height: 27vh;
-  width: 30vh;
-  position: absolute;
-  top: 31%;
-  left: -10%;
-  border-radius: 50%;
+#abouttext{
+  display: grid;
+  grid-template-rows: 2fr 5fr 1fr;
+  margin-top: 4rem;
+  overflow-x: hidden;
   
-  filter:brightness(70%) drop-shadow(8px 8px 10px var(--whiteshade));
-  box-shadow: 0 0 15px var(--cyanshade);
 }
 
-#resume {
-  position: absolute;
-  top: -50%;
-  border-radius: 10%;
-  text-align: center;
-  background-color: var(--cyanshade);
+#aboutimage{
+  overflow: hidden;
+  padding:2rem;
+  padding-top: 8rem;
+
+}
+
+#aboutimage img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+#greeting{
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.greetingframe{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.greetingframe h1{
+  background-color: transparent;
+  width: fit-content;
+  letter-spacing: 1rem;
   padding: 1rem;
-  right: 5%;
+  font-family: "press start 2p";
+  font-size: 20px;
   color: var(--text);
-  font-weight: 100 !important;
-  font-size: 15px !important;
 }
-@media only screen and (min-width: 768px) {
-  #resume {
-    right: -10%;
-  }
 
-  #resume:hover {
-    right: 2%;
-    transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  #para {
-    bottom: 4%;
-    width: 50%;
-  }
-
-  #para p {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  #greeting {
-    width: 40%;
-    top: calc(50% - 200px);
-  }
-
-  #greeting h1 {
-    font-size: 40px;
-  }
-
-  #profile {
-    z-index: -1;
-    height: 70vh;
-    width: 45vw;
-    top: 21vh;
-    left: 5%;
-    border-radius: 20%;
-    transform: perspective(1052px) rotateY(50deg)
+#seconditem{
+  background-color: transparent;
+  width: 100% !important;
+  box-shadow: none
 }
+
+#seconditem h1{
+  color: var(--cyanshade);
+  text-align: center;
+
+
+}
+
+#seconditem h1::first-letter{
+  font-size: 30px;
+}
+
+#para{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#ulpara{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  /* overflow-y: scroll; */
+}
+
+#ulpara li{
+  color: var(--text);
+  font-size: 20px;
+}
+
+#ulpara li::first-letter{
+  font-size: 30px;
+}
+
+
+#ulpara li::first-line{
+  color: var(--cyanshade);
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+#resumediv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+#resumediv a{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px !important;
+}
+
+
+
+@media only screen and (max-width: 459px) {
+
+
+
+  #resumediv{
+    width: 100vw;
+    background-color: var(--cyanshade);
+    
+  }
+  
+  #resumediv a{
+    color: var(--whiteshade);
+  }
+
+  #ulpara{
+    gap: 0;
+    height: 30vh;
+  }
+
+  #ulpara li{
+    width: 94vw;
+    padding: 1rem;
+
+  }
+
+  #greeting{
+    padding: 1rem;
+    
+  }
+
+  .greetingframe h1{
+    letter-spacing: 0.5rem;
+    font-size: 15px;
+  }
+
+
+ #abouttext{
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  margin-top: 0;
+  
+}
+
+
+ 
+ 
+ 
+}
+
+@media only screen and (max-width: 1162px) {
+
+  #aboutimage{
+    display: none;
+  }
+  
+  #about{
+    grid-template-columns: 1fr;
+  }
+  
 }

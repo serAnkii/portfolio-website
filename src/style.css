@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:  cursive;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.7s ease;
 }
 
@@ -108,7 +108,7 @@ body{
 a{
   text-decoration: none;
   color: var(--cyanshade);
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P';
   font-size: 20px;
 }
 
