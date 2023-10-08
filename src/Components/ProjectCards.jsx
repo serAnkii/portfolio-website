@@ -9,15 +9,16 @@ const ProjectCards = (props) => {
         const { id, name, image, description, repo } = ele;
         return (
           <Tilt
-            key={id}
             glareEnable={true}
             glareBorderRadius="18px"
             glarePosition="top"
-            tiltMaxAngleX={5}
-            tiltReverse={true}
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
+            tiltReverse={false}
             gyroscope={true}
+            glareColor="var(--cyanshade)"
           >
-            <div className="card">
+            <div className="card" key={id}>
               <div id="cardimage" style={{ background: `${image}` }}></div>
               
               <div id="linktogithub">

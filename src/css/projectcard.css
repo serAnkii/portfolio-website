@@ -18,6 +18,8 @@
   max-width: 600px;
   overflow: hidden;
   background-color: var(--whiteshade);
+  transform-style: preserve-3d;
+  transform: translateZ(-1000px) !important;
 
 }
 
@@ -27,7 +29,6 @@
   border-top-left-radius: 15px;
   background-position: center !important;
   background-size: contain !important;
-
   background-repeat: no-repeat !important;
 }
 
