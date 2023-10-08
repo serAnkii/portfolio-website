@@ -87,6 +87,7 @@
   border-radius: 10px;
   transition:all ease-in-out 500ms;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #buttondiv button:hover{
