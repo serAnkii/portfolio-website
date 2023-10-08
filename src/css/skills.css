@@ -91,7 +91,7 @@ aside{
 .skillicon {
   font-size: 48px;
   /* margin-bottom: 10px; */
-  color: var(--cyanshade); /* Icon color */
+  color: var(--text); /* Icon color */
 }
 
 #skill-name {

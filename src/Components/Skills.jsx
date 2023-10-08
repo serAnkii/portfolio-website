@@ -75,7 +75,7 @@ const Skills = () => {
       name: "Python",
     },
     {
-      icon: <SiGit className="skillicons" fill="#e>84d31" />,
+      icon: <SiGit className="skillicons" fill="#e84d31"/>,
       name: "Git",
     },
     {
@@ -130,7 +130,7 @@ const Skills = () => {
               INTERESTS
             </h1>
             <i>
-                <MdInterests fill="#19c37d" />
+                <MdInterests fill="var(--whiteshade)" />
               </i>
           </div>
           <div id="inter">
