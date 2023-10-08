@@ -43,7 +43,7 @@
   align-items: center;
   overflow-x: scroll;
   padding: 1rem;
-  background: var(--whiteshade)00;
+  background: var(--whiteshade);
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
