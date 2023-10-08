@@ -108,8 +108,8 @@ body{
 a{
   text-decoration: none;
   color: var(--cyanshade);
-  font-family: 'Press Start 2P';
-  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
 }
 
 #wrapper{
