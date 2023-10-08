@@ -3,9 +3,9 @@
   width: 100%;
   z-index: 100;
   border: 5px solid var(--whiteshade);
-  border-radius: 18px;
+  /* border-radius: 18px; */
   /* background: #343541; */
-  /* background-color: var(--cyanshade); */
+  background-color: var(--whiteshade);
   display: grid;
   grid-template-columns: 1.3fr 4.5fr;
   grid-template-rows:1fr;
@@ -19,7 +19,7 @@ aside{
   display: grid;
   grid-template-rows: 1fr 1fr;
   overflow-y: scroll;
-  border-radius: 18px;
+  /* border-radius: 18px; */
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }

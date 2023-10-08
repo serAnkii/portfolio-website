@@ -9,7 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+  
 }
+
 
 .form {
   width: 100%;
@@ -255,6 +258,8 @@ textarea.input {
   line-height: 35px;
   margin-right: 0.5rem;
   transition: 0.3s;
+  
+  pointer-events: all;
 }
 
 .socialicon:nth-child(2) {

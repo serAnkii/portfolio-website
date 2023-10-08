@@ -17,7 +17,7 @@ function Projects() {
   };
 
   const ref = useRef();
-
+  
   return (
     <div id="projectdiv" className="common">
       <Projectnav />
