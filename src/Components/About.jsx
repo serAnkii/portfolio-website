@@ -27,7 +27,7 @@ export function About() {
           </ul>
         </div>
         <div id="resumediv">
-          <a href="/AnkitNegi.pdf" target="_blank" id="resume">
+          <a href="/Ankit_Negi.pdf" target="_blank" id="resume">
             Resume <AiOutlineDownload/>
           </a>
         </div>

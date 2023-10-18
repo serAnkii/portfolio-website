@@ -1,6 +1,16 @@
 export const data = [
   {
     id: 1,
+    name: "SkillHub",
+    description: "SkillHub is a Collbaorative Skill Exchange Platform where Users can share their skills Among their connections (Or we call them Bitbuddies at our platform).",
+    image: "url('skillhub.png')",
+    group: "development",
+    repo: "https://github.com/serAnkii/SkillHub",
+    deploy: "",
+    shadowcolor:"rgba(0, 119, 205, 0.6)"
+  },
+  {
+    id: 2,
     name: "Twitter X",
     description: "Twitter X is a web application built using NEXT.js that replicates the functionalities of the popular social media platform Twitter, such as tweeting, following, and liking posts.",
     image: "url('twitter.png')",
@@ -10,7 +20,7 @@ export const data = [
     shadowcolor:"rgba(0, 119, 205, 0.6)"
   },
   {
-    id: 2,
+    id: 3,
     name: "credit card fraud detection",
     description:
       "A credit card fraud detection system is a software application that uses various algorithms and techniques to identify and prevent fraudulent activities associated with credit card transactions.",
@@ -21,7 +31,7 @@ export const data = [
     shadowcolor:"#e64a5a"
   },
   {
-    id: 3,
+    id: 4,
     name: "FaceSync-Attendance-Automation",
     description:"This uses KNN classifier to automatically identify and record attendance of individuals based on their unique facial features.",
     group: "ml",
@@ -32,7 +42,7 @@ export const data = [
   },
   
   {
-    id: 4,
+    id: 5,
     name: "portfolio website",
     description: "You are right now looking at me IRL :-).",
     group: "development",
@@ -42,7 +52,7 @@ export const data = [
     shadowcolor:"white"
   },
  { 
-  id: 5,
+  id: 6,
   name: "Blockchain Based Supply Chain",
   description:
     "The food distribution system using blockchain is a transparent and secure network that tracks the movement of food from farm to table, ensuring food safety and reducing waste.",
