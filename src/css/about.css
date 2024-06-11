@@ -56,6 +56,14 @@
   width: 100%;
 }
 
+#resumecontainersmall{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 #resumediv a{
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -161,7 +169,6 @@
 
 
 
-
 @media only screen and (max-width: 459px) {
 
 
@@ -217,6 +224,9 @@
     display: none;
   }
   
+  #resumecontainersmall{
+    display:flex;
+  }
   #about{
     grid-template-columns: 1fr;
   }

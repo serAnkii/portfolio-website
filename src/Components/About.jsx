@@ -21,16 +21,15 @@ export function About() {
         <div id="para">
           <ul id="ulpara">
             <li>
-              I recently graduated in 2023 with a B.Tech in Computer Science
-              from Graphic Era Hill University.
+             Graduated in 2023 with a B.Tech in Computer Science
+              Degree from Graphic Era Hill University.
             </li>
             <li>
-              By day, I'm a Full Stack Web Developer equiped <br /> with the
+              I'm a Full Stack Web Developer equiped <br /> with the
               latest tools of the trade, crafting seamless digital experiences.
               Whether it's front-end or back-end, I've got it covered.
             </li>
             <li>
-              But wait, there's more! I'm not just about pixels and code; <br />{" "}
               I'm also a Machine Learning enthusiast. I thrive on creating
               intelligent applications that tackle real-world challenges.
             </li>
@@ -41,6 +40,11 @@ export function About() {
             </li>
           </ul>
         </div>
+        <div id="resumecontainersmall">
+       <a href="/Ankit_Negi.pdf" target="_blank" id="resume">
+            Resume <AiOutlineDownload/>
+        </a>
+       </div>
       </div>
 
       <div id="aboutimage">
