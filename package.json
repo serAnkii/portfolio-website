@@ -10,7 +10,7 @@
     "react-icons": "^4.11.0",
     "react-parallax-tilt": "^1.7.167",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^3.0.1",
     "styled-components": "^5.3.10",
     "typewriter-effect": "^2.19.0"
   },
