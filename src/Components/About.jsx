@@ -49,7 +49,7 @@ export function About() {
 
       <div id="aboutimage">
         <div id="imagecontainer">
-        <img src="/ankit.png" alt="Profile Picture" id="profile" />
+        <img src="/ankit2.jpeg" alt="Profile Picture" id="profile" />
         </div>
        <div id="resumecontainer">
        <a href="/Ankit_Negi.pdf" target="_blank" id="resume">
